@@ -14,7 +14,15 @@ $gray-500: #919191;
 $gray-600: #747474;
 $gray-800: #575757;
 $gray-900: #1D1D1D;
+$red:#AE2B1A;
 
+//color 변수 활용
+$primary: $green;
+$secondary: $light-green;
+$tertiary: $deep-green;
+$contents-primary:$gray-500;
+$contents-secondary:$gray-200;
+$negative:$red;
 
 //font-size
 $text-xs: rem(12px);
