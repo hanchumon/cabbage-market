@@ -1,0 +1,13 @@
+@use "./../../components" as *;
+@use "./../../utils" as *;
+
+
+.mainboard {
+  @include containerMax;
+  
+  height: 685px;
+  border: solid 1px gray;
+  padding: 0 12px;
+  position: relative;
+  box-sizing: content-box;
+}
