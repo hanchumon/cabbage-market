@@ -1,37 +1,22 @@
-/* Accessibility Styles */
-.a11yHidden,
-legend {
-  overflow: hidden;
-  position: absolute !important;
-  clip: rect(0, 0, 0, 0);
-  clip-path: inset(50%);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+/* Error: Undefined variable.
+ *    ,
+ * 14 |   background-color: $primary;
+ *    |                     ^^^^^^^^
+ *    '
+ *   src\scss\components\_button.scss 14:21  @use
+ *   src\scss\components\_index.scss 1:1     @use
+ *   src\scss\pages\board\_board.scss 1:1    @use
+ *   src\scss\pages\board\_index.scss 1:1    @use
+ *   src\scss\pages\_index.scss 1:1          @use
+ *   src\scss\index.scss 1:1                 root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 14 \2502    background-color: $primary;\d\a    \2502                      ^^^^^^^^\a    \2575 \a   src\\scss\\components\\_button.scss 14:21  @use\a   src\\scss\\components\\_index.scss 1:1     @use\a   src\\scss\\pages\\board\\_board.scss 1:1    @use\a   src\\scss\\pages\\board\\_index.scss 1:1    @use\a   src\\scss\\pages\\_index.scss 1:1          @use\a   src\\scss\\index.scss 1:1                 root stylesheet";
 }
-
-.button_next {
-  position: absolute;
-  bottom: 2.125rem;
-  width: calc(100% - 1.5rem);
-  height: auto;
-  padding: 0.75rem;
-  border: none;
-  background-color: #008F22;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 14px;
-}
-
-.mainboard {
-  max-width: 36rem;
-  margin-left: auto;
-  margin-right: auto;
-  height: 685px;
-  border: solid 1px gray;
-  padding: 0 12px;
-  position: relative;
-  box-sizing: content-box;
-} 
-
-/*# sourceMappingURL=index.css.map */
