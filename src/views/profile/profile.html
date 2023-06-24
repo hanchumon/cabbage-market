@@ -7,22 +7,62 @@
   <title>profile page</title>
 </head>
 <body>
-  <h2 class="a11yHidden">프로필 화면</h2>
-
+  <!-- 프로필.첫 화면 -->
   <div class="profile">
+    <h2 class="a11yHidden">프로필 화면</h2>
 
+<!-- 프로필.주요 메뉴 -->
     <section class="profileMain">
       <h3 class="a11yHidden">프로필 주요 메뉴</h3>
-      
+
       <a href="/" class="profileMain__edit"><img class="profile__img" src="/" alt="프로필 이미지" /></a>
       <p class="profile__name">토끼</p>
-      <span>답변 35</span>
+      <span class="answer">답변 35</span>
 
       <ul class="profileMain__myPages">
         <li><a href="/" class="profileMain__myQna">나의 Q&#38;A</a></li>
         <li><a href="/" class="profileMain__myProfile">나의 프로필</a></li>
         <li><a href="/" class="profileMain__myNews">내소식</a></li>
       </ul>
+    </section>
+
+    <!-- 프로필.활동내역 파악할 수 있는 목록 -->
+    <section class="profileDoit">
+      <h3 class="a11yHidden">내 활동내역을 파악할 수 있는 목록</h3>
+
+      <ul class="profileDoit__list">
+        <li><a href="/" class="profileDoit__item">
+          활동배지 10개
+        </a></li>
+
+        <li><a href="/" class="profileDoit__item">
+         판매상품 3개
+        </a></li>
+
+        <li><a href="/" class="profileDoit__item">
+          받은 매너 평가</a>
+
+          <ol class="mannerValue-list">
+            <li><p class="mannerValue">10
+              <span class="messageShape">시간약속을 잘 지켜요</span></p></li>
+            <li><p class="mannerValue">9
+              <span class="messageShape">친절하고 매너가 좋아요</span></p></li>
+            <li><p class="mannerValue">8
+              <span class="messageShape">제가 있는 곳까지 와서 거래했어요</span></p></li>
+          </ol>
+        </li>
+
+        <li><a href="/" class="profileDoit__item">
+          받은 거래 후기 1</a>
+
+          <dl class="dealReview">
+            <dt class="dealReview__writer">으갸갸갹<br />
+              <span>구매자 &#183; 인천광역시 계양구 &#183; 4개월전</span></dt>
+            <dd class="dealReview__review">감사감사 감사합니다</dd>
+          </dl>
+        </li> 
+      </ul>
+
     </section>
 
   </div>
