@@ -8,11 +8,11 @@
 </head>
 
 <body>
+  <!-- 앱헤더 -->
   <header>
     <div class="screen-header__icons opacity">
-      <img src="" alt="" />
-      <h2>Q&A 글쓰기</h2>
-      <span>완료</span>
+      <h2 class="sprite">Q&A 글쓰기</h2>
+      <button class="" onclick="location.href='qnamain.html'">완료</button>
     </div>
   </header>
 
@@ -20,30 +20,31 @@
     <h3 class="sprite"><span>FRONTEND</span></h3>
     <div>
       <span>안내</span>
-      <span>중고거래 관련, 명예훼손, 광고/홍보 목적의 글은
-        올리실 수 없어요. </span>
+      <p>중고거래 관련, 명예훼손, 광고/홍보 목적의 글은
+        올리실 수 없어요.</p>
       <span>Q&A글쓰기 운영정책</span>
     </div>
 
     <fieldset>
       <legend>글 작성 폼</legend>
       <div class="formInput">
-        <img src="" alt="" />
-        <label for="search" class="a11yHidden"> 제목</label>
-        <input type="search" id="search" name="search" required
+        <!-- 제목 옆 일자 이미지 -->
+        <img src="./../images/titlebarImage.png" alt="" />
+        <label for="postTitle" class="a11yHidden"> 제목</label>
+        <input type="text" id="postTitle" name="postTitle" required
           class="" placeholder="제목" />
-        <label for="search" class="a11yHidden">상세 글</label>
-        <input type="search" id="search" name="search" required
-        class="" placeholder="관심있는 분야에 대한 질문을 올려주세요.
-        장소 정보와 사진을 함께 올리면 친구들에게 더 도움이 돼요" />
+        <label for="postContent" class="a11yHidden">상세 글</label>
+        <input type="text" id="postContent" name="postContent" required
+        class="" placeholder="관심있는 분야에 대한 질문을 올려주세요. 장소 정보와 사진을 함께 올리면 친구들에게 더 도움이 돼요" />
       </div>
     </fieldset>
 
     <ul>
-      <li class="sprite">사진</li>
-      <li class="sprite">장소</li>
+      <li class="sprite"><a href="#">사진</a></li>
+      <li class="sprite"><a href="#">장소</a></li>
       <li class="sprite"></li>
     </ul>
+    <img src="./../images/keyboardImage.png" alt="키보드 이미지" />
   </main>
 </body>
 </html>

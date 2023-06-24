@@ -19,51 +19,61 @@
 
   <main>
     <h2>Q&A</h2>
+    <!-- 프로필 -->
     <div>
-      <img src="./../images/Rectangle.png" alt="" />
-      <div class="minibox">
-        <span class="name">라옹</span>
-        <span class="info">연희동 인증 26회 • 2시간 전</span>
+      <img src="./../images/Rectangle.png" alt="프로필 이미지" />
+      <div>
+        <p>라옹</p>
+        <p>연희동 인증 26회 • 2시간 전</p>
       </div>
     </div>
     
+    <!-- 게시글 레이아웃 -->
     <dl>
       <dt>Q. 혹시 홍대나 연희동 주변에 프론트 스터디 하는 분</dt>
       <dd>계신가요? 있으면 참가하고 싶어서요!</dd>
-      <dd><img src="./../images/contentsImage.png" alt="" /></dd>
+      <dd><img src="./../images/contentsImage.png" alt="게시글 이미지" /></dd>
     </dl>
 
+    <!-- 하단 바 -->
     <div>
       <span class="sprite"></span>
       <span class="sprite"></span>
+      <!-- 댓글 작성 폼 -->
       <fieldset>
         <legend>댓글 작성 폼</legend>
-        <div>
-          <label for="search" class="a11yHidden">댓글</label>
-          <input type="search" id="search" name="search" required
-          class="sprite" placeholder="댓글을 입력해주세요." />
-        </div>
+        <ul>
+          <li class="sprite a11yHidden"><a href="#">사진</a></li>
+          <li class="sprite a11yHidden"><a href="#">장소</a></li>
+          <li class="sprite">
+            <label for="commentInput" class="a11yHidden">댓글</label>
+            <input type="text" id="commentInput" name="commentInput" required
+            class="sprite" placeholder="댓글을 입력해주세요." />
+          </li>
+        </ul>
       </fieldset>
     </div>
 
-    <ul class="badgeBox">
-      <li class="sprite">5개의 친구질문 글에 댓글 남기기</li>
-      <li>미션 완료 시 '우수답변가' 배지를 받아요</li>
-      <li>
-        <img class="badgeBar"src="./../images/wholeblue.png" alt="" />
-        <img class="badgeBar" src="./../images/wholeblue.png" alt="" />
-        <img class="badgeBar" src="./../images/wholeblue.png" alt="" />
-        <img class="badgeBar" src="./../images/wholeblue.png" alt="" />
-        <img class="badgeBar" src="./../images/wholeblue.png" alt="" />
-      </li>
-      <li class="medalImage"><img src="./../images/medal.png" alt="" /></li>
-    </ul>
+    <aside>
+      <a href="#">
+        <span class="sprite">5개의 친구질문 글에 댓글 남기기</span>
+        <span>미션 완료 시 '우수답변가' 배지를 받아요</span>
+        <div>
+          <img src="./../images/wholeblue.png" alt="현재 총 5개의 막대 중 1개의 30% 달성" />
+          <img src="./../images/titlebarImage.png" alt="" />
+        </div>
+        <img src="./../images/wholeblue.png" alt="" />
+        <img src="./../images/wholeblue.png" alt="" />
+        <img src="./../images/wholeblue.png" alt="" />
+        <img src="./../images/wholeblue.png" alt="" />
+        <img src="./../images/medal.png" alt="우수답변가 배지 이미지" />
+      </a>
+    </aside>
 
     <div>
-      <span>아직 댓글이 없어요.</span>
-      <span>가장 먼저 댓글을 남겨보세요.</span>
+      <p>아직 댓글이 없어요.</p>
+      <p>가장 먼저 댓글을 남겨보세요.</p>
     </div>
-    
   </main>
 
   

@@ -7,19 +7,10 @@
   <link rel="stylesheet" href="/style/index.css" />
 </head>
 <body>
-  <header>
-    <ul>
-      <li class=" "></li>
-      <li>
-        <h2>
-          <span>카페인조아</span>
-          <span>보통 3일 내 응답</span>
-        </h2>
-      </li>
-      <li class="sprite"></li>
-      <li class="sprite"></li>
-    </ul>
+  <header></header>
 
+  <main>
+    <!-- 판매자 정보, 약속, 송금-->
     <img src="./../images/chatImage.png" alt="" />
     <div>
       <h3>
@@ -28,19 +19,22 @@
         <span>800,000</span>
       </h3>
     </div>
-    <button class="sprite">약속 잡기</button>
-    <button class="sprite">송금 하기</button>
-  </header>
-
-  <main>
     <div>
+      <button class="sprite">약속 잡기</button>
+      <button class="sprite">송금 하기</button>
+    </div>
+
+    <!-- 채팅 묶는 전체 박스 -->
+    <div>
+      <!-- 상단 알림 박스 -->
       <div>
-        <img src="" alt="" />
-        <p><span>카페인조아님은 우수판매자예요.</span>
+        <!-- 이모지로 변경 -->
+        <p>💸<span>카페인조아님은 우수판매자예요.</span>
         개인정보유도와 명예훼손 내용은 차단될 수 있어요. 
         <span>자세히 보기</span></p>
       </div>
   
+      <!-- 채팅들 -->
       <div>
         <time datetime="2023-02-21">2023년 2월 21일</time>
         <div>
@@ -73,16 +67,16 @@
       </div>
     </div>
 
-    <form name="" action="#" method="POST">
+    <!-- 메세지 입력 폼 -->
+    <form name="chatMessageForm" action="#" method="POST">
     <fieldset>
       <legend>메세지 입력 폼</legend>
       <div>
-        <div>
-          <label for="search" class="a11yHidden spritePlus">입력창</label>
-          <input type="search" id="search" name="search"
-          required placeholder="메세지 보내기" />
-        </div>
-        <button><img src="./../images/sendButton.png" alt="" /></button>
+        <span class="sprite"></span>
+        <label for="messageInput" class="a11yHidden sprite">입력창</label>
+        <input type="text" id="messageInput" name="messageInput"
+        required placeholder="메세지 보내기" />
+        <input type="submit"/>
       </div>
     </fieldset>
     </form>
