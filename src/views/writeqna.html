@@ -8,43 +8,47 @@
 </head>
 
 <body>
-  <!-- 앱헤더 -->
-  <header>
-    <div class="screen-header__icons opacity">
-      <h2 class="sprite">Q&A 글쓰기</h2>
-      <button class="" onclick="location.href='qnamain.html'">완료</button>
-    </div>
-  </header>
 
   <main>
-    <h3 class="sprite"><span>FRONTEND</span></h3>
-    <div>
-      <span>안내</span>
-      <p>중고거래 관련, 명예훼손, 광고/홍보 목적의 글은
-        올리실 수 없어요.</p>
-      <span>Q&A글쓰기 운영정책</span>
+    <div class="qnaTopicBox">
+      <h3 class="selectQnaTopic">FRONTEND</h3>
+      <span class="sprite spriteChangeQnaTopic"></span>
     </div>
 
-    <fieldset>
-      <legend>글 작성 폼</legend>
-      <div class="formInput">
-        <!-- 제목 옆 일자 이미지 -->
-        <img src="./../images/titlebarImage.png" alt="" />
-        <label for="postTitle" class="a11yHidden"> 제목</label>
-        <input type="text" id="postTitle" name="postTitle" required
-          class="" placeholder="제목" />
-        <label for="postContent" class="a11yHidden">상세 글</label>
-        <input type="text" id="postContent" name="postContent" required
-        class="" placeholder="관심있는 분야에 대한 질문을 올려주세요. 장소 정보와 사진을 함께 올리면 친구들에게 더 도움이 돼요" />
+    <div class="writeQnaBox">
+      <div class="writeNoticeBox">
+        <span class="writeNoticeHighlight">안내</span>
+        <span>중고거래 관련, 명예훼손, 광고/홍보 목적의 글은
+          올리실 수 없어요.</span>
+        <a class="writeNoticeDetail" href="www.naver.com">Q&A글쓰기 운영정책</a>
       </div>
-    </fieldset>
 
-    <ul>
-      <li class="sprite"><a href="#">사진</a></li>
-      <li class="sprite"><a href="#">장소</a></li>
-      <li class="sprite"></li>
+      <form name="writeQnaForm" action="#" method="POST" class="writeQnaForm">
+        <fieldset>
+          <legend>QNA 글 작성 폼</legend>
+          <div class="qnaFormInput">
+            <!-- 제목 옆 일자 이미지 -->
+            <img class="qnaTitleBar" src="./../images/titlebarImage.png" alt="" />
+            <label for="postTitle" class="a11yHidden">제목</label>
+            <input type="text" id="postTitle" name="postTitle" required
+              class="writeQnaTitle" placeholder="제목" />
+  
+            <label for="postContent" class="a11yHidden">상세 글</label>
+            <input type="text" id="postContent" name="postContent" required
+            class="writeQnaContent" placeholder="관심있는 분야에 대한 질문을 올려주세요. 장소 정보와 사진을 함께 올리면 친구들에게 더 도움이 돼요" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+
+    <ul class="qnaWriteBar">
+      <li class="sprite spritePicture"><a href="#">사진</a></li>
+      <li class="sprite spritePlace"><a href="#">장소</a></li>
+      <li class="sprite spriteKeyboard"></li>
     </ul>
-    <img src="./../images/keyboardImage.png" alt="키보드 이미지" />
+    <img class="keyboardImg" src="./../images/keyboardImage.png" alt="키보드 이미지" />
   </main>
+
 </body>
 </html>

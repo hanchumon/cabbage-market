@@ -3,79 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Q&A 목록</title>
+  <title>Q&A 게시글 페이지</title>
   <link rel="stylesheet" href="/style/index.css" />
 </head>
 
 <body>
-  <header>
-    <div>
-      <span class="sprite"></span>
-      <span class="sprite"></span>
-      <span class="sprite"></span>
-      <span class="sprite"></span>
-    </div>
-  </header>
 
   <main>
-    <h2>Q&A</h2>
+    <h2 class="qnaBoardTopic">Q&A</h2>
     <!-- 프로필 -->
-    <div>
-      <img src="./../images/Rectangle.png" alt="프로필 이미지" />
-      <div>
-        <p>라옹</p>
-        <p>연희동 인증 26회 • 2시간 전</p>
-      </div>
+    <div class="qnaBoardProfileBox">
+      <img class="circleProfile" src="./../images/Rectangle.png" alt="프로필 이미지" />
+      <span class="qnaBoardName">라옹</span>
+      <span class="qnaBoardPlace">연희동 인증 26회 • 2시간 전</span>
     </div>
     
     <!-- 게시글 레이아웃 -->
-    <dl>
-      <dt>Q. 혹시 홍대나 연희동 주변에 프론트 스터디 하는 분</dt>
-      <dd>계신가요? 있으면 참가하고 싶어서요!</dd>
-      <dd><img src="./../images/contentsImage.png" alt="게시글 이미지" /></dd>
+    <dl class="qnaBoardPostContent">
+      <dt class="qnaBoardTitle"><span class="qBlue">Q.</span> 혹시 홍대나 연희동 주변에 프론트 스터디 하는 분</dt>
+      <dd class="qnaBoardDetail">계신가요? 있으면 참가하고 싶어서요!</dd>
+      <dd class="qnaBoardImage"><img src="./../images/contentsImage.png" alt="게시글 이미지" /></dd>
     </dl>
 
-    <!-- 하단 바 -->
-    <div>
-      <span class="sprite"></span>
-      <span class="sprite"></span>
-      <!-- 댓글 작성 폼 -->
+    <!-- 댓글 작성 폼 -->
+    <form name="writeCommentForm" action="#" method="POST" class="qnaBoardCommentForm">
       <fieldset>
         <legend>댓글 작성 폼</legend>
-        <ul>
+        <ul class="qnaBoardCommentBar">
           <li class="sprite a11yHidden"><a href="#">사진</a></li>
           <li class="sprite a11yHidden"><a href="#">장소</a></li>
-          <li class="sprite">
+          <li class="qnaBoardCommentInput">
             <label for="commentInput" class="a11yHidden">댓글</label>
             <input type="text" id="commentInput" name="commentInput" required
-            class="sprite" placeholder="댓글을 입력해주세요." />
+            class="sprite spriteEmoticon" placeholder="댓글을 입력해주세요." />
           </li>
         </ul>
       </fieldset>
-    </div>
+    </form>
 
-    <aside>
+    <aside class="advertisementBox">
       <a href="#">
-        <span class="sprite">5개의 친구질문 글에 댓글 남기기</span>
-        <span>미션 완료 시 '우수답변가' 배지를 받아요</span>
-        <div>
-          <img src="./../images/wholeblue.png" alt="현재 총 5개의 막대 중 1개의 30% 달성" />
-          <img src="./../images/titlebarImage.png" alt="" />
+        <div class="advertisementTextBox">
+          <span class="sprite spriteFlag">5개의 친구질문 글에 댓글 남기기</span>
+          <span class="advertisementDetail">미션 완료 시 '우수답변가' 배지를 받아요</span>
         </div>
-        <img src="./../images/wholeblue.png" alt="" />
-        <img src="./../images/wholeblue.png" alt="" />
-        <img src="./../images/wholeblue.png" alt="" />
-        <img src="./../images/wholeblue.png" alt="" />
-        <img src="./../images/medal.png" alt="우수답변가 배지 이미지" />
+
+        <div class="percentBar">
+          <div class="FullBar">
+            <img class="greyBar" src="./../images/wholeblue.png" alt="현재 총 5개의 막대 중 1개의 30% 달성" />
+            <img class="blueBar" src="./../images/titlebarImage.png" alt="" />
+          </div>
+          <div class="percentEmptyBar">
+            <img class="greyBar" src="./../images/wholeblue.png" alt="" />
+            <img class="greyBar" src="./../images/wholeblue.png" alt="" />
+            <img class="greyBar" src="./../images/wholeblue.png" alt="" />
+            <img class="greyBar" src="./../images/wholeblue.png" alt="" />
+          </div>
+        </div>
+        <img class="medalImage" src="./../images/medal.png" alt="우수답변가 배지 이미지" />
       </a>
     </aside>
 
-    <div>
+    <div class="qnaBoardBottomTitle">
       <p>아직 댓글이 없어요.</p>
       <p>가장 먼저 댓글을 남겨보세요.</p>
     </div>
   </main>
-
-  
 </body>
 </html>

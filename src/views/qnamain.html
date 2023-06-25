@@ -3,96 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Q&A  메인 페이지</title>
+  <title>Q&A 메인 페이지</title>
   <link rel="stylesheet" href="/style/index.css" />
 </head>
 
 <body>
-  <!-- 앱헤더 -->
-  <header>
-    <span class="sprite"></span>
-  </header>
-
-  <nav>
-    <ul>
-      <li>
-        <a href=""></a>
-        <span>홈</span>
-      </li>
-      <li>
-        <a href=""></a>
-        <span>게시판</span>
-      </li>
-      <li>
-        <a href=""></a>
-        <span>내근처</span>
-      </li>
-      <li>
-        <a href=""></a>
-        <span>채팅</span>
-      </li>
-      <li>
-        <a href=""></a>
-        <span>나의 이듬</span>
-      </li>
-    </ul>
-  </nav>
-
   <main>
-    <div>
-      <img src="./../images/profileImage.png" alt="" />
-      <h2>Q&A</h2>
-      <span class="sprite">참여중</span>
+    <div class="qnaProfile">
+      <img src="./../images/profileImage.png" alt="사용자 프로필 이미지" />
+      <h2 class="qnaState">Q&A</h2>
+      <span class="sprite spriteAttend">참여중</span>
     </div>
 
-    <a href="qnaboard.html">
+    <a class="qnaPost" href="qnaboard.html">
       <dl>
-        <dt>JS</dt>
-        <dt>JS에서 함수 선언문과 표현식의 차이를 아직 잘 모르겠네요...</dt>
-        <dd>북가좌동 • 2일 전</dd>
+        <dt class="qnaPostTopic">JS</dt>
+        <dt class="qnaPostTitle">JS에서 함수 선언문과 표현식의 차이를 아직 잘 모르겠네요...</dt>
+        <dd class="qnaPostContent">함수 선언문과 표현식의 차이를 아직 잘 모르겠네요...</dd>
+        <dd class="qnaPostSub">북가좌동 • 2일 전</dd>
       </dl>
     </a>
     
-    <a href="qnaboard.html">
+    <a class="qnaPost" href="qnaboard.html">
       <dl>
-        <dt>UI•UX</dt>
-        <dt>아니 auto Layout 했는데 왜 이러냐 진짜</dt>
-        <dd>아니 이거 묶으려고 auto Layout했는데 왜 어그러지냐</dd>
-        <dd>망원동 • 2일 전 • 조회 132</dd>
-        <dd><span>2</span><span>1</span></dd>
-        <dd><img src="./../images/qnalistImage.png" alt="" /></dd>
+        <dt class="qnaPostTopic">UI•UX</dt>
+        <dt class="qnaPostTitle">아니 auto Layout 했는데 왜 이러냐 진짜</dt>
+        <dd class="qnaPostContent">아니 이거 묶으려고 auto Layout했는데 왜 어그러지냐</dd>
+        <dd class="qnaPostSub">망원동 • 2일 전 • 조회 132</dd>
+        <dd class="qnaPostSub">
+          <span class="sprite spriteRecommend">2</span>
+          <span class="sprite spriteComment">1</span>
+        </dd>
+        <dd class="qnaPostImage">
+          <img src="./../images/qnalistImage.png" alt="QNA 게시글 이미지" />
+        </dd>
       </dl>
     </a>
 
-    <a href="qnaboard.html">
+    <a class="qnaPost" href="qnaboard.html">
       <dl>
-        <dt>HTML</dt>
-        <dt>웹 접근성 적용해서 코드 짜려는데 여기에 어떤거 넣어야 하나요?</dt>
-        <dd>aria-hidden 적용하면 보이는 거 안들리는 거 맞나요?</dd>
-        <dd>남가좌제2동 • 4일 전 • 조회 19</dd>
+        <dt class="qnaPostTopic">HTML</dt>
+        <dt class="qnaPostTitle">웹 접근성 적용해서 코드 짜려는데 여기에 어떤거 넣어야 하나요?</dt>
+        <dd class="qnaPostContent">aria-hidden 적용하면 보이는 거 안들리는 거 맞나요?</dd>
+        <dd class="qnaPostSub">남가좌제2동 • 4일 전 • 조회 19</dd>
       </dl>
     </a>
 
-    <a href="qnaboard.html">
+    <a class="qnaPost" href="qnaboard.html">
       <dl>
-        <dt>css</dt>
-        <dt>CSS flex 적용했는데 왜 이러는지 모르겠어요ㅠㅠ</dt>
-        <dd>flex justify-content : center 적용했는데 왜 이렇게 될까요..</dd>
-        <dd>성산제3동 • 7일 전</dd>
-        <dd><span>6</span><span>3</span></dd>
+        <dt class="qnaPostTopic">css</dt>
+        <dt class="qnaPostTitle">CSS flex 적용했는데 왜 이러는지 모르겠어요ㅠㅠ</dt>
+        <dd class="qnaPostContent">flex justify-content : center 적용했는데 왜 이렇게 될까요..</dd>
+        <dd class="qnaPostSub">성산제3동 • 7일 전</dd>
+        <dd class="qnaPostSub">
+          <span class="sprite spriteRecommend">6</span>
+          <span class="sprite spriteComment">3</span>
+        </dd>
       </dl>
     </a>
 
-    <a href="qnaboard.html">
+    <a class="qnaPost" href="qnaboard.html">
       <dl>
-        <dt>UI•UX</dt>
-        <dt>Figma 하는 중인데 어두운 화면이면 어떻게 해야하나요?</dt>
-        <dd>다른 화면 만드는데 어두운 배경이 깔리고 또 다른 화면이 나와요.</dd>
-        <dd>북가좌동 • 2일 전</dd>
-        <dd><span>1</span><span>4</span></dd>
-        <dd><img src="./../images/qnalistImage.png" alt="" /></dd>
+        <dt class="qnaPostTopic">UI•UX</dt>
+        <dt class="qnaPostTitle">Figma 하는 중인데 어두운 화면이면 어떻게 해야하나요?</dt>
+        <dd class="qnaPostContent">다른 화면 만드는데 어두운 배경이 깔리고 또 다른 화면이 나와요.</dd>
+        <dd class="qnaPostSub">북가좌동 • 2일 전</dd>
+        <dd class="qnaPostSub">
+          <span class="sprite spriteRecommend">1</span>
+          <span class="sprite spriteComment">4</span>
+        </dd>
+        <dd class="qnaPostImage">
+          <img src="./../images/qnalistImage.png" alt="QNA 게시글 이미지" />
+        </dd>
       </dl>
     </a>
+    
   </main>
 </body>
 </html>

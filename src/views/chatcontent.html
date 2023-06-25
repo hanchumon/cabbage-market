@@ -3,64 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>채팅창</title>
+  <title>채팅창 페이지</title>
   <link rel="stylesheet" href="/style/index.css" />
 </head>
 <body>
-  <header></header>
 
   <main>
-    <!-- 판매자 정보, 약속, 송금-->
-    <img src="./../images/chatImage.png" alt="" />
-    <div>
-      <h3>
-        <span>판매중</span>
-        <span>intel mac 2017</span>
-        <span>800,000</span>
-      </h3>
-    </div>
-    <div>
-      <button class="sprite">약속 잡기</button>
-      <button class="sprite">송금 하기</button>
+    <div class="chatTopBox">
+      <div class="chatProfileBox">
+        <img src="./../images/chatImage.png" alt="채팅 상대 프로필 이미지" />
+        <h3 class="chatItemDetail">
+          <span class="isSelling">판매중</span>
+          <span class="chatItemName">intel mac 2017</span>
+          <span class="chatItemPrice">800,000</span>
+        </h3>
+      </div>
+      <div class="chatButtonBox">
+        <button class="sprite spriteDate">약속 잡기</button>
+        <button class="sprite spriteSendMoney">송금 하기</button>
+      </div>
     </div>
 
     <!-- 채팅 묶는 전체 박스 -->
-    <div>
+    <div class="wholechattingBox">
       <!-- 상단 알림 박스 -->
-      <div>
-        <!-- 이모지로 변경 -->
-        <p>💸<span>카페인조아님은 우수판매자예요.</span>
-        개인정보유도와 명예훼손 내용은 차단될 수 있어요. 
-        <span>자세히 보기</span></p>
+      <div class="chatNoticeBox">
+        <span class="chatNoticeHighlight">💸카페인조아님은 우수판매자예요.</span>
+        <span>개인정보유도와 명예훼손 내용은 차단될 수 있어요.</span>
+        <a class="chatNoticeDetail" href="#">자세히 보기</a>
       </div>
   
       <!-- 채팅들 -->
-      <div>
-        <time datetime="2023-02-21">2023년 2월 21일</time>
-        <div>
-          <span>가격 네고 가능한가요?</span>
-          <time datetime="2023-02-21T16:30:00">오후 4:30</time>
+      <div class="mainChattingBox">
+        <time class="chatDate" datetime="2023-02-21">2023년 2월 21일</time>
+        <div class="chatContents">
+          <span class="chatMessage">가격 네고 가능한가요?</span>
+          <time class="chatTime" datetime="2023-02-21T16:30:00">오후 4:30</time>
         </div>
-        <div>
-          <span>목요일 거래 가능할까요?</span>
-          <time datetime="2023-02-21T17:32:00">오후 5:32</time>
-        </div>
-  
-        <div>
-          <time datetime="2023-02-22">2023년 2월 22일</time>
-          <span>판매 안하시나요?ㅠㅠ</span>
-          <time datetime="2023-02-22T21:16:16">오후 9:16</time>
+        <div class="chatContents">
+          <span class="chatMessage">목요일 거래 가능할까요?</span>
+          <time class="chatTime" datetime="2023-02-21T17:32:00">오후 5:32</time>
         </div>
   
-        <div>
-          <time datetime="2023-02-22">2023년 2월 22일</time>
-          <span>판매 안하시나요?ㅠㅠ</span>
-          <time datetime="2023-02-22T21:16:16">오후 9:16</time>
+        <div class="chatContents">
+          <time class="chatDate" datetime="2023-02-22">2023년 2월 22일</time>
+          <span class="chatMessage">판매 안하시나요?ㅠㅠ</span>
+          <time class="chatTime" datetime="2023-02-22T21:16:16">오후 9:16</time>
         </div>
   
-        <div>
-          <time datetime="2023-03-06">2023년 3월 6일</time>
-          <span>죄송해요ㅠㅠ 제가 핸드폰을 바꿔서 지금봤네요ㅠㅠ
+        <div class="chatContents">
+          <time class="chatDate" datetime="2023-03-06">2023년 3월 6일</time>
+          <span class="chatMessage">죄송해요ㅠㅠ 제가 핸드폰을 바꿔서 지금봤네요ㅠㅠ
             팡매는 안됐는데 먼저 연락하신분이 있어서 답장 기다리고 있습니다 ㅠㅠ
           </span>
         </div>
@@ -68,17 +61,19 @@
     </div>
 
     <!-- 메세지 입력 폼 -->
-    <form name="chatMessageForm" action="#" method="POST">
-    <fieldset>
-      <legend>메세지 입력 폼</legend>
-      <div>
-        <span class="sprite"></span>
-        <label for="messageInput" class="a11yHidden sprite">입력창</label>
-        <input type="text" id="messageInput" name="messageInput"
-        required placeholder="메세지 보내기" />
-        <input type="submit"/>
-      </div>
-    </fieldset>
+    <form name="chatMessageForm" action="#" method="POST" class="chatMessageForm">
+      <fieldset>
+        <legend>채팅 메세지 입력 폼</legend>
+        <ul class="messageInputBar">
+          <li class="sprite spritePlus"></li>
+          <li class="messageInputPlace">
+            <label for="messageInput" class="a11yHidden">입력창</label>
+            <input type="text" id="messageInput" name="messageInput" class="sprite spriteEmoticon"
+            required placeholder="메세지 보내기" />
+            <input class="sprite spritSubmit" type="submit"/>
+          </li>
+        </ul>
+      </fieldset>
     </form>
 
   </main>
