@@ -367,4 +367,16 @@ legend {
   margin: -1px;
 }
 
+body {
+  background: yellow;
+}
+
+.spriteReceptionSensitivity {
+  content: "왜 안되지?";
+  background: url(/images/icon_sprite_1x.png) no-repeat;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+}
+
 /*# sourceMappingURL=index.css.map */

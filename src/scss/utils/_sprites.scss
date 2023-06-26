@@ -1,1 +1,37 @@
-// sprite.scss
+@use "./unit" as *;
+
+// .sprite::before {
+//   min-width: rem(20px);
+//   min-height: rem(20px);
+//   background-image: url(/images/icon_sprite_1x.png);
+//   background-repeat: no-repeat;
+//   padding-left: rem(25px);
+
+//   $sprites: ReceptionSensitivity, Lte, Battery, Favorite, Twitter;
+//   $x: 0;
+//   $y: 0;
+//   @each $sprite in $sprites {
+//     &#{$sprite} {
+//       background-position: $x $y;
+//     }
+//     $x: $x - 20px;
+//   }
+  // $sprites: Book, Board, News, Favorite, Twitter;
+  // $x: 0;
+  // $y: -20px;
+  // @each $sprite in $sprites {
+  //   &#{$sprite} {
+  //     background-position: $x $y;
+  //   }
+  //   $x: $x - 20px;
+  // }
+  // $sprites: Book, Board, News, Favorite, Twitter;
+  // $x: 0;
+  // $y: -40px;
+  // @each $sprite in $sprites {
+  //   &#{$sprite} {
+  //     background-position: $x $y;
+  //   }
+  //   $x: $x - 20px;
+  // }
+// }
