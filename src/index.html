@@ -4,14 +4,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>인덱스 페이지</title>
+  <title>배추마켓</title>
   <link rel="stylesheet" as="style" crossorigin
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
   <link rel="stylesheet" href="/style/index.css" />
 </head>
 
 <body>
-
+  <h1 class="a11yHidden">배추마켓</h1>
+  <div class="sizingWrapper">
+    <header class="mainHeader locationHeader">
+      <h2 class="a11yHidden">기본 정보</h2>
+      <div class="timeInfo">
+        <time class="timeInfo__date" datetime="2023-06-25T02:26">2:26</time>
+        <ul class="celluarInfo">
+          <li class="a11yHidden sprite spriteReceptionSensitivity">수신감도</li>
+          <li class="a11yHidden sprite spriteLte">데이터 종류</li>
+          <li class="a11yHidden sprite spriteBattery">배터리 잔량</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="cabbageMarket">
+        <h2 class="a11yHidden">배추마켓 시작하기</h2>
+        <img class="cabbageMarket__img" src="/images/cabbage_market.svg" alt="" srcset="/images/cabbage_market.png" />
+        <p class="cabbageMarket__title">배움의 추진력</p>
+        <p class="cabbageMarket_-brief">책도사고 스터디도 하며<br /> 배움에 추진력을 더하다 </p>
+      </section>
+      <a href="/" class="startButton button">시작하기</a>
+      <p class="asign">이미 계정이 있나요?</p>
+      <a class="loginPage" href="/">로그인</a>
+    </main>
+  </div>
 </body>
 
 </html>
