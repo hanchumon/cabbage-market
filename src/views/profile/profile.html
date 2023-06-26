@@ -9,11 +9,11 @@
 <body>
   <h1 class="a11yHidden">배추 마켓</h1>
 
-  <!-- 프로필.첫 화면 -->
+  <!-- 프로필 첫 화면 -->
   <div class="profile">
     <h2 class="a11yHidden">프로필 화면</h2>
 
-<!-- 프로필.주요 메뉴 -->
+<!-- 프로필 주요 메뉴 -->
     <section class="profileMain">
       <h3 class="a11yHidden">프로필 주요 메뉴</h3>
 
@@ -26,23 +26,23 @@
         <span class="answer">답변 35</span>
       </p>
 
-      <!-- 여기는 각각 스프라이트 이미지를 넣기위해서 클래스명 다르게 줘보았습니다 -->
-      <ul class="profileMain__myPages">
-        <li class="profileMain__myPagesItem">
-          <a href="/" class="profileMain__myQna">나의 Q&#38;A</a>
+      <!-- 클래스 수정 -->
+      <ul class="profileMainMyPage__list">
+        <li class="profileMainMyPage__item">
+          <a href="/" class="profileMainMyPage__link" id="myQna">나의 Q&#38;A</a>
         </li>
 
-        <li class="profileMain__myPagesItem">
-          <a href="/" class="profileMain__myProfile">나의 프로필</a>
+        <li class="profileMainMyPage__item">
+          <a href="/" class="profileMainMyPage__link" id="myProfile">나의 프로필</a>
         </li>
 
-        <li class="profileMain__myPagesItem">
-          <a href="/" class="profileMain__myNews">내소식</a>
+        <li class="profileMainMyPage__item">
+          <a href="/" class="profileMainMyPage__link" id="myNews">내소식</a>
         </li>
       </ul>
     </section>
 
-    <!-- 프로필.내 활동 능력치 -->
+    <!-- 프로필 내 활동 능력치 -->
     <section class="profileStats">
       <h3 class="a11yHidden">나의 활동 능력치</h3>
 
@@ -73,7 +73,7 @@
       </div>
     </section>
 
-    <!-- 프로필.활동내역 파악할 수 있는 목록 -->
+    <!-- 프로필 활동내역 파악할 수 있는 목록 -->
     <section class="profileDoit">
       <h3 class="a11yHidden">나의 활동내역을 파악할 수 있는 목록</h3>
     
@@ -131,7 +131,7 @@
 
       <ul class="profileBottom__list">
 
-        <!-- a, span 태그 클래스 수정, 추가 -->
+        <!-- a, span 태그 클래스 수정, id 추가 -->
         <li class="profileBottom__item">
           <a href="/" class="profileBottom__link" id="storedQuestion">
           보관 질문</a>
