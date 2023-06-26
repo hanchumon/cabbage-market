@@ -1,3 +1,25 @@
+/* Error: Undefined variable.
+ *    ,
+ * 14 |   background-color: $primary;
+ *    |                     ^^^^^^^^
+ *    '
+ *   src\scss\components\_button.scss 14:21  @use
+ *   src\scss\components\_index.scss 1:1     @use
+ *   src\scss\pages\board\_board.scss 1:1    @use
+ *   src\scss\pages\board\_index.scss 1:1    @use
+ *   src\scss\pages\_index.scss 1:1          @use
+ *   src\scss\index.scss 1:1                 root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 14 \2502    background-color: $primary;\d\a    \2502                      ^^^^^^^^\a    \2575 \a   src\\scss\\components\\_button.scss 14:21  @use\a   src\\scss\\components\\_index.scss 1:1     @use\a   src\\scss\\pages\\board\\_board.scss 1:1    @use\a   src\\scss\\pages\\board\\_index.scss 1:1    @use\a   src\\scss\\pages\\_index.scss 1:1          @use\a   src\\scss\\index.scss 1:1                 root stylesheet";
+}
 @charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
