@@ -7,21 +7,83 @@
   <title>profileDetails page</title>
 </head>
 <body>
+  <h1 class="a11yHidden">배추마켓</h1>
+
   <div class="profilelInformationEdit">
-    <h5 class="a11yHidden">기본정보 수정화면</h5>
-    
+    <h2 class="a11yHidden">기본정보 수정화면</h2>
+
     <p class="profilelInformationEdit__page">
       기본정보
       <a href="/profileCard.html" class="backProfileCard"></a>
     </p>
 
-    <section class="profilelInformationContent">
+    <form action="/">
+      <!-- 기본정보 입력 부분 -->
+      <fieldset>
+        <legend>profilelInformation</legend>
 
-    </section>
+        <label for="">하는 일</label>
+        <input type="text" id=""/>
 
-    <section class="agreeContent">
-      
-    </section>
+        <label for="">프로필 키워드</label>
+        <input type="text" />
+
+        <label for="">성별</label>
+        <input type="radio" />
+        <input type="radio" />
+
+        <label for="">연령</label>
+        <input type="radio" />
+        <input type="radio" />
+        
+        <label for="">회사</label>
+        <div>
+          <a href="/">검색하기</a>
+          <input type="text" />
+        </div>
+
+        <label for="">학교</label>
+        <div>
+          <a href="/">검색하기</a>
+          <input type="text" />
+        </div>
+
+        <label for="">자격</label>
+        <input type="text" />
+
+        <label for="">취득 자격</label>
+        <input type="file" />
+      </fieldset>
+      <!-- 동의서 부분 -->
+      <fieldset>
+        <legend>agreeCentent</legend>
+        
+        <div>
+          <input type="checkbox" id="" />
+          <label for="">아래 내용에 전체 동의합니다<span>필수동의</span></label>
+        </div>
+
+        <input type="checkbox" id="" />
+        <label for="">&#91;필수&#93; 개인 정보 수집 및 이용 동의</label>
+          <p>
+            입력한 별명, 프로필 사진, 하는 일, 프로필 키워드, 성별, 회사, 학교, 자격은 배추마켓 서비스 내 프로필 페이지, 답변자 정보 영역, 배추마켓 홈 및 서비스 내 프로필 공개를 목적으로 합니다<span>수집된 정보는 언제든지 직접 삭제할 수 있고, 탈퇴 시에는 바로 파기됩니다</span>
+          </p>
+
+        <input type="checkbox" id="aa" />
+        <label for="aa">&#91;필수&#93; 프로필 정보 노출 영역 확인<span><a href="/">자세히</a></span></label>
+
+        <input type="checkbox" />
+        <label for="">&#91;필수&#93; 사실과 다른 정보를 기재하여 발생한 문제에 대해서는 본인이 일체의 책임을 부담하겠습니다</label>
+      </fieldset>
+
+      <div>
+        <input type="reset" />
+        <input type="submit" />
+      </div>
+
+      <p>정보 초기화 및 이용 동의 철회</p>
+    </form>
+
   </div>
 </body>
 </html>
