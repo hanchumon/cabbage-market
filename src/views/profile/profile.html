@@ -17,14 +17,16 @@
     <section class="profileMain">
       <h3 class="a11yHidden">프로필 주요 메뉴</h3>
 
-      <a href="/" class="profileMain__edit">
-        <img class="profile__img" src="/" alt="프로필 이미지" />
+      <!-- 링크에 클래스 수정, id추가, main의 부품이라고 클래스 수정 -->
+      <a href="/profileCard.html" class="profileMain__link" id="goProfileCardEdit">
+        <img class="profileMain__img" src="/" alt="프로필 이미지" />
       </a>
-      <p class="profile__name">토끼
+      <p class="profileMain__name">토끼
         <span class="ordinalBagde">6기</span><br />
         <span class="answer">답변 35</span>
       </p>
 
+      <!-- 여기는 각각 스프라이트 이미지를 넣기위해서 클래스명 다르게 줘보았습니다 -->
       <ul class="profileMain__myPages">
         <li class="profileMain__myPagesItem">
           <a href="/" class="profileMain__myQna">나의 Q&#38;A</a>
@@ -59,13 +61,14 @@
         </div>
       </div>
 
+      <!-- p, sapn 태그에 클래스 수정, 추가 -->
       <div class="profileStats__percent">
-        <p class="prcentStats getLike">받은 좋아요 100&#37;<br />
-          <span>11개 중 11명이 만족</span>
+        <p class="percent__getLike">받은 좋아요 100&#37;<br />
+          <span class="getLike">11개 중 11명이 만족</span>
         </p>
 
-        <p class="prcentStats responseRate">응답률 &#45;&#37;<br />
-          <span>표시될 만큼 충분히 채팅하지 않았어요</span>
+        <p class="percent__responseRate">응답률 &#45;&#37;<br />
+          <span class="responseRate">표시될 만큼 충분히 채팅하지 않았어요</span>
         </p>
       </div>
     </section>
@@ -73,20 +76,21 @@
     <!-- 프로필.활동내역 파악할 수 있는 목록 -->
     <section class="profileDoit">
       <h3 class="a11yHidden">나의 활동내역을 파악할 수 있는 목록</h3>
-
-      <ul class="profileDoitList">
+    
+      <!-- ul, a span 태그 클래스 수정, 추가 -->
+      <ul class="profileDoit__list">
         <li class="profileDoit__item">
-          <a href="/" class="activityBadge">활동배지 10개</a>
+          <a href="/" class="profileDoit__link" id="activityBadge">활동배지 10개</a>
         </li>
 
         <li class="profileDoit__item">
-          <a href="/" class="saleProduct">판매상품 3개</a>
+          <a href="/" class="profileDoit__link" id="saleProduct">판매상품 3개</a>
         </li>
 
         <li class="profileDoit__item">
-          <a href="/" class="getMannerValue">받은 매너 평가</a>
+          <a href="/" class="profileDoit__link" id="getMannerValue">받은 매너 평가</a>
 
-          <a href="/" class="goMannerValuePage">
+          <a href="/" class="profileDoit__link" id="goMannerValuePage">
             <ol class="mannerValueList">
               <li class="mannerValueItem">
                 <p class="mannerValue">10
@@ -108,12 +112,12 @@
         </li>
 
         <li class="profileDoit__item">
-          <a href="/" class="getDealReview">받은 거래 후기 1</a>
+          <a href="/" class="profileDoit__link" id="getDealReview">받은 거래 후기 1</a>
 
-          <a href="/" class="goDealReviewPage">
+          <a href="/" class="profileDoit__link" id="goDealReviewPage">
             <dl class="dealReview">
               <dt class="dealReview__writer">여우<br />
-                <span>구매자 &#183; 부산광역시 해운대구 &#183; 4개월전</span></dt>
+                <span class="buyer">구매자 &#183; 부산광역시 해운대구 &#183; 4개월전</span></dt>
               <dd class="dealReview__review">너무 감사합니다&#33;</dd>
             </dl>
           </a>
@@ -127,29 +131,30 @@
 
       <ul class="profileBottom__list">
 
+        <!-- a, span 태그 클래스 수정, 추가 -->
         <li class="profileBottom__item">
-          <a href="/" class="storedQuestion">
+          <a href="/" class="profileBottom__link" id="storedQuestion">
           보관 질문</a>
         </li>
         <li class="profileBottom__item">
-          <a href="/" class="appSetting" >
+          <a href="/" class="profileBottom__link" id="appSetting" >
             설정</a>
         </li>
         <li class="profileBottom__item">
-          <a href="/" class="officialBlog" >
+          <a href="/" class="profileBottom__link" id="officialBlog" >
            지식 iN 공식 블로그</a>
         </li>
         <li class="profileBottom__item">
-          <a href="/" class="servicInformation">
+          <a href="/" class="profileBottom__link" id="servicInformation">
             서비스 정보</a>
         </li>
         <li class="profileBottom__item">
-          <a href="/" class="announcement" >
+          <a href="/" class="profileBottom__link" id="announcement" >
             공지사항</a>
         </li>
         <li class="profileBottom__item">
-          <a href="/" class="logOut">
-            로그아웃 <span>rabbit</span></a>
+          <a href="/" class="profileBottom__link" id="logout">
+            로그아웃 <span class="loginId">rabbit</span></a>
         </li>
       </ul>
     </section>
