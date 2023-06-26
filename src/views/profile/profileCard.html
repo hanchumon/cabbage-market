@@ -14,9 +14,10 @@
   <div class="profileEdit">
     <h2 class="a11yHidden">프로필수정 화면</h2>
 
+    <!-- 링크 수정, id 추가 -->
     <p class="profileEdit__page">
       프로필수정
-      <a href="/profile.html" class="backProfile"></a>
+      <a href="/profile.html" class="profileEdit__link" id="goProfile"></a>
     </p>
 
     <!-- 프로필 카드 화면 -->
@@ -33,16 +34,17 @@
         <p class="profileCard__name">토끼<br />
           <span class="ordinalBagde">6기</span>
         </p>
-        <img src="/" alt="프로필카드 내의 프로필 이미지" />
+        <img src="/" class="profileCard__img" alt="프로필카드 내의 프로필 이미지" />
       </section>
 
       <!-- 기본 정보 목록 -->
       <section class="profilelInformation">
         <h4 class="a11yHidden">기본 정보</h4>
 
+        <!-- link class 수정하고 id는 어디로가는지 알려주고싶어서 추가 -->
         <p class="profilelInformation__section">
           기본 정보
-          <a href="/" class="profilelInformation__edit">수정하기</a>
+          <a href="/profileDetails.html" class="profilelInformation__link" id="goProfileInfoEdit">수정하기</a>
         </p>
 
         <dl class="profilelInformation__list">
@@ -81,7 +83,7 @@
 
         <p class="additionalInformation__section">
           추가 정보
-          <a href="/" class="additionalInformation__edit">수정하기</a>
+          <a href="/" class="additionalInformation__edit" id="goAddInfoEdit">수정하기</a>
         </p>
 
         <dl class="additionalInformation__list">
