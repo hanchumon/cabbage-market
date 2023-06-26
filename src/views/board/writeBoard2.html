@@ -9,6 +9,65 @@
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
   <link rel="stylesheet" href="/style/index.css" />
 </head>
+
 <body>
+  <h1 class="a11yHidden">배추마켓</h1>
   
+  <!-- 보드 작성 -->
+  <h2 class="a11yHidden">게시판 작성</h2>
+  <main>
+  <span>EUID 피그마 스터디 하실분!</span>
+  <details>
+    <summary>더 많은 내용<span>펼치기</span></summary>
+    <ui>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ui>
+  </details>
+ 
+  <form>
+    <input type="text" placeholder="검색어를 입력하세요.">
+  </form>
+
+  <form>
+    <span></span>
+    <label for="" class="">인원</label>
+    <input type='button' onclick='count("plus")' value='+' />
+    <span id='result'>0</span>
+    <input type='button' onclick='count("minus")' value='-' />
+    <!-- java code.
+      function count(type)  {
+    // 결과를 표시할 element
+    const resultElement = document.getElementById('result');
+    
+    // 현재 화면에 표시된 값
+    let number = resultElement.innerText;
+    
+    // 더하기/빼기
+    if(type === 'plus') {
+      number = parseInt(number) + 1;
+    }else if(type === 'minus')  {
+      number = parseInt(number) - 1;
+    }
+    
+    // 결과 출력
+    resultElement.innerText = number;
+    } -->
+  
+    <span></span>
+    <label for="" class="">날짜</label>
+    <input type="date">
+    
+    <span></span>
+    <label for="" class="">시간</label>
+    <input type="time">
+  
+    <span></span>
+    <label for="" class="">장소</label>
+    <input type="text" placeholder="입력해주세요">
+ 
+    <input type="button" class="button_next" value="다음">
+  </form>
+</main>
 </body>

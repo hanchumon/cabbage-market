@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>board</title>
+  <link rel="stylesheet preload" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
+  <link rel="stylesheet" href="/style/index.css" />
+</head>
+
+
+<body>
+  <h1 class="a11yHidden">배추마켓</h1>
+
+  <!-- 보드 같이해요 -->
+  <h2 class="a11yHidden">게시판 같이해요</h2>
+
+  <!-- 보드 같이해요 내비 -->
+  <nav class="togetherBoardNav">
+    <h3 class="a11yHidden">내비게이션</h3>
+    <ul class="togetherBoardNav__list">
+      <li class="togetherBoardNav__item"><a href="/" class="togetherBoardNav__link">전체</a></li>
+      <li class="togetherBoardNav__item"><a href="/" class="togetherBoardNav__link">스터디</a></li>
+      <li class="togetherBoardNav__item"><a href="/" class="togetherBoardNav__link">프로젝트</a></li>
+      <li class="togetherBoardNav__item"><a href="/" class="togetherBoardNav__link">오프라인</a></li>
+      <li class="togetherBoardNav__item"><a href="/" class="togetherBoardNav__link">공모전</a></li>
+    </ul>
+  </nav>
+
+  <!-- 보드 같이해요 정렬 -->
+  <!-- 팝업창으로 설정? -->
+  <section class="togetherBoardSorting">
+    <h3 class="a11yHidden">정렬</h3>
+    <form class="togetherBoardSorting__form">
+      <select name='sorting' class="togetherBoardSorting__select">
+        <option value='Recently' selected>최근 작성순</option>
+        <option value='soon'>가까운 일정순</option>
+      </select>
+      <input type='button' value='모집중인 글만' class="togetherBoardSorting__button">
+    </form>
+  </section>
+
+  <!-- 보드 같이해요 메인-->
+  <main>
+    <h3 class="a11yHidden">메인</h3>
+    <ul class="togetherBoardMain__list">
+      <li class="togetherBoardMain__item">
+        <a class="togetherBoardMain__link" href="/">
+          <p class="togetherBoardMain__item__info"> <span>모집중</span> • 스터디 • 연남동</p>
+          <p class="togetherBoardMain__item__title">멋사플레이스 클론 스터디 하실분</p>
+          <p class="togetherBoardMain__item__who sprite sprite__who">누구나 참여 가능</p>
+          <p class="togetherBoardMain__item__date sprite sprite__date">날짜</p>
+          <p class="boardMain__item__info sprite sprite__info">정보</p>
+          <p class="boardMain__item__NOP sprite sprite__NOP">인원</p>
+          <img src="/" class="boardMain__item__img" alt="이미지">
+        </a>
+      </li>
+    </ul>
+      <dl>
+        <dt class="a11yHidden">정보</dt>
+        <dd>모집중 스터디 연남동</dd>
+        <dt class="a11yHidden">제목</dt>
+        <dd>멋사플레이스 클론 스터디 하실분</dd>
+        <div>
+          <dd class="boardMain__item__who sprite sprite__who"><span></span>참여가능여부</dd>
+          <dd class="boardMain__item__date sprite sprite__date"><span></span>날짜</dd>
+        </div>
+        <dt class="a11yHidden">참여인원</dt>
+        <dd>n/4명</dd>
+        <dt class="a11yHidden">작성시간</dt>
+        <dd>n분전</dd>
+      </dl>
+    </a>
+
+  </main>
+</body>
