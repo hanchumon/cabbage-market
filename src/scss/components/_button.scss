@@ -16,8 +16,8 @@
   line-height: 150%;
 }
 
-@mixin keywordButton{
-  padding: rem(6px) rem(10px);
+@mixin keywordButton ($LRPadding: rem(10px)){
+  padding: rem(6px) $LRPadding;
   border-radius: rem(20px);
   border: solid 1px $gray-500;
   

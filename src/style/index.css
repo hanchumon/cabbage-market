@@ -347,56 +347,309 @@ legend {
 
 .sprite {
   content: "";
-  min-width: 1.25rem;
-  min-height: 1.25rem;
-  background-image: url(/images/icon_sprite_1x.png);
+  background-image: url(./../../images/icon_1x.png);
   background-repeat: no-repeat;
-  padding-left: 1.25rem;
+  float: left;
 }
 .spriteHome {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
   background-position: 0 0;
 }
-.spriteNavBoard {
-  background-position: -20px 0;
+.spriteBoard {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -1.25rem 0;
 }
 .spriteChat {
-  background-position: -40px 0;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -2.5rem 0;
 }
-.spriteMap {
-  background-position: -60px 0;
+.spritePlace {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -3.75rem 0;
 }
 .spriteMyPage {
-  background-position: -80px 0;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -5rem 0;
+}
+.spritePpl {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -6.25rem 0;
 }
 .spriteFillHome {
-  background-position: 0 -20px;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: 0rem -1.25rem;
 }
 .spriteFillBoard {
-  background-position: -20px -20px;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -1.25rem -1.25rem;
 }
 .spriteFillChat {
-  background-position: -40px -20px;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -2.5rem -1.25rem;
 }
-.spriteFillMap {
-  background-position: -60px -20px;
+.spriteFillPlace {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -3.75rem -1.25rem;
 }
-.spriteMore {
-  background-position: 0 -40px;
+.spriteFillMyPage {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -5rem -1.25rem;
+}
+.spriteMenu {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: 0rem -2.5rem;
 }
 .spritePlus {
-  background-position: -20px -40px;
-}
-.spriteMinus {
-  background-position: -40px -40px;
-}
-.spriteCheck {
-  background-position: -60px -40px;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -1.25rem -2.5rem;
 }
 .spriteExit {
-  background-position: -80px -40px;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -5rem -2.5rem;
 }
-.spriteDown {
-  background-position: -100px -40px;
+.spriteSelect {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -6.25rem -2.5rem;
+}
+.spriteLgSearch {
+  min-width: 1.375rem;
+  min-height: 1.375rem;
+  background-position: -10rem -2.5rem;
+}
+.spriteBack {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: 0rem -3.75rem;
+}
+.spriteMoreRight {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -1.25rem -3.75rem;
+}
+.spriteAlarm {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -6.25rem -3.75rem;
+}
+.spriteSex {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -3.75rem -5rem;
+}
+.spriteSmile {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -5rem -5rem;
+}
+.spriteQr {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -6.25rem -5rem;
+}
+.spritePencil {
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  background-position: -10rem -5rem;
+}
+.spritePictureBlack {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: 0rem -6.25rem;
+}
+.spriteKeyBoard {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -1.25rem -6.25rem;
+}
+.spriteShare {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -2.5rem -6.25rem;
+}
+.spriteTime {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -3.75rem -6.25rem;
+}
+.spriteSearch {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -5rem -6.25rem;
+}
+.spriteRecommand {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -5rem -7.5rem;
+}
+.spriteCall {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -6.25rem -7.5rem;
+}
+.spriteCal {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: 0rem -8.75rem;
+}
+.spriteWon {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -2.5rem -8.75rem;
+}
+.spriteLock {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -3.75rem -8.75rem;
+}
+.spriteMark {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -7.5rem -8.75rem;
+}
+.spriteReceptionSensitivity {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: 0rem -10rem;
+}
+.spriteLte {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -1.25rem -10rem;
+}
+.spriteBattery {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -2.5rem -10rem;
+}
+.spriteMore {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -3.75rem -10rem;
+}
+.spriteComment {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -5rem -10rem;
+}
+.spriteCheck {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -6.25rem -10rem;
+}
+.spriteCircleCheck {
+  min-width: 1.625rem;
+  min-height: 1.625rem;
+  background-position: -10rem -10rem;
+}
+.spriteSend {
+  min-width: 1.125rem;
+  min-height: 1.125rem;
+  background-position: -1.25rem -11.25rem;
+}
+.spriteEdit {
+  min-width: 1.125rem;
+  min-height: 1.125rem;
+  background-position: -2.5rem -10rem;
+}
+.spriteMessage {
+  min-width: 1rem;
+  min-height: 1rem;
+  background-position: -1.25rem -12.5rem;
+}
+.spritePlaceGray {
+  min-width: 1rem;
+  min-height: 1rem;
+  background-position: -6.25rem -12.5rem;
+}
+.spritePictureGray {
+  min-width: 1rem;
+  min-height: 1rem;
+  background-position: -7.5rem -12.5rem;
+}
+.spriteMdHeart {
+  min-width: 1rem;
+  min-height: 1rem;
+  background-position: -8.75rem -12.5rem;
+}
+.spriteBell {
+  min-width: 1.625rem;
+  min-height: 1.625rem;
+  background-position: -10rem -12.5rem;
+}
+.spriteTwoPeople {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -1.25rem -13.75rem;
+}
+.spriteTwoPeopleGray {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -3.75rem -13.75rem;
+}
+.spriteWho {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -5rem -13.75rem;
+}
+.spriteCertificate {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -7.5rem -13.75rem;
+}
+.spriteCirclePlus {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -1.25rem -15rem;
+}
+.spriteClose {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -2.5rem -15rem;
+}
+.spriteExplanation {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -3.75rem -15rem;
+}
+.spritePerson {
+  min-width: 1.625rem;
+  min-height: 1.625rem;
+  background-position: -10rem -15rem;
+}
+.spriteDateBlack {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -1.25rem -16.25rem;
+}
+.spriteCalGray {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -2.5rem -16.25rem;
+}
+.spriteFlag {
+  min-width: 0.75rem;
+  min-height: 0.75rem;
+  background-position: -3.75rem -16.25rem;
+}
+.spritePostioning {
+  min-width: 0.5rem;
+  min-height: 0.5rem;
+  background-position: -5rem -16.25rem;
 }
 
 body {
@@ -496,16 +749,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   margin-right: auto;
-}
-
-.boardNav,
-.boardMain {
-  max-width: 37.4375rem;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 20rem;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0.75rem;
 }
 
 .boardNav {
@@ -541,7 +785,7 @@ img {
 .boardMain__item__title {
   width: 11.875rem;
   color: #121212;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: Pretendard;
   line-height: 160%;
   overflow: hidden;
@@ -558,26 +802,6 @@ img {
   position: absolute;
   right: 0.8125rem;
   bottom: 0.75rem;
-}
-
-.sprite {
-  padding-left: 18px;
-  background: url(./../../../images/icon_sprite_1x.png) no-repeat 0 0;
-  height: 1rem;
-  width: 1rem;
-}
-.sprite__who {
-  background-position: -100px 0;
-}
-.sprite__date {
-  background-position: -100px 0;
-}
-.sprite__info {
-  background-position: -100px 0;
-  margin-top: 5px;
-}
-.sprite__NOP {
-  background-position: -100px 0;
 }
 
 .boardMain__item__img {
@@ -601,6 +825,119 @@ img {
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 150%;
+}
+
+body {
+  max-width: 37.4375rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 685px;
+  width: 365px;
+  border: solid 1px gray;
+  position: relative;
+  box-sizing: content-box;
+}
+
+.togetherBoardNav__form {
+  display: flex;
+  flex-flow: row;
+  gap: 0.75rem;
+  align-items: center;
+  height: rmx(91px);
+  overflow: hidden;
+  padding: 8px 20px;
+}
+.togetherBoardNav__box {
+  display: flex;
+  flex-flow: column;
+  gap: 0.375rem;
+  text-align: center;
+}
+.togetherBoardNav__button {
+  width: 3.375rem;
+  height: 3.375rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #E9E9E9;
+  font-size: 1.25rem;
+}
+.togetherBoardNav__button:hover {
+  border: #003F21 solid 0.125rem;
+}
+.togetherBoardNav__label {
+  color: var(--contents-content-primary, #000);
+  text-align: center;
+  font-size: 0.625rem;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.togetherBoardMain__item__who {
+  padding-left: 5px;
+}
+
+.togetherBoardSorting {
+  padding: 0.5rem 0 0.75rem 0.875rem;
+  border-bottom: solid 1px #BDBDBD;
+}
+.togetherBoardSorting__form {
+  display: flex;
+  flex-flow: row;
+  gap: 0.4375rem;
+}
+.togetherBoardSorting__select {
+  padding: 0.375rem 0.625rem;
+  border-radius: 1.25rem;
+  border: solid 1px #919191;
+  font-size: 0.625rem;
+  line-height: 160%;
+  text-align: center;
+  appearance: none;
+}
+.togetherBoardSorting__button {
+  padding: 0.375rem 1.625rem;
+  border-radius: 1.25rem;
+  border: solid 1px #919191;
+  font-size: 0.625rem;
+  line-height: 160%;
+}
+
+.togetherBoardMain__item {
+  position: relative;
+  padding: 0.75rem 0.9375rem;
+  border-bottom: solid 1px #BDBDBD;
+}
+.togetherBoardMain__item__title {
+  width: 100%;
+  color: #121212;
+  font-size: 0.875rem;
+  font-family: Pretendard;
+  line-height: 160%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.togetherBoardMain__item__info {
+  color: #919191;
+  font-size: 10.503px;
+  font-family: Pretendard;
+  line-height: 160%;
+}
+.togetherBoardMain__item__who, .togetherBoardMain__item__date, .togetherBoardMain__item__NOP, .togetherBoardMain__item__befor {
+  color: #121212;
+  font-size: 10.503px;
+  font-family: Pretendard;
+  line-height: 160%;
+}
+.togetherBoardMain__item__befor {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.9375rem;
+}
+
+.spanHighligth {
+  color: #008F22;
 }
 
 /*# sourceMappingURL=index.css.map */

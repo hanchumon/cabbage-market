@@ -16,19 +16,18 @@
   width: $width;
 
   color: $black;
-  font-size: 14px;
+  font-size: $text-sm;
   font-family: Pretendard;
   line-height: 160%;
 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  
 }
 
-@mixin itemContent ($color: $gray-500){
+@mixin itemContent ($color: $gray-500, $line-height: 160%){
   color: $color;
   font-size: 10.503px;
   font-family: Pretendard;
-  line-height: 160%;
+  line-height: $line-height;
 }

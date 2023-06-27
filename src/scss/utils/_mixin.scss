@@ -125,6 +125,11 @@
   object-position: $posX, $posY;
 }
 
+@mixin whbp($size:rem(20px),$bpX:0,$bpY:0){
+  min-width: $size;
+  min-height: $size;
+  background-position: $bpX $bpY;
+}
 
 // Float 해제를 위한 clear 스타일 ---------------------------------------------------- /
 @mixin clearFix {
