@@ -356,7 +356,7 @@ legend {
 .spriteHome {
   background-position: 0 0;
 }
-.spriteNavBoard {
+.spriteBoard {
   background-position: -20px 0;
 }
 .spriteChat {
@@ -367,6 +367,15 @@ legend {
 }
 .spriteMyPage {
   background-position: -80px 0;
+}
+.spritePpl {
+  background-position: -100px 0;
+}
+.spriteN {
+  background-position: -120px 0;
+}
+.spriteCall {
+  background-position: -140px 0;
 }
 .spriteFillHome {
   background-position: 0 -20px;
@@ -379,6 +388,12 @@ legend {
 }
 .spriteFillMap {
   background-position: -60px -20px;
+}
+.spriteFillMyPage {
+  background-position: -80px -20px;
+}
+.spritePictureBlack {
+  background-position: -100px -20px;
 }
 .spriteMore {
   background-position: 0 -40px;
@@ -395,7 +410,7 @@ legend {
 .spriteExit {
   background-position: -80px -40px;
 }
-.spriteDown {
+.spriteSelect {
   background-position: -100px -40px;
 }
 
@@ -544,7 +559,7 @@ iframe {
   height: 100vh;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   gap: 0.25rem;
 }
@@ -585,7 +600,6 @@ iframe {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: stretch;
-  margin-top: 0.5rem;
   font-size: 0.875rem;
   font-weight: 400;
   gap: 0.5rem;

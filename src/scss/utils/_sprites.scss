@@ -11,7 +11,7 @@
   // $ReceptionSensitivity: $ReceptionSensitivity::before;
   // $Search: $Search::before;
 
-  $sprites: Home, NavBoard, Chat, Map, MyPage, ;
+  $sprites: Home, Board, Chat, Map, MyPage, Ppl,N ,Call;
   $x: 0;
   $y: 0;
   @each $sprite in $sprites {
@@ -20,7 +20,7 @@
     }
     $x: $x - 20px;
   }
-  $sprites: FillHome, FillBoard, FillChat, FillMap, ;
+  $sprites: FillHome, FillBoard, FillChat, FillMap, FillMyPage, PictureBlack;
   $x: 0;
   $y: -20px;
   @each $sprite in $sprites {
@@ -29,7 +29,7 @@
     }
     $x: $x - 20px;
   }
-  $sprites: More, Plus, Minus, Check, Exit, Down;
+  $sprites: More, Plus, Minus, Check, Exit, Select;
   $x: 0;
   $y: -40px;
   @each $sprite in $sprites {

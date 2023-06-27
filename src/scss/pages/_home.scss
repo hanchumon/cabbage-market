@@ -5,7 +5,7 @@
 .cabbageMarket{
   width: 100%;
   height: 100vh;
-  @include flexbox($direction:column,$items: center);
+  @include flexbox($direction:column, $justify:space-evenly,$items: center);
   gap: $spacing-1;
   &__img{
     height: auto;
@@ -34,7 +34,6 @@
 }
 .asign{
   @include flexbox($justify:center);
-  margin-top: $spacing-2;
   font-size: $text-sm;
   font-weight: 400;
   gap: $spacing-2;
