@@ -218,7 +218,7 @@
   }
 
   &Bell {
-    @include whbp($size: rem(26px), $bpX: rem(-160px), $bpY: rem(-200px));
+    @include whbp($size: rem(30px), $bpX: rem(-160px), $bpY: rem(-200px));
   }
 
   // -----------22------------
@@ -252,7 +252,7 @@
   }
 
   &Person {
-    @include whbp($size: rem(26px), $bpX: rem(-160px), $bpY: rem(-240px));
+    @include whbp($size: rem(30px), $bpX: rem(-160px), $bpY: rem(-240px));
   }
 
   // ------------26-----------
