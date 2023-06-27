@@ -3,14 +3,6 @@
 @use "./../../base" as *;
 @use "./../../themes" as *;
 
-body {
-  @include containerMax;
-  height: 685px;
-  width: 365px;
-  border: solid 1px gray;
-  position: relative;
-  box-sizing: content-box;
-}
 
 .togetherBoardNav {
   &__form {
