@@ -1,11 +1,73 @@
 @use "../utils/" as *;
-.timeInfo{
-  background: pink;
-  @include paddingX(10px);
-  @include flexbox($justify: space-between, $items:center);
+@use "../themes/" as *;
 
+//기본정보
+.timeInfo {
+  @include paddingX(16px);
+  @include flexbox($justify: space-between, $items: center);
+  
 }
 
-.celluarInfo{
+.celluarInfo {
   @include flexbox($items: flex-start);
+  font-family: inherit;
+  border: 0;
+}
+
+
+//헤더 공통디자인
+.statusBar {
+  // background: pink;
+  @include flexbox;
+  column-gap: $spacing-2;
+  width: 100%;
+  height: rem(40px);
+  
+}
+
+.locationHeader__search, .locationHeader__menu, .locationHeader__menu{
+  flex-shrink: 0;
+}
+
+//location 헤더 디자인
+.selectLocation{
+  position: relative;
+  z-index: 1;
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 0;
+    height: 0;
+    margin-top: -1px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid $tertiary;
+  }
+  label{
+    position: absolute;
+    top: rem(3px);  /* 위치정렬 */ 
+    left: rem(5px);  /* 위치정렬 */
+    @include paddingX(13px);
+    @include paddingY(8px);
+    color: $tertiary;  
+    z-index: -1;  /* IE8에서 label이 위치한 곳이 클릭되지 않는 것 해결 */
+    font-size: $text-md;
+  }
+  select{
+    width: 100%; 
+    height: auto;  /* 높이 초기화 */
+    line-height: normal;  /* line-height 초기화 */
+    font-family: inherit;  /* 폰트 상속 */
+    @include paddingX(13px);
+    @include paddingY(8px);
+    border: 0;
+    opacity: 0;  /* 숨기기 */
+    filter:alpha(opacity=0);  /* IE8 숨기기 */
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+  }
 }
