@@ -3,6 +3,7 @@
 @use "../../components/" as *;
 .sizingWrapper{
   position: relative;
+  height: 100%;
 }
 .searchHeader__wrapper {
   @include padding(16px);
@@ -49,7 +50,7 @@
   line-height: 1.5;
   font-size: $text-sm;
   color: $primary;
-  position: sticky;
+  position: absolute;
   bottom:0;
   right:0;
 }

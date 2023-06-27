@@ -34,7 +34,7 @@
 
 //location 헤더 디자인
 .locationHeader__search, .locationHeader__menu, .locationHeader__menu{
-  flex-shrink: 0;
+  // flex-shrink: 0;
 }
 
 .selectLocation{
@@ -55,7 +55,7 @@
   }
   label{
     position: absolute;
-    width: 100%; 
+    width: 80%; 
     top: rem(3px);  /* 위치정렬 */ 
     @include paddingY(8px);
     z-index: -1;  /* IE8에서 label이 위치한 곳이 클릭되지 않는 것 해결 */
