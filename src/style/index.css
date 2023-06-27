@@ -723,10 +723,6 @@ iframe {
   padding-right: 1rem;
 }
 
-.locationHeader__search, .locationHeader__menu, .locationHeader__menu {
-  flex-shrink: 0;
-}
-
 .selectLocation {
   flex-grow: 1;
   position: relative;
@@ -747,7 +743,7 @@ iframe {
 }
 .selectLocation label {
   position: absolute;
-  width: 100%;
+  width: 80%;
   top: 0.1875rem; /* 위치정렬 */
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -847,6 +843,8 @@ iframe {
   bottom: 0;
   padding: 8px 12px 24px 12px;
   background: #fff;
+  margin-left: auto;
+  margin-right: auto;
 }
 .commonNav__link {
   display: flex;
@@ -1816,6 +1814,7 @@ iframe {
 
 .sizingWrapper {
   position: relative;
+  height: 100%;
 }
 
 .searchHeader__wrapper {
@@ -1874,7 +1873,7 @@ iframe {
   line-height: 1.5;
   font-size: 0.875rem;
   color: #008F22;
-  position: sticky;
+  position: absolute;
   bottom: 0;
   right: 0;
 }

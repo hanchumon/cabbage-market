@@ -16,6 +16,7 @@
     bottom: 0;
     padding: 8px 12px 24px 12px;
     background: $white;
+    @include autoMargin;
   }
 
   &__link {
