@@ -4,12 +4,12 @@
 @use "./../../themes" as *;
 
 body {
-  @include containerMax;
-  height: 685px;
-  width: 365px;
-  border: solid 1px gray;
-  position: relative;
-  box-sizing: content-box;
+  // @include containerMax;
+  // height: 685px;
+  // width: 365px;
+  // border: solid 1px gray;
+  // position: relative;
+  // box-sizing: content-box;
 }
 
 .togetherBoardNav {
@@ -19,9 +19,10 @@ body {
     gap: rem(12px);
     align-items: center;
     height: rmx(91px);
-    // background-color: aqua;
     overflow: hidden;
-    padding: 8px 20px;
+    @include paddingX (rem(8px));
+    padding-bottom: 8px;
+    
   }
 
   &__box {
@@ -35,8 +36,8 @@ body {
     width: rem(54px);
     height: rem(54px);
     border-radius: 50%;
-    border: none;
     background-color: $gray-100;
+    border: none;
     font-size: $text-lg;
   }
   &__button:hover{
@@ -54,7 +55,7 @@ body {
 }
 
 .togetherBoardSorting {
-  padding: rem(8px) 0 rem(12px) rem(14px);
+  padding: rem(8px) 0 rem(12px) rem(2px);
   border-bottom: solid 1px $gray-300;
 
   &__form {
@@ -72,31 +73,46 @@ body {
 
   &__button {
     @include keywordButton(rem(26px));
+    background-color: $white;
   }
 }
 
 .togetherBoardMain {
   &__item {
-    // background-color: aqua;
+    
     position: relative;
-    padding: rem(12px) rem(15px);
+    padding: rem(12px) rem(3px);
     border-bottom: solid 1px $gray-300;
+    
+    
     &__title{
-      @include itemTitle;
+      @include itemTitle(calc(100% - 6.5625rem),$font-weight:600);
+      margin-bottom: rem(8px);
     }
     
-    &__info{
-      @include itemContent;
+    &__info,&__NOP{
+      @include itemContentOver($width: calc(100% - 6.5625rem));
     }
 
-    &__who,&__date,&__NOP,&__befor{
-      @include itemContent($color:$black);
+    &__who,&__date{
+      @include itemContentOver($color:$black, $width: calc(100% - 6.5625rem));
+      padding-left: 4px;
+    }
+
+    &__profile{
+      margin-top: 8px;
+      float: left;
+    }
+    &__NOP{
+      margin-top: 8px;
+      line-height: 200%;
+      padding-left: 2px;
     }
 
     &__befor{
+      @include itemContent;
       position: absolute;
-      bottom: rem(12px);
-      right: rem(15px);
+      @include posbottomRight($b: rem(12px), $r: rem(12px)); 
     }
     
   }
