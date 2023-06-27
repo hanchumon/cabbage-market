@@ -10,25 +10,22 @@
 <body>
   <h1 class="a11yHidden">배추마켓</h1>
 
-  <!-- 프로필 첫 화면 -->
   <div class="sizingWrapper">
     <h2 class="a11yHidden">프로필 화면</h2>
 
-<!-- 프로필 주요 메뉴 -->
     <section class="profileMain">
       <h3 class="a11yHidden">프로필 주요 메뉴</h3>
 
-      <!-- 스프라이트 이미지 클래스 추가 -->
       <a href="/profileCard.html" class="profileMain__link" id="goProfileCardEdit">
         <img class="profileMain__img" src="/" alt="프로필 이미지" />
         <span class="sprite spriteEdit"></span>
       </a>
-      <p class="profileMain__name">토끼
-        <span class="ordinalBagde">6기</span><br />
-        <span class="answer">답변 35</span>
-      </p>
 
-      <!-- 스프라이트 이미지 클래스 추가 -->
+      <div class="profileMain__name">
+        <p class="profileId">토끼 <span class="ordinalBagde">6기</span></p>
+        <span class="answer">답변 35</span>
+      </div>
+
       <ul class="profileMainMyPage__list">
         <li class="profileMainMyPage__item">
           <a href="/" class="profileMainMyPage__link" id="myQna">
@@ -50,11 +47,9 @@
       </ul>
     </section>
 
-    <!-- 프로필 내 활동 능력치 -->
     <section class="profileStats">
       <h3 class="a11yHidden">나의 활동 능력치</h3>
 
-      <!-- 스프라이트 이미지 클래스 추가 -->
       <div class="profileStats__passionTemperature">
         <p class="passionTemperature" title="열정온도는 여러 활동 내역을 기반으로 종합해서 만든 열정 지표입니다">
           <span class="sprite spriteExplanation"></span>
@@ -75,7 +70,6 @@
         </div>
       </div>
 
-      <!-- 스프라이트 이미지 클래스 추가 -->
       <div class="profileStats__percent">
         <p class="percent__getLike sprite spriteHeart">
           <span class="sprite spriteMdHeart"></span>
@@ -91,11 +85,9 @@
       </div>
     </section>
 
-    <!-- 프로필 활동내역 파악할 수 있는 목록 -->
     <section class="profileDoit">
       <h3 class="a11yHidden">나의 활동내역을 파악할 수 있는 목록</h3>
     
-    <!-- 스프라이트 이미지 클래스 추가 -->
       <ul class="profileDoit__list">
         <li class="profileDoit__item">
           <a href="/" class="profileDoit__link" id="activityBadge">
@@ -149,7 +141,6 @@
           <a href="/" class="profileDoit__link" id="goDealReviewPage">
             <dl class="dealReview">
 
-              <!-- 스프라이트 이미지 클래스 추가 -->
               <dt class="dealReview__writer">
                 <img class="dealReview__img" src="/" alt="작성자 이미지" />
                 여우<br />
@@ -163,13 +154,11 @@
       </ul>
     </section>
 
-    <!-- 프로필 하단 앱 관련 여러 사항들 부분 -->
     <section class="profileBottom">
       <h3 class="a11yHidden">프로필 하단 앱 관련 목록</h3>
 
       <ul class="profileBottom__list">
 
-        <!-- a, span 태그 클래스 수정, id 추가 -->
         <li class="profileBottom__item">
           <a href="/" class="profileBottom__link" id="storedQuestion">
           보관 질문</a>
