@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 @use "home";
 @use "qnaboard";
 @use "qnamain";
 @use "writeqna";
 @use "chatlists";
 @use "chatcontent";
+=======
+@forward "./mainpage";
+@forward "./board";
+>>>>>>> 8a3d661d6c5badc4daad08efcb1d7b6c5bfaec00

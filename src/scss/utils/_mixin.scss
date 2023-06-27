@@ -1,1 +1,136 @@
-// mixin.scss
+@use "./unit" as *;
+@use "./media-query" as *;
+
+//position mixin
+@mixin pos{
+  position: absolute;
+}
+
+@mixin posTopLeft($t: 0, $l: 0){
+  @include pos;
+  top: $t;
+  left: $l;
+}
+
+@mixin posTopRight($t: 0, $r: 0){
+  @include pos;
+  top: $t;
+  right: $r;
+
+}
+@mixin posCenterX {
+  @include pos;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin posCenterY {
+  @include pos;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin posBottomY {
+  @include pos;
+  top: 100%;
+  transform: translateY(-100%);
+}
+
+@mixin posCenter {
+  @include pos;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+//padding mixin
+@mixin padding($spacing){
+  @include paddingX($spacing);
+  @include paddingY($spacing);
+}
+@mixin paddingX($spacing){
+  padding-left: rem($spacing);
+  padding-right: rem($spacing);
+}
+
+@mixin paddingY($spacing){
+  padding-top: rem($spacing);
+  padding-bottom: rem($spacing);
+}
+
+//margin mixin
+@mixin margin($spacing){
+  @include marginX($spacing);
+  @include marginY($spacing);
+}
+
+@mixin marginX($spacing){
+  padding-left: rem($spacing);
+  padding-right: rem($spacing);
+}
+
+@mixin marginY($spacing){
+  padding-top: rem($spacing);
+  padding-bottom: rem($spacing);
+}
+
+@mixin containerMax($max-width: 599px){
+  max-width: rem($max-width);
+  @include autoMargin;
+}
+
+@mixin containerMin($min-width: 320px){
+  min-width: rem($min-width);
+  @include autoMargin;
+}
+
+@mixin autoMargin{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// 그리드 믹스인
+@mixin gridbox(
+  $column-count: 12, 
+  $column-width: 1fr, 
+  $row-gap: 0, 
+  $column-gap: 16px) {
+  display: grid;
+  grid-template-columns: repeat($column-count, $column-width);
+  grid-template-rows: auto;
+  grid-column-gap: rem($column-gap);
+  grid-row-gap: rem($row-gap);
+}
+
+//ratio mixin
+@mixin ratio($w: 16,$h: 9){
+  aspect-ratio: $w / $h;
+}
+
+// 반응형 콘텐츠
+@mixin response($width: max-width, $height: auto) {
+  #{$width}: 100%;
+  height: $height;
+}
+
+@mixin textOver{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin fit($posX:50%, $posY:50%, $fit:cover){
+  object-fit: cover;
+  object-position: $posX, $posY;
+}
+
+
+// Float 해제를 위한 clear 스타일 ---------------------------------------------------- /
+@mixin clearFix {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}

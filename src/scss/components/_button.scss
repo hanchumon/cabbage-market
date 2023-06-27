@@ -1,1 +1,26 @@
-// button.scss
+@use "./../themes" as *;
+@use "./../utils" as *;
+
+
+// 다음 버튼
+@mixin mainButton( $height: auto, $padding : rem(8px), $bgc: $primary, $color:$white,){
+  width: 100%;
+  height: $height;
+  padding: $padding 0;
+  border: none;
+  background-color: $bgc;
+  border-radius: 10px;
+  color: $color;
+  font-size: $text-sm;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+@mixin keywordButton{
+  padding: rem(6px) rem(10px);
+  border-radius: rem(20px);
+  border: solid 1px $gray-500;
+  
+  font-size: $text-xxs;
+  line-height: 160%;
+}
