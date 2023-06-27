@@ -1,163 +1,84 @@
-@use "sass:meta";
-@use "sass:math";
 @use "./unit" as *;
 
 .sprite {
-  width: rem(20px);
-  height: rem(20px);
-  background-image: url(/images/icon_sprite_1x.png);
+  min-width: rem(20px);
+  min-height: rem(20px);
+  background-image: url(/images/icon_1x.png);
   background-repeat: no-repeat;
   padding-left: rem(20px);
-}
 
-.spriteHome {
-  background-position: 0 0;
-}
 
-.spriteBoard {
-  background-position: -20px 0;
-}
 
-.spriteChat {
-  background-position: -40px 0;
-}
-
-.spritePlace {
-  background-position: -60px 0;
-}
-
-.spriteMyPage {
-  background-position: -80px 0;
-}
-
-.spritePpl {
-  background-position: -100px 0;
-}
-
-.spriteFillHome {
-  background-position: 0 -20px;
-}
-
-.spriteFillBoard {
-  background-position: -20px -20px;
-}
-
-.spriteFillChat {
-  background-position: -40px -20px;
-}
-
-.spriteFillMap {
-  background-position: -60px -20px;
-}
-
-.spriteFillMyPage {
-  background-position: -80px -20px;
-}
-
-.spriteMenu {
-  background-position: 0 -40px;
-}
-
-.spritePlus {
-  background-position: -20px -40px;
-}
-
-.spriteExit {
-  background-position: -80px -40px;
-}
-
-.spriteSelect {
-  background-position: -100px -40px;
-}
-
-.spriteBack {
-  background-position: 0 -60px;
-}
-
-.spriteMoreRight {
-  background-position: -20px -60px;
-}
-
-.spriteAlarm {
-  background-position: -100px -60px;
-}
-
-.spriteSex {
-  background-position: -60px -80px;
-}
-
-.spriteSmile {
-  background-position: -80px -80px;
-}
-
-.spriteQr {
-  background-position: -100px -80px;
-}
-
-.spritePictureBlack {
-  background-position: 0 -100px;
-}
-
-.spriteKeyBoard {
-  background-position: -20px -100px;
-}
-
-.spriteShare {
-  background-position: -40px -100px;
-}
-
-.spriteTime {
-  background-position: -60px -100px;
-}
-
-.spriteSearch {
-  background-position: -80px -100px;
-}
-
-.spriteRecommand {
-  background-position: -80px -120px;
-}
-
-.spriteCall {
-  background-position: -100px -120px;
-}
-
-.spriteCal {
-  background-position: 0 -140px;
-}
-
-.spriteWon {
-  background-position: -40px -140px;
-}
-
-.spriteLock {
-  background-position: -60px -140px;
-}
-
-.spriteMark {
-  background-position: -120px -140px;
-}
-
-.spriteReceptionSensitivity {
-  background-position: 0 -160px;
-}
-
-.spriteLte {
-  background-position: -20px -160px;
-}
-
-.spriteBattery {
-  background-position: -40px -160px;
-}
-
-.spriteMore {
-  background-position: -60px -160px;
-}
-
-.spriteComment {
-  background-position: -80px -160px;
-}
-
-.spriteCheck {
-  background-position: -100px -160px;
+  $sprites: Home, Board, Chat, Place, MyPage, Ppll;
+  $x: 0;
+  $y: 0;
+  @each $sprite in $sprites {
+    &#{$sprite} {
+      background-position: $x $y;
+    }
+    $x: $x - 20px;
+  }
+  $sprites: FillHome, FillBoard, FillChat, FillMap, FillMyPage;
+  $x: 0;
+  $y: -20px;
+  @each $sprite in $sprites {
+    &#{$sprite} {
+      background-position: $x $y;
+    }
+    $x: $x - 20px;
+  }
+  $sprites: Menu, Plus, N, N, Exit, Select;
+  $x: 0;
+  $y: -40px;
+  @each $sprite in $sprites {
+    &#{$sprite} {
+      background-position: $x $y;
+    }
+    $x: $x - 20px;
+  }
+  $sprites: Back, MoreRight, N, N, N, Alarm;
+  $x: 0;
+  $y: -60px;
+  @each $sprite in $sprites {
+    &#{$sprite} {
+      background-position: $x $y;
+    }
+    $x: $x - 20px;
+  }
+  $sprites: PictureBlack, KeyBoard, Share, Time, Search;
+  $x: 0;
+  $y: -80px;
+  @each $sprite in $sprites {
+    &#{$sprite} {
+      background-position: $x $y;
+    }
+    $x: $x - 20px;
+  }
+  $sprites: N, N, N, N, Recommand, Call;
+  $x: 0;
+  $y: -100px;
+  @each $sprite in $sprites {
+    &#{$sprite} {
+      background-position: $x $y;
+    }
+    $x: $x - 20px;
+  }
+  $sprites: Cal, N, Won, Lock, N, N, Mark;
+  $x: 0;
+  $y: -120px;
+  @each $sprite in $sprites {
+    &#{$sprite} {
+      background-position: $x $y;
+    }
+    $x: $x - 20px;
+  }
+  $sprites: N, N, N, N, Recommand, Call;
+  $x: 0;
+  $y: -140px;
+  @each $sprite in $sprites {
+    &#{$sprite} {
+      background-position: $x $y;
+    }
+    $x: $x - 20px;
+  }
 }

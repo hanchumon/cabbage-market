@@ -346,163 +346,152 @@ legend {
 }
 
 .sprite {
-  width: 1.25rem;
-  height: 1.25rem;
-  background-image: url(/images/icon_sprite_1x.png);
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-image: url(/images/icon_1x.png);
   background-repeat: no-repeat;
   padding-left: 1.25rem;
 }
-
 .spriteHome {
   background-position: 0 0;
 }
-
 .spriteBoard {
   background-position: -20px 0;
 }
-
 .spriteChat {
   background-position: -40px 0;
 }
-
 .spritePlace {
   background-position: -60px 0;
 }
-
 .spriteMyPage {
   background-position: -80px 0;
 }
-
-.spritePpl {
+.spritePpll {
   background-position: -100px 0;
 }
-
 .spriteFillHome {
   background-position: 0 -20px;
 }
-
 .spriteFillBoard {
   background-position: -20px -20px;
 }
-
 .spriteFillChat {
   background-position: -40px -20px;
 }
-
 .spriteFillMap {
   background-position: -60px -20px;
 }
-
 .spriteFillMyPage {
   background-position: -80px -20px;
 }
-
 .spriteMenu {
   background-position: 0 -40px;
 }
-
 .spritePlus {
   background-position: -20px -40px;
 }
-
+.spriteN {
+  background-position: -40px -40px;
+}
+.spriteN {
+  background-position: -60px -40px;
+}
 .spriteExit {
   background-position: -80px -40px;
 }
-
 .spriteSelect {
   background-position: -100px -40px;
 }
-
 .spriteBack {
   background-position: 0 -60px;
 }
-
 .spriteMoreRight {
   background-position: -20px -60px;
 }
-
+.spriteN {
+  background-position: -40px -60px;
+}
+.spriteN {
+  background-position: -60px -60px;
+}
+.spriteN {
+  background-position: -80px -60px;
+}
 .spriteAlarm {
   background-position: -100px -60px;
 }
-
-.spriteSex {
+.spritePictureBlack {
+  background-position: 0 -80px;
+}
+.spriteKeyBoard {
+  background-position: -20px -80px;
+}
+.spriteShare {
+  background-position: -40px -80px;
+}
+.spriteTime {
   background-position: -60px -80px;
 }
-
-.spriteSmile {
+.spriteSearch {
   background-position: -80px -80px;
 }
-
-.spriteQr {
-  background-position: -100px -80px;
-}
-
-.spritePictureBlack {
+.spriteN {
   background-position: 0 -100px;
 }
-
-.spriteKeyBoard {
+.spriteN {
   background-position: -20px -100px;
 }
-
-.spriteShare {
+.spriteN {
   background-position: -40px -100px;
 }
-
-.spriteTime {
+.spriteN {
   background-position: -60px -100px;
 }
-
-.spriteSearch {
+.spriteRecommand {
   background-position: -80px -100px;
 }
-
-.spriteRecommand {
+.spriteCall {
+  background-position: -100px -100px;
+}
+.spriteCal {
+  background-position: 0 -120px;
+}
+.spriteN {
+  background-position: -20px -120px;
+}
+.spriteWon {
+  background-position: -40px -120px;
+}
+.spriteLock {
+  background-position: -60px -120px;
+}
+.spriteN {
   background-position: -80px -120px;
 }
-
-.spriteCall {
+.spriteN {
   background-position: -100px -120px;
 }
-
-.spriteCal {
+.spriteMark {
+  background-position: -120px -120px;
+}
+.spriteN {
   background-position: 0 -140px;
 }
-
-.spriteWon {
+.spriteN {
+  background-position: -20px -140px;
+}
+.spriteN {
   background-position: -40px -140px;
 }
-
-.spriteLock {
+.spriteN {
   background-position: -60px -140px;
 }
-
-.spriteMark {
-  background-position: -120px -140px;
+.spriteRecommand {
+  background-position: -80px -140px;
 }
-
-.spriteReceptionSensitivity {
-  background-position: 0 -160px;
-}
-
-.spriteLte {
-  background-position: -20px -160px;
-}
-
-.spriteBattery {
-  background-position: -40px -160px;
-}
-
-.spriteMore {
-  background-position: -60px -160px;
-}
-
-.spriteComment {
-  background-position: -80px -160px;
-}
-
-.spriteCheck {
-  background-position: -100px -160px;
+.spriteCall {
+  background-position: -100px -140px;
 }
 
 body {
@@ -537,6 +526,27 @@ iframe {
   margin-left: auto;
   margin-right: auto;
   padding: 0.75rem;
+}
+
+.timeInfo {
+  background: pink;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.celluarInfo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+body {
+  background: yellow;
 }
 
 .boardNav,
@@ -645,6 +655,11 @@ iframe {
   text-align: center;
 }
 
+.sizingWrapper {
+  width: 100%;
+  height: 100vh;
+}
+
 .cabbageMarket {
   width: 100%;
   height: 100vh;
@@ -657,7 +672,7 @@ iframe {
 .cabbageMarket__img {
   height: auto;
   max-width: 18.75rem;
-  margin-top: 9.375rem;
+  margin-top: 3.125rem;
 }
 .cabbageMarket__title {
   text-align: center;
@@ -683,7 +698,7 @@ iframe {
   font-weight: 600;
   line-height: 150%;
   text-align: center;
-  margin-top: 12.5rem;
+  margin-top: 3.125rem;
 }
 
 .asign {

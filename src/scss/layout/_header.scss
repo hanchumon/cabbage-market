@@ -1,1 +1,11 @@
-// header.scss
+@use "../utils/" as *;
+.timeInfo{
+  background: pink;
+  @include paddingX(10px);
+  @include flexbox($justify: space-between, $items:center);
+
+}
+
+.celluarInfo{
+  @include flexbox($items: flex-start);
+}
