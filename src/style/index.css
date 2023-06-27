@@ -605,6 +605,52 @@ iframe {
   appearance: none;
 }
 
+.sizingWrapper {
+  position: relative;
+}
+
+.commonNav__list {
+  width: calc(100% - 24px);
+  max-width: 37.4375rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  font-weight: 400;
+  font-size: 0.6875rem;
+  position: fixed;
+  bottom: 0;
+  padding: 8px 12px 24px 12px;
+  background: #fff;
+}
+.commonNav__link {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.mainNav__list {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  font-weight: 400;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  gap: 8px;
+}
+
+.accentColor {
+  font-weight: 700;
+  color: white;
+}
+
 .boardNav,
 .boardMain {
   max-width: 37.4375rem;
