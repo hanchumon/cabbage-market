@@ -686,6 +686,197 @@ iframe {
   padding: 0.75rem;
 }
 
+.timeInfo {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.timeInfo__date {
+  font-size: 14px;
+}
+
+.celluarInfo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: inherit;
+  border: 0;
+}
+.celluarInfo :nth-child(2) {
+  margin-left: -4px;
+  margin-right: 4px;
+}
+
+.statusBar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 0.5rem;
+  width: 100%;
+  height: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.locationHeader__search, .locationHeader__menu, .locationHeader__menu {
+  flex-shrink: 0;
+}
+
+.selectLocation {
+  flex-grow: 1;
+  position: relative;
+  z-index: 1;
+}
+.selectLocation::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 0;
+  height: 0;
+  margin-top: -1px;
+  margin-left: 30px;
+  border-left: 5px transparent;
+  border-right: 5px transparent;
+  border-bottom: 5px #747474;
+}
+.selectLocation label {
+  position: absolute;
+  width: 100%;
+  top: 0.1875rem; /* 위치정렬 */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #003F21;
+  z-index: -1; /* IE8에서 label이 위치한 곳이 클릭되지 않는 것 해결 */
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.selectLocation select {
+  width: 100%;
+  height: auto; /* 높이 초기화 */
+  line-height: normal; /* line-height 초기화 */
+  font-family: inherit; /* 폰트 상속 */
+  padding-left: 0.8125rem;
+  padding-right: 0.8125rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 0;
+  opacity: 0; /* 숨기기 */
+  filter: alpha(opacity=0); /* IE8 숨기기 */
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.profileHeader__item {
+  flex-grow: 1;
+}
+.profileHeader__description {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.backHeader__title {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  flex-grow: 1;
+  margin-left: -5%;
+}
+.backHeader__backicon {
+  flex-grow: 1;
+}
+.backHeader__home {
+  flex-grow: 1;
+}
+
+.qnaHeader__textItem {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+.qnaHeader__done {
+  color: #747474;
+  font-size: 0.875rem;
+}
+
+.qnaHeader__qChat {
+  font-size: 1.125rem;
+  font-weight: 700;
+  flex-grow: 1;
+}
+
+.statusBar__qchat {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+.qnaHeader__chatText {
+  font-size: 0.875rem;
+  text-align: center;
+}
+.qnaHeader__chatText__span {
+  color: #A7A7A7;
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.sizingWrapper {
+  position: relative;
+}
+
+.commonNav__list {
+  width: calc(100% - 24px);
+  max-width: 37.4375rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  font-weight: 400;
+  font-size: 0.6875rem;
+  position: fixed;
+  bottom: 0;
+  padding: 8px 12px 24px 12px;
+  background: #fff;
+}
+.commonNav__link {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.mainNav__list {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  font-weight: 400;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  gap: 8px;
+}
+
+.accentColor {
+  font-weight: 700;
+  color: white;
+}
+
 .sizingWrapper {
   width: 100%;
   height: 100%;
@@ -1624,195 +1815,69 @@ iframe {
   color: #008F22;
 }
 
-.timeInfo {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.timeInfo__date {
-  font-size: 14px;
-}
-
-.celluarInfo {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  font-family: inherit;
-  border: 0;
-}
-.celluarInfo :nth-child(2) {
-  margin-left: -4px;
-  margin-right: 4px;
-}
-
-.statusBar {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  column-gap: 0.5rem;
-  width: 100%;
-  height: 2.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.locationHeader__search, .locationHeader__menu, .locationHeader__menu {
-  flex-shrink: 0;
-}
-
-.selectLocation {
-  flex-grow: 1;
-  position: relative;
-  z-index: 1;
-}
-.selectLocation::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  width: 0;
-  height: 0;
-  margin-top: -1px;
-  margin-left: 30px;
-  border-left: 5px transparent;
-  border-right: 5px transparent;
-  border-bottom: 5px #747474;
-}
-.selectLocation label {
-  position: absolute;
-  width: 100%;
-  top: 0.1875rem; /* 위치정렬 */
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  color: #003F21;
-  z-index: -1; /* IE8에서 label이 위치한 곳이 클릭되지 않는 것 해결 */
-  font-size: 1.125rem;
-  font-weight: 700;
-}
-.selectLocation select {
-  width: 100%;
-  height: auto; /* 높이 초기화 */
-  line-height: normal; /* line-height 초기화 */
-  font-family: inherit; /* 폰트 상속 */
-  padding-left: 0.8125rem;
-  padding-right: 0.8125rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border: 0;
-  opacity: 0; /* 숨기기 */
-  filter: alpha(opacity=0); /* IE8 숨기기 */
-  -webkit-appearance: none; /* 네이티브 외형 감추기 */
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.profileHeader__item {
-  flex-grow: 1;
-}
-.profileHeader__description {
-  font-size: 0.875rem;
-  font-weight: 700;
-}
-
-.backHeader__title {
-  text-align: center;
-  font-size: 0.875rem;
-  font-weight: 700;
-  flex-grow: 1;
-  margin-left: -5%;
-}
-.backHeader__backicon {
-  flex-grow: 1;
-}
-.backHeader__home {
-  flex-grow: 1;
-}
-
-.qnaHeader__textItem {
-  flex-grow: 1;
-  text-align: center;
-  font-weight: 700;
-  font-size: 0.875rem;
-}
-.qnaHeader__done {
-  color: #747474;
-  font-size: 0.875rem;
-}
-
-.qnaHeader__qChat {
-  font-size: 1.125rem;
-  font-weight: 700;
-  flex-grow: 1;
-}
-
-.statusBar__qchat {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  flex-grow: 1;
-}
-
-.qnaHeader__chatText {
-  font-size: 0.875rem;
-  text-align: center;
-}
-.qnaHeader__chatText__span {
-  color: #A7A7A7;
-  font-weight: 400;
-  font-size: 0.875rem;
-  text-align: center;
-}
-
 .sizingWrapper {
   position: relative;
 }
 
-.commonNav__list {
-  width: calc(100% - 24px);
-  max-width: 37.4375rem;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: stretch;
-  font-weight: 400;
-  font-size: 0.6875rem;
-  position: fixed;
-  bottom: 0;
-  padding: 8px 12px 24px 12px;
-  background: #fff;
-}
-.commonNav__link {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
+.searchHeader__wrapper {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.mainNav__list {
-  width: 100%;
-  color: rgba(255, 255, 255, 0.5);
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 400;
+.searchHeaderBack {
+  margin-right: 1rem;
+  margin-top: 1%;
+}
+
+.searchHeaderInput {
+  border: 0;
+  background: #D3D3D3;
+  border-radius: 5px;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: calc(100% - 3rem);
+}
+
+.searchKeyword {
+  font-size: text-sm;
+  font-family: Pretendard;
+  font-weight: 700;
+  line-height: 1.5%;
+  padding-left: 0.75rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  gap: 8px;
+}
+.searchKeyword__list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-left: 0.75rem;
+  column-gap: 0.25rem;
+  margin-top: 0.75rem;
+}
+.searchKeyword__button {
+  padding: 0.375rem 0.625rem;
+  border-radius: 1.25rem;
+  border: solid 1px #919191;
+  font-size: 0.625rem;
+  line-height: 160%;
+  background: #fff;
 }
 
-.accentColor {
-  font-weight: 700;
-  color: white;
+.submitButton {
+  background: transparent;
+  border: 0;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  color: #008F22;
+  position: sticky;
+  bottom: 0;
+  right: 0;
 }
 
 /*# sourceMappingURL=index.css.map */
