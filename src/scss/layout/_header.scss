@@ -60,7 +60,6 @@
     width: 100%; 
     top: rem(3px);  /* 위치정렬 */ 
     @include paddingY(8px);
-    color: $tertiary;  
     z-index: -1;  /* IE8에서 label이 위치한 곳이 클릭되지 않는 것 해결 */
     font-size: $text-md;
     font-weight: 700;

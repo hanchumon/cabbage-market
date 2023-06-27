@@ -751,7 +751,6 @@ iframe {
   top: 0.1875rem; /* 위치정렬 */
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: #003F21;
   z-index: -1; /* IE8에서 label이 위치한 곳이 클릭되지 않는 것 해결 */
   font-size: 1.125rem;
   font-weight: 700;
