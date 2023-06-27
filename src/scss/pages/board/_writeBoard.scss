@@ -1,0 +1,36 @@
+@use "./../../components" as *;
+@use "./../../utils" as *;
+@use "./../../base" as *;
+@use "./../../themes" as *;
+
+.boardMain{
+  position: relative;
+  height: calc(100% - rem(50px));
+}
+
+.insertTitle{
+  &__input{
+  padding-left: rem(4px);
+  border: none;
+}}
+
+.aroundPopular{
+  font-size: $text-xxs ;
+  margin-top: rem(16px);
+  
+  &__box{
+    margin-top: rem(12px);
+    // background-color: aqua;
+    @include flexbox ($wrap:wrap);
+    gap: rem(11px) rem(6px);
+  }
+  &__button{
+    @include keywordButton;
+  }
+}
+
+
+.button_next{
+  position: absolute;
+  bottom: rem(32px);
+}

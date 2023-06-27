@@ -1,5 +1,6 @@
 @use "../utils/" as *;
 @use "../themes/" as *;
+@use "../components/" as *;
 
 .sizingWrapper {
   position: relative;
@@ -7,6 +8,7 @@
 
 .commonNav {
   &__list {
+    z-index: 10;
     width: calc(100% - 24px);
     max-width: rem(599px);
     @include flexbox($justify: space-between);
@@ -38,4 +40,69 @@
 .accentColor {
   font-weight: 700;
   color: rgba($white, 1);
+}
+
+//  보더 내비게이션
+.boardNav {
+  border-bottom: solid 1px $gray-300;
+  border-top: solid 1px $gray-300;
+  @include paddingY(rem(130px));
+  
+  &__list{
+    display: flex;
+    flex-flow: row wrap;
+    gap: rem(4px);
+    overflow: hidden;
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    display: block;
+    @include keywordButton;
+  }
+}
+// 보더 같이 내비
+.togetherBoardNav {
+  &__form {
+    display: flex;
+    flex-flow: row;
+    gap: rem(12px);
+    align-items: center;
+    height: rmx(91px);
+    overflow: hidden;
+    @include paddingX (rem(8px));
+    padding-bottom: 8px;
+    
+  }
+
+  &__box {
+    display: flex;
+    flex-flow: column;
+    gap: rem(6px);
+    text-align: center;
+  }
+
+  &__button {
+    width: rem(54px);
+    height: rem(54px);
+    border-radius: 50%;
+    background-color: $gray-100;
+    border: none;
+    font-size: $text-lg;
+  }
+  &__button:hover{
+    border: $deep-green solid rem(2px);
+  }
+
+  &__label {
+    color: var(--contents-content-primary, #000);
+    text-align: center;
+    font-size: $text-xxs;
+    font-family: Pretendard;
+    font-weight: 600;
+    line-height: 150%;
+  }
 }
