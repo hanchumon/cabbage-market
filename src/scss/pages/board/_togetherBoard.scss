@@ -3,47 +3,6 @@
 @use "./../../base" as *;
 @use "./../../themes" as *;
 
-.togetherBoardNav {
-  &__form {
-    display: flex;
-    flex-flow: row;
-    gap: rem(12px);
-    align-items: center;
-    height: rmx(91px);
-    overflow: hidden;
-    @include paddingX (rem(8px));
-    padding-bottom: 8px;
-    
-  }
-
-  &__box {
-    display: flex;
-    flex-flow: column;
-    gap: rem(6px);
-    text-align: center;
-  }
-
-  &__button {
-    width: rem(54px);
-    height: rem(54px);
-    border-radius: 50%;
-    background-color: $gray-100;
-    border: none;
-    font-size: $text-lg;
-  }
-  &__button:hover{
-    border: $deep-green solid rem(2px);
-  }
-
-  &__label {
-    color: var(--contents-content-primary, #000);
-    text-align: center;
-    font-size: $text-xxs;
-    font-family: Pretendard;
-    font-weight: 600;
-    line-height: 150%;
-  }
-}
 
 .togetherBoardSorting {
   padding: rem(8px) 0 rem(12px) rem(2px);
@@ -52,21 +11,21 @@
   &__form {
     display: flex;
     flex-flow: row;
-    gap: rem(7px)
+    gap: rem(7px);
   }
 
   &__select {
     @include keywordButton;
     text-align: center;
     appearance: none;
-
-  }
-
-  &__button {
-    @include keywordButton(rem(26px));
-    background-color: $white;
   }
 }
+
+.newContent{
+  @include pulsButton;
+  
+}
+
 
 .togetherBoardMain {
   &__item {
