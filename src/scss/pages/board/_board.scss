@@ -12,11 +12,7 @@
 //   position: relative;
 //   box-sizing: content-box;
 // }
-.boardNav,
-.boardMain {
-  @include containerMax;
-  @include containerMin;
-}
+
 
 .boardNav {
   border-bottom: solid 1px $gray-300;
@@ -83,18 +79,18 @@
   }
 }
 
-// .boardMain__link{background-color: yellow;}
-
 // 스프라이트 설정
 
-.sprite {
-  padding-left: 18px;
-  background: url(./../../../images/icon_sprite_1x.png) no-repeat 0 0;
+.sprite{
+
   height: rem(16px);
   width: rem(16px);
 
   &__who {
-    background-position: -100px 0;
+    display: block;
+    height: rem(16px);
+  width: rem(16px);
+    background-position: -80px -220px;
   }
 
   &__date {

@@ -2,16 +2,26 @@
 
 .sprite {
   content: "";
-  min-width: rem(20px);
-  min-height: rem(20px);
+  min-width: rem(16px);
+  min-height: rem(16px);
   background-image: url(/images/icon_sprite_1x.png);
   background-repeat: no-repeat;
-  padding-left: rem(20px);
+  padding-left: rem(16px);
+  float: left;
 
   // $ReceptionSensitivity: $ReceptionSensitivity::before;
   // $Search: $Search::before;
 
-  $sprites: Home, NavBoard, Chat, Map, MyPage, ;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  $sprites: Home, NavBoard, Chat, Map, MyPage;
   $x: 0;
   $y: 0;
   @each $sprite in $sprites {
@@ -20,7 +30,7 @@
     }
     $x: $x - 20px;
   }
-  $sprites: FillHome, FillBoard, FillChat, FillMap, ;
+  $sprites: FillHome, FillBoard, FillChat, FillMap;
   $x: 0;
   $y: -20px;
   @each $sprite in $sprites {

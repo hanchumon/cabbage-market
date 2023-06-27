@@ -1,0 +1,109 @@
+@use "./../../components" as *;
+@use "./../../utils" as *;
+@use "./../../base" as *;
+@use "./../../themes" as *;
+
+body {
+  @include containerMax;
+  height: 685px;
+  width: 365px;
+  border: solid 1px gray;
+  position: relative;
+  box-sizing: content-box;
+}
+
+.togetherBoardNav {
+  &__form {
+    display: flex;
+    flex-flow: row;
+    gap: rem(12px);
+    align-items: center;
+    height: rmx(91px);
+    // background-color: aqua;
+    overflow: hidden;
+    padding: 8px 20px;
+  }
+
+  &__box {
+    display: flex;
+    flex-flow: column;
+    gap: rem(6px);
+    text-align: center;
+  }
+
+  &__button {
+    width: rem(54px);
+    height: rem(54px);
+    border-radius: 50%;
+    border: none;
+    background-color: $gray-100;
+    font-size: $text-lg;
+  }
+  &__button:hover{
+    border: $deep-green solid rem(2px);
+  }
+
+  &__label {
+    color: var(--contents-content-primary, #000);
+    text-align: center;
+    font-size: $text-xxs;
+    font-family: Pretendard;
+    font-weight: 600;
+    line-height: 150%;
+  }
+}
+
+
+.togetherBoardSorting {
+  padding: rem(8px) 0 rem(12px) rem(14px);
+  border-bottom: solid 1px $gray-300;
+
+  &__form {
+    display: flex;
+    flex-flow: row;
+    gap: rem(7px)
+  }
+
+  &__select {
+    @include keywordButton;
+    text-align: center;
+    appearance: none;
+
+  }
+
+  &__button {
+    @include keywordButton(rem(26px));
+
+  }
+}
+
+.togetherBoardMain {
+  &__item {
+    // background-color: aqua;
+    position: relative;
+    padding: rem(12px) rem(15px);
+    border-bottom: solid 1px $gray-300;
+    &__title{
+      @include itemTitle;
+    }
+    
+    &__info{
+      @include itemContent;
+    }
+
+    &__who,&__date,&__NOP,&__befor{
+      @include itemContent($color:$black);
+    }
+
+    &__befor{
+      position: absolute;
+      bottom: rem(12px);
+      right: rem(15px);
+    }
+    
+  }
+}
+.spanHighligth{
+  color: $primary; 
+}
+
