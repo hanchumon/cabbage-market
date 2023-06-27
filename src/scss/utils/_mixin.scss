@@ -75,8 +75,13 @@
   padding-bottom: rem($spacing);
 }
 
-@mixin containerMax($max-width: 1024px){
+@mixin containerMax($max-width: 599px){
   max-width: rem($max-width);
+  @include autoMargin;
+}
+
+@mixin containerMin($min-width: 320px){
+  min-width: rem($min-width);
   @include autoMargin;
 }
 

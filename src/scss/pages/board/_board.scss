@@ -1,0 +1,123 @@
+@use "./../../components" as *;
+@use "./../../utils" as *;
+@use "./../../base" as *;
+@use "./../../themes" as *;
+
+
+// body {
+//   @include containerMax;
+//   height: 685px;
+//   width: 365px;
+//   border: solid 1px gray;
+//   position: relative;
+//   box-sizing: content-box;
+// }
+.boardNav,
+.boardMain {
+  @include containerMax;
+  @include containerMin;
+}
+
+.boardNav {
+  border-bottom: solid 1px $gray-300;
+  padding: rem(8px) 0 rem(8px) rem(12px);
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    display: block;
+    @include keywordButton;
+  }
+
+  // 라디오 버튼   
+  // &__label,&__topic{
+  //   @include keywordButton;}
+  // &__input{
+  //   display: none;
+  // }
+
+  // .boardNav__label[type=radio]+label{
+  //   display: inline-block;
+
+
+  // }
+
+
+  // input[type=radio]:checked + label{
+  //   display: inline-block;
+  //   background-color: $gray-300;
+  //   color: $white;
+
+  // }
+}
+
+.boardMain {
+  &__item {
+    border-bottom: solid 1px $gray-300;
+    padding: rem(12px);
+    position: relative;
+
+    &__kind {
+      @include spanTag;
+    }
+
+    &__title {
+      @include itemTitle(rem(190px));
+    }
+
+    &__content,
+    &__who,
+    &__date,
+    &__info,
+    &__NOP {
+      @include itemContent;
+    }
+
+    &__NOP {
+      position: absolute;
+      right: rem(13px);
+      bottom: rem(12px);
+    }
+  }
+}
+
+// .boardMain__link{background-color: yellow;}
+
+// 스프라이트 설정
+
+.sprite {
+  padding-left: 18px;
+  background: url(./../../../images/icon_sprite_1x.png) no-repeat 0 0;
+  height: rem(16px);
+  width: rem(16px);
+
+  &__who {
+    background-position: -100px 0;
+  }
+
+  &__date {
+    background-position: -100px 0;
+  }
+
+  &__info {
+    background-position: -100px 0;
+    margin-top: 5px;
+  }
+
+  &__NOP {
+    background-position: -100px 0;
+
+  }
+}
+
+.boardMain__item__img {
+  position: absolute;
+  top: rem(12px);
+  right: rem(13px);
+  width: rem(60px);
+  height: rem(60px);
+  border-radius: rem(4px);
+  background-color: $gray-800;
+}
