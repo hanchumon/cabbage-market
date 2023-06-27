@@ -1,8 +1,82 @@
 @use "../../themes/" as *;
 @use "../../utils/" as *;
+.sizingWrapper{
+  height: 100%;
+  
+}
+.mainStory{
+  background: $gray-300;
+  position: relative;
+  width: 100%;
+  height: rem(255px);
+  
+  &__img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: rem(230px);
+  }
 
-.storyFeild{
+  &__p{
+    color: $white;
+    font-weight: 700;
+    font-size: rem(18px);
+    @include posTopLeft(30px, 30px);
+    line-height: 1.6;
+  }
+  
+  &__link{
+    color: $white;
+    @include posTopLeft(85px, 30px);
+    font-size: $text-sm;
+  }
+  &__number{
+    color: $white;    
+    &01{
+      @include posTopLeft(rem(200px), rem(30px));
+  }
+  &03{    
+    @include posTopLeft(rem(200px), rem(95px));
+  }
+  &Img{
+    @include posTopLeft(rem(207px), rem(50px));
+  }
+  }
+}
+.storyField{
   &__list{
+    @include gridbox($column-count:2);
+    gap: $spacing-3;
+    margin-top: rem(12px);
+    margin-bottom:rem(60px);
+  }
+  
+  &__item{
+    justify-item: stretch;
+    align-item: stretch;
     
   }
+  
+  &__img{
+    width: 100%;
+    height: auto;
+    margin-bottom: $spacing-3;
+
+  }
+
+  &__title{
+    font-size: rem(11.5px);
+    line-height: 1.6;
+  }
+  
+  &__brief{
+    font-size: rem(11px);
+    line-height: 1.6;
+    color: $gray-400;
+
+  }
+}
+
+.storyField___title{
+  font-size: $text-sm;
 }
