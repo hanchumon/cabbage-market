@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>profileDetails page</title>
+</head>
+<body>
+  <h1 class="a11yHidden">배추마켓</h1>
+
+  <div class="sizingWrapper">
+    <h2 class="a11yHidden">기본정보 수정화면</h2>
+
+    <p class="profilelInformationEdit__page">
+      기본정보
+      <a href="/profileCard.html" class="backProfileCard"></a>
+    </p>
+
+    <form action="/" method="post" id="profilelInformation" target="_blank">
+
+      <fieldset class="inputForm profilelInformation">
+        <legend>기본정보 입력</legend>
+
+        <fieldset class="inputForm">
+          <legend>하는 일 작성</legend>
+
+          <div class="textPluseBox">
+            <label class="formTitle" for="job">하는 일</label>
+            <input class="jobStyle sprite spriteCirclePlus" type="text" id="job" name="job" placeholder="본인이 하는 일을 추가해보세요"/>
+          </div>
+        </fieldset>
+
+        <fieldset class="inputForm">
+          <legend>프로필 키워드 작성</legend>
+
+          <div class="textPluseBox">
+            <label class="formTitle" for="keyWord">프로필 키워드</label>
+            <input class="keyWordStyle sprite spriteCirclePlus" type="text" id="keyWord" name="keyWord" placeholder="프로필 키워드를 추가해보세요"/>
+          </div>
+        </fieldset>
+
+       <fieldset class="inputForm">
+          <legend>성별 공개여부</legend>
+
+          <label class="formTitle" for="genderPrivate">성별</label>
+          <p class="Notice">정보 공개 시, 내 답변 프로필 카드에 정보가 노출됩니다</p>
+
+          <div class="openChoiceBox">
+            <input class="privateButton sprite spriteClose" type="radio" id="genderPrivate" name="genderChoices" value="genderPrivate" checked/>
+            <label for="genderPrivate">비공개</label>
+  
+            <input class="openButton sprite spriteOpen" type="radio" id="genderReveal" name="genderChoices" value="genderReveal"/>
+            <label for="genderReveal">전체 공개</label>
+          </div>
+       </fieldset>
+
+       <fieldset class="inputForm">
+          <legend>연령 공개여부</legend>
+
+          <label class="formTitle" for="agerPrivate">연령</label>
+          <p class="Notice">정보 공개 시, 내 답변 프로필 카드에 정보가 노출됩니다</p>
+
+          <div class="openChoiceBox">
+            <input class="privateButton sprite spriteClose" type="radio" id="agerPrivate" name="ageChoices" value="agePrivate"/>
+            <label for="genderPrivate">비공개</label>
+
+            <input  class="openButton sprite spriteOpen" type="radio" id="ageReveal" name="ageChoices" value="ageReveal" checked/>
+            <label for="ageReveal">전체 공개</label>
+          </div>
+       </fieldset>
+
+       <fieldset class="inputForm">
+          <legend>회사 검색 및 작성</legend>
+      
+          <label class="formTitle" for="company">회사</label>
+
+          <div class="companyBox">
+            <a class="searchBox" href="/"><span class="sprite spriteLgSearch"></span> 검색하기</a>
+            <input class="textBox sprite spritePencil" type="text" id="company" />
+          </div>
+       </fieldset>
+
+        <fieldset class="inputForm">
+          <legend>학교 검색 및 작성</legend>
+
+          <label class="formTitle" for="school">학교</label>
+
+          <div class="schoolBox">
+            <a class="searchBox" href="/"><span class="sprite spriteLgSearch"></span>검색하기</a>
+            <input class="textBox sprite spritePencil" type="text" id="school" />
+          </div>
+        </fieldset>
+
+        <fieldset class="inputForm">
+          <legend>자격증 작성</legend>
+
+          <label class="formTitle" for="qualification">자격</label>
+          <input class="textBox sprite spritePencil" type="text" id="qualification" />
+        </fieldset>
+          
+        <fieldset class="inputForm">
+          <legend>취득 자격증 파일 불러오기</legend>
+
+          <div class="certificateBox">
+            <label class="formTitle" for="Certificate" title="자격증 이미지를 바로 불러올 수 있습니다">
+              취득자격<span class="sprite spriteExplanation"></span>
+            </label>
+
+            <input class="fileCertificate" type="file" id="Certificate" />
+            <p class="certificateMent">
+            <span class="spriteCertificate"></span>
+            국가 자격증을 간편하게 등록해보세요&#33;
+          </p>
+          </div>
+        </fieldset>
+
+      </fieldset>
+
+      <fieldset class="inputForm agreeCentent">
+        <legend>동의서</legend>
+        
+        <div class="allCheck">
+          <input class="checkboxStyle" type="checkbox" id="allAgree"/>
+          <label for="allAgree">아래 내용에 전체 동의합니다<span>필수동의</span></label>
+        </div>
+
+        <input class="checkboxStyle" type="checkbox" id="personalAgree"/>
+        <label for="personalAgree">&#91;필수&#93; 개인 정보 수집 및 이용 동의</label>
+          <p>
+            입력한 별명, 프로필 사진, 하는 일, 프로필 키워드, 성별, 회사, 학교, 자격은 배추마켓 서비스 내 프로필 페이지, 답변자 정보 영역, 배추마켓 홈 및 서비스 내 프로필 공개를 목적으로 합니다<span>수집된 정보는 언제든지 직접 삭제할 수 있고, 탈퇴 시에는 바로 파기됩니다</span>
+          </p>
+
+        <input class="checkboxStyle" type="checkbox" id="infoAgree" />
+        <label for="infoAgree">&#91;필수&#93; 프로필 정보 노출 영역 확인<span><a href="/">자세히</a></span></label>
+
+        <input class="checkboxStyle" type="checkbox" id="responsibilityAgree" />
+        <label for="responsibilityAgree">&#91;필수&#93; 사실과 다른 정보를 기재하여 발생한 문제에 대해서는 본인이 일체의 책임을 부담하겠습니다</label>
+      </fieldset>
+
+      <div>
+        <input class="cancel" type="reset" />
+        <input class="save" type="submit" />
+      </div>
+
+      <p class="agreeInformation">정보 초기화 및 이용 동의 철회</p>
+    </form>
+
+  </div>
+</body>
+</html>
