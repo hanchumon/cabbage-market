@@ -77,7 +77,7 @@
 
   // -----------6------------
   &Back {
-    @include whbp($bpX: rem(-0px), $bpY: rem(-60px));
+    @include whbp($bpX: rem(-40px), $bpY: rem(-60px));
   }
 
   &MoreRight {

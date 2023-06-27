@@ -434,7 +434,7 @@ legend {
 .spriteBack {
   min-width: 1.25rem;
   min-height: 1.25rem;
-  background-position: 0rem -3.75rem;
+  background-position: -2.5rem -3.75rem;
 }
 .spriteMoreRight {
   min-width: 1.25rem;
@@ -694,6 +694,9 @@ iframe {
   justify-content: space-between;
   align-items: center;
 }
+.timeInfo__date {
+  font-size: 14px;
+}
 
 .celluarInfo {
   display: flex;
@@ -738,6 +741,9 @@ iframe {
   height: 0;
   margin-top: -1px;
   margin-left: 30px;
+  border-left: 5px transparent;
+  border-right: 5px transparent;
+  border-bottom: 5px #747474;
 }
 .selectLocation label {
   position: absolute;
@@ -765,6 +771,64 @@ iframe {
   -webkit-appearance: none; /* 네이티브 외형 감추기 */
   -moz-appearance: none;
   appearance: none;
+}
+
+.profileHeader__item {
+  flex-grow: 1;
+}
+.profileHeader__description {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.backHeader__title {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  flex-grow: 1;
+  margin-left: -5%;
+}
+.backHeader__backicon {
+  flex-grow: 1;
+}
+.backHeader__home {
+  flex-grow: 1;
+}
+
+.qnaHeader__textItem {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+.qnaHeader__done {
+  color: #747474;
+  font-size: 0.875rem;
+}
+
+.qnaHeader__qChat {
+  font-size: 1.125rem;
+  font-weight: 700;
+  flex-grow: 1;
+}
+
+.statusBar__qchat {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+.qnaHeader__chatText {
+  font-size: 0.875rem;
+  text-align: center;
+}
+.qnaHeader__chatText__span {
+  color: #A7A7A7;
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-align: center;
 }
 
 .sizingWrapper {

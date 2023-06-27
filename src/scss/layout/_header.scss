@@ -5,7 +5,9 @@
 .timeInfo {
   @include paddingX(16px);
   @include flexbox($justify: space-between, $items: center);
-  
+  &__date{
+    font-size: 14px;
+  }
 }
 
 .celluarInfo {
@@ -49,6 +51,9 @@
     height: 0;
     margin-top: -1px;
     margin-left: 30px;
+    border-left: 5px transparent;
+    border-right: 5px transparent;
+    border-bottom: 5px $gray-600;
   }
   label{
     position: absolute;
@@ -78,5 +83,69 @@
 
 //profile 헤더 디자인
 .profileHeader{
+  &__item{
+    flex-grow: 1;
+  }
+  
+  &__description{
+    font-size: $text-sm;
+    font-weight: 700;
+  }
+}
+
+//뒤로가기 관련
+.backHeader{
+  &__title{
+    text-align: center;
+    font-size: $text-sm;
+    font-weight: 700;
+    flex-grow: 1;
+    margin-left: -5%;
+  }
+
+  &__backicon{
+    flex-grow: 1;
+  }
+  &__home{
+    flex-grow: 1;
+  }
+}
+
+//qna 헤더 디자인
+.qnaHeader{
+  &__textItem{
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 700;
+    font-size: $text-sm;
+  }
+
+  &__done{
+    color: $gray-600;
+    font-size: $text-sm;
+  }
+}
+
+.qnaHeader__qChat{
+  font-size: $text-md;
+  font-weight: 700;
+  flex-grow: 1;
+}
+
+.statusBar__qchat{
+  @include flexbox(column);
+  flex-grow: 1
+  ;
+}
+
+.qnaHeader__chatText{
+  font-size: $text-sm;
+  text-align: center;
+  &__span{
+    color: $gray-400;
+    font-weight: 400;
+    font-size: $text-sm;
+    text-align: center;
+  }
 
 }
