@@ -537,4 +537,20 @@ iframe {
   line-height: 150%;
 }
 
+.cabbageMarket {
+  border: 1px solid #121212;
+  width: 100%;
+}
+.cabbageMarket__img {
+  height: auto;
+  max-width: 18.75rem;
+  text-align: center;
+}
+.cabbageMarket__title {
+  text-align: center;
+}
+.cabbageMarket__brief {
+  text-align: center;
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -1,1 +1,20 @@
-// home.scss
+@use "../utils/" as *;
+@use "../themes/" as *;
+
+.cabbageMarket{
+  border: 1px solid $black;
+  width: 100%;
+  &__img{
+    height: auto;
+    max-width: rem(300px);
+    text-align: center;
+  }
+
+  &__title{
+    text-align: center;
+  }
+
+  &__brief{
+    text-align: center;
+  }
+}
