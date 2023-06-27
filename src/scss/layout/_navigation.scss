@@ -14,25 +14,37 @@
     font-size: rem(11px);
     position: fixed;
     bottom: 0;
-    padding: 8px 12px 24px 12px;
+    padding-bottom: 16px;
     background: $white;
   }
 
   &__link {
-    @include flexbox($direction:column, $items:center);
+    @include flexbox($direction: column, $items: center);
     text-align: center;
+    @include paddingY(8px);
+    
   }
 }
 
-.mainNav__list {
-  width: 100%;
-
-  color: rgba($white, 0.5);
-  @include flexbox($justify: space-between);
-  font-weight: 400;
-  @include paddingY(12px);
-  @include paddingX(8px);
-  gap: 8px;
+.mainNav {
+  &__list {
+    width: 100%;
+    background: $primary;
+    color: rgba($white, 0.5);
+    @include flexbox($justify: space-between);
+    font-weight: 400;
+    @include paddingY(12px);
+    @include paddingX(8px);
+    gap: rem(8px);
+  }
+  // &__item{
+    //   flex-shrink: 0;
+    // }
+    
+    &__link {
+    font-size: $text-sm;
+    @include paddingY(8px);
+  }
 }
 
 .accentColor {
