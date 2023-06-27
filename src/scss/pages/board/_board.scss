@@ -4,16 +4,6 @@
 @use "./../../themes" as *;
 
 
-// body {
-//   @include containerMax;
-//   height: 685px;
-//   width: 365px;
-//   border: solid 1px gray;
-//   position: relative;
-//   box-sizing: content-box;
-// }
-
-
 .boardNav {
   border-bottom: solid 1px $gray-300;
   padding: rem(8px) 0 rem(8px) rem(12px);
@@ -26,27 +16,6 @@
     display: block;
     @include keywordButton;
   }
-
-  // 라디오 버튼   
-  // &__label,&__topic{
-  //   @include keywordButton;}
-  // &__input{
-  //   display: none;
-  // }
-
-  // .boardNav__label[type=radio]+label{
-  //   display: inline-block;
-
-
-  // }
-
-
-  // input[type=radio]:checked + label{
-  //   display: inline-block;
-  //   background-color: $gray-300;
-  //   color: $white;
-
-  // }
 }
 
 .boardMain {
@@ -79,34 +48,6 @@
   }
 }
 
-// 스프라이트 설정
-
-.sprite{
-
-  height: rem(16px);
-  width: rem(16px);
-
-  &__who {
-    display: block;
-    height: rem(16px);
-  width: rem(16px);
-    background-position: -80px -220px;
-  }
-
-  &__date {
-    background-position: -100px 0;
-  }
-
-  &__info {
-    background-position: -100px 0;
-    margin-top: 5px;
-  }
-
-  &__NOP {
-    background-position: -100px 0;
-
-  }
-}
 
 .boardMain__item__img {
   position: absolute;
