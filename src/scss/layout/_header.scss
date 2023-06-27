@@ -18,19 +18,20 @@
 //헤더 공통디자인
 .statusBar {
   // background: pink;
-  @include flexbox;
+  @include flexbox($items:center);
   column-gap: $spacing-2;
   width: 100%;
-  height: rem(40px);
-  
+  height: rem(40px);  
+  @include marginX(16px);
 }
 
+//location 헤더 디자인
 .locationHeader__search, .locationHeader__menu, .locationHeader__menu{
   flex-shrink: 0;
 }
 
-//location 헤더 디자인
 .selectLocation{
+  flex-grow: 1;
   position: relative;
   z-index: 1;
 
@@ -42,19 +43,17 @@
     width: 0;
     height: 0;
     margin-top: -1px;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid $tertiary;
+    margin-left: 30px;
   }
   label{
     position: absolute;
+    width: 100%; 
     top: rem(3px);  /* 위치정렬 */ 
-    left: rem(5px);  /* 위치정렬 */
-    @include paddingX(13px);
     @include paddingY(8px);
     color: $tertiary;  
     z-index: -1;  /* IE8에서 label이 위치한 곳이 클릭되지 않는 것 해결 */
     font-size: $text-md;
+    font-weight: 700;
   }
   select{
     width: 100%; 
@@ -72,4 +71,7 @@
   }
 }
 
-//
+//profile 헤더 디자인
+.profileHeader{
+
+}

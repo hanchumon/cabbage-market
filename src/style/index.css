@@ -1,18 +1,1634 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 4 | @forward "./qna/";
- *   | ^^^^^^^^^^^^^^^^^
- *   '
- *   src/scss/pages/_index.scss 4:1  @use
- *   src/scss/index.scss 6:1         root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 4 \2502  @forward \"./qna/\";\a   \2502  ^^^^^^^^^^^^^^^^^\a   \2575 \a   src/scss/pages/_index.scss 4:1  @use\a   src/scss/index.scss 6:1         root stylesheet";
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
 }
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body,
+body::before,
+body::after,
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+
+[class] {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Accessibility Styles */
+.a11yHidden,
+legend {
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.sprite {
+  content: "";
+  background-image: url(/images/icon_sprite_1x.png);
+  background-repeat: no-repeat;
+  float: left;
+}
+.spriteHome {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: 0 0;
+}
+.spriteBoard {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -1.25rem 0;
+}
+.spriteChat {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -2.5rem 0;
+}
+.spritePlace {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -3.75rem 0;
+}
+.spriteMyPage {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -5rem 0;
+}
+.spritePpl {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -6.25rem 0;
+}
+.spriteFillHome {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: 0rem -1.25rem;
+}
+.spriteFillBoard {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -1.25rem -1.25rem;
+}
+.spriteFillChat {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -2.5rem -1.25rem;
+}
+.spriteFillPlace {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -3.75rem -1.25rem;
+}
+.spriteFillMyPage {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -5rem -1.25rem;
+}
+.spriteMenu {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: 0rem -2.5rem;
+}
+.spritePlus {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -1.25rem -2.5rem;
+}
+.spriteExit {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -5rem -2.5rem;
+}
+.spriteSelect {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -6.25rem -2.5rem;
+}
+.spriteLgSearch {
+  min-width: 1.375rem;
+  min-height: 1.375rem;
+  background-position: -10rem -2.5rem;
+}
+.spriteBack {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: 0rem -3.75rem;
+}
+.spriteMoreRight {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -1.25rem -3.75rem;
+}
+.spriteAlarm {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -6.25rem -3.75rem;
+}
+.spriteSex {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -3.75rem -5rem;
+}
+.spriteSmile {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -5rem -5rem;
+}
+.spriteQr {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -6.25rem -5rem;
+}
+.spritePencil {
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  background-position: -10rem -5rem;
+}
+.spritePictureBlack {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: 0rem -6.25rem;
+}
+.spriteKeyBoard {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -1.25rem -6.25rem;
+}
+.spriteShare {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -2.5rem -6.25rem;
+}
+.spriteTime {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -3.75rem -6.25rem;
+}
+.spriteSearch {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -5rem -6.25rem;
+}
+.spriteRecommand {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -5rem -7.5rem;
+}
+.spriteCall {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -6.25rem -7.5rem;
+}
+.spriteCal {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: 0rem -8.75rem;
+}
+.spriteWon {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -2.5rem -8.75rem;
+}
+.spriteLock {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -3.75rem -8.75rem;
+}
+.spriteMark {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -7.5rem -8.75rem;
+}
+.spriteReceptionSensitivity {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: 0rem -10rem;
+}
+.spriteLte {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -1.25rem -10rem;
+}
+.spriteBattery {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -2.5rem -10rem;
+}
+.spriteMore {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -3.75rem -10rem;
+}
+.spriteComment {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -5rem -10rem;
+}
+.spriteCheck {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  background-position: -6.25rem -10rem;
+}
+.spriteCircleCheck {
+  min-width: 1.625rem;
+  min-height: 1.625rem;
+  background-position: -10rem -10rem;
+}
+.spriteSend {
+  min-width: 1.125rem;
+  min-height: 1.125rem;
+  background-position: -1.25rem -11.25rem;
+}
+.spriteEdit {
+  min-width: 1.125rem;
+  min-height: 1.125rem;
+  background-position: -2.5rem -10rem;
+}
+.spriteMessage {
+  min-width: 1rem;
+  min-height: 1rem;
+  background-position: -1.25rem -12.5rem;
+}
+.spritePlaceGray {
+  min-width: 1rem;
+  min-height: 1rem;
+  background-position: -6.25rem -12.5rem;
+}
+.spritePictureGray {
+  min-width: 1rem;
+  min-height: 1rem;
+  background-position: -7.5rem -12.5rem;
+}
+.spriteMdHeart {
+  min-width: 1rem;
+  min-height: 1rem;
+  background-position: -8.75rem -12.5rem;
+}
+.spriteBell {
+  min-width: 1.625rem;
+  min-height: 1.625rem;
+  background-position: -10rem -12.5rem;
+}
+.spriteTwoPeople {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -1.25rem -13.75rem;
+}
+.spriteTwoPeopleGray {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -3.75rem -13.75rem;
+}
+.spriteWho {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -5rem -13.75rem;
+}
+.spriteCertificate {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -7.5rem -13.75rem;
+}
+.spriteCirclePlus {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -1.25rem -15rem;
+}
+.spriteClose {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -2.5rem -15rem;
+}
+.spriteExplanation {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -3.75rem -15rem;
+}
+.spritePerson {
+  min-width: 1.625rem;
+  min-height: 1.625rem;
+  background-position: -10rem -15rem;
+}
+.spriteDateBlack {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -1.25rem -16.25rem;
+}
+.spriteCalGray {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -2.5rem -16.25rem;
+}
+.spriteFlag {
+  min-width: 0.75rem;
+  min-height: 0.75rem;
+  background-position: -3.75rem -16.25rem;
+}
+.spritePostioning {
+  min-width: 0.5rem;
+  min-height: 0.5rem;
+  background-position: -5rem -16.25rem;
+}
+
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font: inherit;
+  background-color: #fff;
+}
+
+/* 유연한 미디어 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.sizingWrapper {
+  max-width: 37.4375rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.75rem;
+}
+
+.timeInfo {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.celluarInfo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: inherit;
+  border: 0;
+}
+
+.statusBar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 0.5rem;
+  width: 100%;
+  height: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.locationHeader__search, .locationHeader__menu, .locationHeader__menu {
+  flex-shrink: 0;
+}
+
+.selectLocation {
+  flex-grow: 1;
+  position: relative;
+  z-index: 1;
+}
+.selectLocation::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 0;
+  height: 0;
+  margin-top: -1px;
+  margin-left: 30px;
+}
+.selectLocation label {
+  position: absolute;
+  width: 100%;
+  top: 0.1875rem; /* 위치정렬 */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #003F21;
+  z-index: -1; /* IE8에서 label이 위치한 곳이 클릭되지 않는 것 해결 */
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.selectLocation select {
+  width: 100%;
+  height: auto; /* 높이 초기화 */
+  line-height: normal; /* line-height 초기화 */
+  font-family: inherit; /* 폰트 상속 */
+  padding-left: 0.8125rem;
+  padding-right: 0.8125rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 0;
+  opacity: 0; /* 숨기기 */
+  filter: alpha(opacity=0); /* IE8 숨기기 */
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.sizingWrapper {
+  position: relative;
+}
+
+.commonNav__list {
+  width: calc(100% - 24px);
+  max-width: 37.4375rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  font-weight: 400;
+  font-size: 0.6875rem;
+  position: fixed;
+  bottom: 0;
+  padding: 8px 12px 24px 12px;
+  background: #fff;
+}
+.commonNav__link {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.mainNav__list {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  font-weight: 400;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  gap: 8px;
+}
+
+.accentColor {
+  font-weight: 700;
+  color: white;
+}
+
+.boardNav,
+.boardMain {
+  max-width: 37.4375rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.boardNav {
+  border-bottom: solid 1px #BDBDBD;
+  padding: 0.5rem 0 0.5rem 0.75rem;
+}
+.boardNav__item {
+  display: inline-block;
+}
+.boardNav__link {
+  display: block;
+  padding: 0.375rem 0.625rem;
+  border-radius: 1.25rem;
+  border: solid 1px #919191;
+  font-size: 0.625rem;
+  line-height: 160%;
+}
+
+.boardMain__item {
+  border-bottom: solid 1px #BDBDBD;
+  padding: 0.75rem;
+  position: relative;
+}
+.boardMain__item__kind {
+  padding: 0 0.25rem;
+  background-color: #BDBDBD;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 0.625rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+.boardMain__item__title {
+  width: 11.875rem;
+  color: #121212;
+  font-size: 14px;
+  font-family: Pretendard;
+  line-height: 160%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.boardMain__item__content, .boardMain__item__who, .boardMain__item__date, .boardMain__item__info, .boardMain__item__NOP {
+  color: #919191;
+  font-size: 10.503px;
+  font-family: Pretendard;
+  line-height: 160%;
+}
+.boardMain__item__NOP {
+  position: absolute;
+  right: 0.8125rem;
+  bottom: 0.75rem;
+}
+
+.sprite {
+  padding-left: 18px;
+  background: url(./../../../images/icon_sprite_1x.png) no-repeat 0 0;
+  height: 1rem;
+  width: 1rem;
+}
+.sprite__who {
+  background-position: -100px 0;
+}
+.sprite__date {
+  background-position: -100px 0;
+}
+.sprite__info {
+  background-position: -100px 0;
+  margin-top: 5px;
+}
+.sprite__NOP {
+  background-position: -100px 0;
+}
+
+.boardMain__item__img {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.8125rem;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 0.25rem;
+  background-color: #575757;
+}
+
+.button_next {
+  width: 100%;
+  height: auto;
+  padding: 0.75rem 0;
+  border: none;
+  background-color: #008F22;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: center;
+}
+
+.sizingWrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.cabbageMarket {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.25rem;
+}
+.cabbageMarket__img {
+  height: auto;
+  max-width: 18.75rem;
+  margin-top: 3.125rem;
+}
+.cabbageMarket__title {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #003F21;
+  padding-bottom: 0.09375rem;
+}
+.cabbageMarket__brief {
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.startButton {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0;
+  border: none;
+  background-color: #008F22;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 3.125rem;
+}
+
+.asign {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+  font-size: 0.875rem;
+  font-weight: 400;
+  gap: 0.5rem;
+}
+.asign__login {
+  color: #008F22;
+}
+
+.sprite {
+  background: url(/images/cabbageMarket_icon.png) no-repeat;
+}
+
+.sizingWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.chatProfileBox {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  margin-right: 6rem;
+  padding: 0.75rem 0rem 0.375rem 0.75rem;
+  gap: 0.5rem;
+}
+
+.qnaChatItem__img {
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 4px;
+  background: #BDBDBD;
+}
+
+.chatItemDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.chatItem__nameprice {
+  display: inline-flex;
+}
+
+.chatItem__sell {
+  color: #000;
+  font-size: 0.65rem;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 150%;
+  margin-right: 0.5rem;
+}
+
+.chatItem__name {
+  font-size: 0.65rem;
+  font-family: Pretendard;
+  line-height: 160%;
+}
+
+.chatItem__price {
+  font-size: 0.65rem;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.chatButtonBox {
+  font-size: 0.65644rem;
+  font-family: Pretendard;
+  line-height: 160%;
+  display: flex;
+  padding: 0.25rem 0rem 0.5rem 0.75rem;
+  gap: 0.25rem;
+  border-bottom: 0.3px solid #919191;
+}
+
+.calButton {
+  padding: 0.3rem 0.75rem 0.3rem 0.68rem;
+  border-radius: 6px;
+  border: 1px solid #919191;
+  background: #FFF;
+  font-size: 0.65rem;
+  font-family: Pretendard;
+  line-height: 160%;
+  display: flex;
+}
+
+.wonButton {
+  padding: 0.3rem 0.75rem 0.3rem 0.6875rem;
+  border-radius: 6px;
+  border: 1px solid #919191;
+  font-size: 0.65rem;
+  font-family: Pretendard;
+  line-height: 160%;
+  display: flex;
+}
+
+.outChatNoticeBox {
+  display: flex;
+  padding: 0.5rem 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatNoticeBox {
+  padding: 0.75rem 1.4375rem 0.75rem 1rem;
+  border-radius: 10px;
+  background: #8DB0F9;
+  color: #FFF;
+  font-size: 0.65rem;
+  font-family: Pretendard;
+  line-height: 160%;
+}
+
+.chatNotice__highlight {
+  font-weight: 600;
+  line-height: 150%;
+  white-space: nowrap;
+}
+
+.chatNotice__detail {
+  text-decoration: underline;
+}
+
+.dateBox {
+  display: flex;
+  padding: 0.625rem 7.7rem 0.25rem 7.7rem;
+  font-size: 0.65rem;
+  font-family: Pretendard;
+  color: #919191;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatDate {
+  width: 5rem;
+  margin-bottom: 0.3rem;
+}
+
+.chatSend {
+  display: flex;
+  padding: 0rem 0.75rem;
+  align-items: flex-end;
+  gap: 0.2rem;
+}
+
+.chatTime {
+  color: #919191;
+  font-size: 0.65rem;
+  font-family: Pretendard;
+  line-height: 160%;
+}
+
+.chatMessage {
+  color: white;
+  padding: 0.5rem 0.875rem;
+  border-radius: 20px;
+  background: #8DB0F9;
+  font-size: 0.875rem;
+  font-family: Pretendard;
+  line-height: 160%;
+}
+
+.myChat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.yourChatBox {
+  padding: 0rem 0.75rem;
+  width: calc(100% - 4rem);
+}
+
+.chatReceive {
+  padding: 0.5rem 1.25rem;
+  border-radius: 20px;
+  background: #EBECF0;
+}
+
+.chatReceiveMessage {
+  font-size: 0.875rem;
+  font-family: Pretendard;
+  line-height: 160%;
+}
+
+.messageInput__list {
+  display: flex;
+  padding: 0.75rem 0.75rem 1.875rem 0.5rem;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.messageInput__bar {
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  background: #EBECF0;
+  font-size: 0.875rem;
+  font-family: Pretendard;
+  line-height: 160%;
+  color: #9DA1B4;
+  border: 0;
+  width: 22rem;
+  margin-top: 1rem;
+}
+
+.spriteSend {
+  background-position: -20px -180px;
+  width: 18px;
+  height: 18px;
+  border: 0;
+  margin-right: 1rem;
+  margin-left: 0.2rem;
+  margin-top: 1rem;
+}
+
+.spritePlus {
+  background-position: -20px -40px;
+  width: 24px;
+  height: 24px;
+  margin-top: 1rem;
+}
+
+.spriteCal {
+  background-position: 0px -140px;
+  width: 20px;
+  height: 20px;
+}
+
+.calMessage, .wonMessage {
+  margin-left: 0.2rem;
+}
+
+.spriteWon {
+  background-position: -40px -140px;
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+  .qnaChat__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  .qnaChat__item {
+    border: solid 0.03rem #919191;
+    height: 4.25rem;
+    padding: 0.8rem 1.15rem 1rem 1.15rem;
+  }
+  .qnaChat__link {
+    align-items: center;
+    display: flex;
+    margin-right: 6rem;
+  }
+  .qnaChatProfile__img {
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: #919191;
+    border-radius: 5rem;
+    margin-right: 1rem;
+  }
+  .qnaChat__profile {
+    flex-shrink: 0;
+    width: 100%;
+  }
+  .qnaChat__name {
+    font-size: 0.875rem;
+    font-family: Pretendard;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .qnaChat__info {
+    font-size: 0.65rem;
+    font-family: Pretendard;
+    line-height: 160%;
+  }
+  .qnaChat__message {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.875rem;
+    font-family: Pretendard;
+    line-height: 160%;
+  }
+  .qnaChat__img {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 599px) {
+  .sizingWrapper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .qnaBoardTopBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-left: 0.2rem;
+  }
+  .qnaBoard__topic {
+    padding: 0.125rem 0.8rem;
+    border-radius: 4px;
+    background: #C4C7D2;
+    color: white;
+    font-size: 0.65rem;
+    font-family: Pretendard;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .qnaBoardProfileBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .qnaBoardProfile__group {
+    margin-left: 0.3rem;
+  }
+  .qnaBoardProfile__img {
+    border-radius: 50px;
+    background: #919191;
+  }
+  .qnaBoardProfile__name {
+    font-size: 0.65rem;
+    font-family: Pretendard;
+  }
+  .qnaBoardProfile__detail {
+    color: #9DA1B4;
+    font-size: 0.65644rem;
+    font-family: Pretendard;
+    line-height: 160%;
+  }
+  .qnaBoardPost__title {
+    font-size: 1.16rem;
+    font-family: Pretendard;
+    font-weight: 600;
+    line-height: 150%;
+    width: 17rem;
+  }
+  .qBlue {
+    color: #5A85EE;
+  }
+  .qnaBoardPost__detail {
+    font-size: 0.875rem;
+    font-family: Pretendard;
+    line-height: 160%;
+    margin-top: 0.3rem;
+  }
+  .qnaBoardPost__img {
+    margin-top: 0.75rem;
+    width: 18rem;
+    height: 22rem;
+    border-radius: 8px;
+    background: #919191;
+  }
+  .qnaBoardCommentForm {
+    width: 100%;
+    height: 100;
+  }
+  .qnaBoardBar__list {
+    display: flex;
+    width: 20rem;
+    padding: 0.5rem 0.75rem 2rem 0.75rem;
+    justify-content: flex-end;
+  }
+  .qnaBoardBar__input {
+    margin-right: 0.3rem;
+  }
+  .commentInput__bar {
+    padding: 0.5rem 0.75rem;
+    border-radius: 20px;
+    background: #EBECF0;
+    font-size: 0.875rem;
+    font-family: Pretendard;
+    line-height: 160%;
+    color: #9DA1B4;
+    border: 0;
+    margin-right: 0.7rem;
+    width: 14rem;
+  }
+  .qnaBoardBottomBox {
+    display: flex;
+    padding: 0.625rem 0rem;
+    justify-content: center;
+    width: 18.5rem;
+  }
+  .qnaBoardAdv__box {
+    display: flex;
+    padding: 0.75rem 1.125rem 0.75rem 0.125rem;
+    border-radius: 8px;
+    background: #5C9F27;
+  }
+  .qnaBoardAdv__link {
+    display: inline-flex;
+    padding: 0rem 0.625rem;
+    flex-direction: column;
+    margin-right: 1rem;
+  }
+  .qnaBoardAdvText__main {
+    color: #FFF;
+    font-size: 0.65rem;
+    font-family: Pretendard;
+    font-weight: 600;
+    line-height: 150%;
+    margin-left: 0.7rem;
+  }
+  .qnaBoardAdvText__sub {
+    color: #9DA1B4;
+    font-size: 0.65rem;
+    font-family: Pretendard;
+    line-height: 200%;
+  }
+  .medalBox {
+    padding: 0rem 0.625rem;
+    border-radius: 10px;
+    background: #FFF;
+  }
+  .medalImage {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.6rem;
+  }
+  .qnaBoardEmpty {
+    display: flex;
+    flex-direction: column;
+    padding: 3.75rem 0rem 8.75rem 0rem;
+    justify-content: center;
+    text-align: center;
+    width: 20rem;
+  }
+  .qnaBoardEmpty__text {
+    color: #9DA1B4;
+    font-size: 0.875rem;
+    font-family: Pretendard;
+    line-height: 160%;
+  }
+  .sprite {
+    background: url(/images/cabbageMarket_icon.png) no-repeat;
+  }
+  .spriteFlag {
+    background: url(/images/cabbageMarket_icon.png) no-repeat;
+    background-position: -60px -260px;
+    width: 14px;
+    height: 14px;
+    white-space: nowrap;
+  }
+  .spritePicture {
+    background: url(/images/cabbageMarket_icon.png) no-repeat;
+    background-position: 0px -100px;
+    width: 20px;
+    height: 20px;
+    margin-top: 0.5rem;
+  }
+  .spritePlace {
+    background: url(/images/cabbageMarket_icon.png) no-repeat;
+    background-position: -60px 0px;
+    width: 20px;
+    height: 20px;
+    margin-top: 0.5rem;
+    margin-right: 0.8rem;
+    margin-left: 0.9rem;
+  }
+  .spriteEmoticon {
+    background: url(/images/cabbageMarket_icon.png) no-repeat;
+    background-position: -80px -80px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 17rem;
+    top: 33.9rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 599px) {
+  .qnaProfile {
+    width: auto;
+    height: auto;
+    padding: 0.75rem 1.125rem;
+    border-bottom: 0.5rem solid #BDBDBD;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .qnaProfile__mini {
+    margin-left: -1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .qnaProfile__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .qnaState {
+    font-family: Pretendard;
+    font-weight: 600;
+    margin-left: 1rem;
+  }
+  .spriteAttend {
+    padding: 0.4rem 0.75rem;
+    border-radius: 8px;
+    background: #9DA1B4;
+    color: #FFF;
+    font-size: 0.65rem;
+    font-family: Pretendard;
+    font-weight: 600;
+    margin-left: 8rem;
+  }
+  .qnaPost__list {
+    display: flex;
+    flex-direction: column;
+    font-family: Pretendard;
+    width: auto;
+  }
+  .qnaPost__item {
+    padding: 0.75rem 5.0625rem 0.75rem 0.75rem;
+  }
+  .qnaPost__link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    align-items: flex-start;
+  }
+  .qnaPost__topic {
+    padding: 0rem 0.75rem;
+    border-radius: 4px;
+    background: #C4C7D2;
+    color: #FFF;
+    font-size: 0.6rem;
+    font-weight: 600;
+  }
+  .qnaPost__title {
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 14rem;
+  }
+  .qnaPost__content {
+    color: #B1B4C3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0.65rem;
+    font-family: Pretendard;
+    line-height: 160%;
+  }
+  .qnaPost__info {
+    color: #9DA1B4;
+    font-size: 0.65rem;
+    font-family: Pretendard;
+  }
+  .qnaPost__img {
+    width: rem(62px);
+    height: rem(62px);
+    border-radius: 10px;
+  }
+  .spriteRecommend {
+    color: #9DA1B4;
+    font-size: 0.6rem;
+    font-family: Pretendard;
+    line-height: 160%;
+  }
+}
+@media (min-width: 320px) and (max-width: 599px) {
+  .spriteMoveRight {
+    background: url(/images/cabbagemarket_icon.png);
+    width: 18px;
+    height: 18px;
+    background-position: -20px -60px;
+  }
+  .qnaTopBox {
+    display: flex;
+    flex-direction: row;
+    padding: 0.75rem 0rem;
+    align-items: flex-start;
+    border-bottom: 0.3px solid #919191;
+  }
+  .qnaTopBox__topic {
+    font-size: 0.875rem;
+    font-family: Pretendard;
+    font-weight: 600;
+    margin-left: 0.5rem;
+  }
+  .qnaNoticeBox {
+    padding: 0.5rem 0rem;
+  }
+  .blueNoticeBox {
+    padding: 0.75rem 3.5rem 0.75rem 1rem;
+    border-radius: 10px;
+    background: #8DB0F9;
+    color: #FFF;
+    font-size: 0.65644rem;
+    font-family: Pretendard;
+  }
+  .qnaNotice__highlight {
+    font-weight: 600;
+    line-height: 150%;
+    margin-right: 0.3rem;
+    white-space: nowrap;
+  }
+  .qnaNotice__message {
+    width: 15rem;
+  }
+  .qnaNotice__detail {
+    font-weight: 600;
+    line-height: 150%;
+    margin-right: 0.3rem;
+    text-decoration: underline;
+  }
+  .writeQnaTitle__group {
+    display: flex;
+    height: 2.5rem;
+    padding: 0.375rem 0rem;
+    justify-content: center;
+  }
+  .writeQna__title {
+    width: 16.5rem;
+    height: 1.375rem;
+    color: #9DA1B4;
+    font-size: 1.16rem;
+    font-family: Pretendard;
+    font-weight: 600;
+    border: 0;
+  }
+  .writeQnaContent__group {
+    display: flex;
+    height: 2.5rem;
+    padding: 0.75rem 0rem 6.5rem 0rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .writeQna__content {
+    color: #919191;
+    font-size: 0.875rem;
+    font-family: Pretendard;
+    line-height: 160%;
+    border: 0;
+    width: 19rem;
+    margin-top: 2rem;
+    resize: none;
+  }
+  .qnaBottomBar__list {
+    display: flex;
+    flex-direction: row;
+    padding: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 11.5rem;
+  }
+  .qnaKeyboard__img {
+    width: 100%;
+    height: 15rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
