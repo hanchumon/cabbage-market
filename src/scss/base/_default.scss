@@ -1,4 +1,5 @@
 @use "../utils/" as *;
+@use "../themes/" as *;
 
 body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
@@ -30,4 +31,5 @@ iframe {
   @include containerMax;
   @include containerMin;
   @include autoMargin;
+  padding: $spacing-3;
 }
