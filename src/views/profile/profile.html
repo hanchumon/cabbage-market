@@ -17,27 +17,34 @@
     <section class="profileMain">
       <h3 class="a11yHidden">프로필 주요 메뉴</h3>
 
-      <!-- 링크에 클래스 수정, id추가, main의 부품이라고 클래스 수정 -->
+      <!-- 스프라이트 이미지 클래스 추가 -->
       <a href="/profileCard.html" class="profileMain__link" id="goProfileCardEdit">
         <img class="profileMain__img" src="/" alt="프로필 이미지" />
+        <span class="sprite spriteEdit"></span>
       </a>
       <p class="profileMain__name">토끼
         <span class="ordinalBagde">6기</span><br />
         <span class="answer">답변 35</span>
       </p>
 
-      <!-- 클래스 수정 -->
+      <!-- 스프라이트 이미지 클래스 추가 -->
       <ul class="profileMainMyPage__list">
         <li class="profileMainMyPage__item">
-          <a href="/" class="profileMainMyPage__link" id="myQna">나의 Q&#38;A</a>
+          <a href="/" class="profileMainMyPage__link" id="myQna">
+            <span class="sprite spriteCheck"></span>
+            나의 Q&#38;A</a>
         </li>
 
         <li class="profileMainMyPage__item">
-          <a href="/" class="profileMainMyPage__link" id="myProfile">나의 프로필</a>
+          <a href="/" class="profileMainMyPage__link" id="myProfile">
+            <span class="sprite spritePerson"></span>
+            나의 프로필</a>
         </li>
 
         <li class="profileMainMyPage__item">
-          <a href="/" class="profileMainMyPage__link" id="myNews">내소식</a>
+          <a href="/" class="profileMainMyPage__link" id="myNews">
+            <span class="sprite spriteBell"></span>
+            내소식</a>
         </li>
       </ul>
     </section>
@@ -46,8 +53,12 @@
     <section class="profileStats">
       <h3 class="a11yHidden">나의 활동 능력치</h3>
 
+      <!-- 스프라이트 이미지 클래스 추가 -->
       <div class="profileStats__passionTemperature">
-        <p class="passionTemperature">열정온도</p>
+        <p class="passionTemperature">
+          <span class="sprite spriteExplanation"></span>
+          열정온도
+        </p>
 
         <div class="passionTemperature__firstTemperature">
           <p class="passionTemperature__first">첫 온도 36.5&#176;C</p>
@@ -61,13 +72,17 @@
         </div>
       </div>
 
-      <!-- p, sapn 태그에 클래스 수정, 추가 -->
+      <!-- 스프라이트 이미지 클래스 추가 -->
       <div class="profileStats__percent">
-        <p class="percent__getLike">받은 좋아요 100&#37;<br />
+        <p class="percent__getLike sprite spriteHeart">
+          <span class="sprite spriteHeart"></span>
+          받은 좋아요 100&#37;<br />
           <span class="getLike">11개 중 11명이 만족</span>
         </p>
 
-        <p class="percent__responseRate">응답률 &#45;&#37;<br />
+        <p class="percent__responseRate">
+          <span class="sprite spriteMessage"></span>
+          응답률 &#45;&#37;<br />
           <span class="responseRate">표시될 만큼 충분히 채팅하지 않았어요</span>
         </p>
       </div>
@@ -77,33 +92,45 @@
     <section class="profileDoit">
       <h3 class="a11yHidden">나의 활동내역을 파악할 수 있는 목록</h3>
     
-      <!-- ul, a span 태그 클래스 수정, 추가 -->
+    <!-- 스프라이트 이미지 클래스 추가 -->
       <ul class="profileDoit__list">
         <li class="profileDoit__item">
-          <a href="/" class="profileDoit__link" id="activityBadge">활동배지 10개</a>
+          <a href="/" class="profileDoit__link" id="activityBadge">
+            <span class="sprite spriteMoreRight"></span>
+            활동배지 10개</a>
         </li>
 
         <li class="profileDoit__item">
-          <a href="/" class="profileDoit__link" id="saleProduct">판매상품 3개</a>
+          <a href="/" class="profileDoit__link" id="saleProduct">
+            <span class="sprite spriteMoreRight"></span>
+            판매상품 3개</a>
         </li>
 
         <li class="profileDoit__item">
-          <a href="/" class="profileDoit__link" id="getMannerValue">받은 매너 평가</a>
+          <a href="/" class="profileDoit__link" id="getMannerValue">
+            <span class="sprite spriteMoreRight"></span>
+            받은 매너 평가</a>
 
           <a href="/" class="profileDoit__link" id="goMannerValuePage">
             <ol class="mannerValueList">
               <li class="mannerValueItem">
-                <p class="mannerValue">10
+                <p class="mannerValue">
+                  <span class="sprite spriteTwoPeople"></span>
+                  10
                   <span class="messageShape">시간약속을 잘 지켜요</span>
                 </p>
               </li>
               <li class="mannerValueItem">
-                <p class="mannerValue">9
+                <p class="mannerValue">
+                  <span class="sprite spriteTwoPeople"></span>
+                  9
                   <span class="messageShape">친절하고 매너가 좋아요</span>
                 </p>
               </li>
               <li class="mannerValueItem">
-                <p class="mannerValue">8
+                <p class="mannerValue">
+                  <span class="sprite spriteTwoPeople"></span>
+                  8
                   <span class="messageShape">제가 있는 곳까지 와서 거래했어요</span>
                 </p>
               </li>
@@ -112,12 +139,20 @@
         </li>
 
         <li class="profileDoit__item">
-          <a href="/" class="profileDoit__link" id="getDealReview">받은 거래 후기 1</a>
+          <a href="/" class="profileDoit__link" id="getDealReview">
+            <span class="sprite spriteMoreRight"></span>
+            받은 거래 후기 1</a>
 
           <a href="/" class="profileDoit__link" id="goDealReviewPage">
             <dl class="dealReview">
-              <dt class="dealReview__writer">여우<br />
-                <span class="buyer">구매자 &#183; 부산광역시 해운대구 &#183; 4개월전</span></dt>
+
+              <!-- 스프라이트 이미지 클래스 추가 -->
+              <dt class="dealReview__writer">
+                <img class="dealReview__img" src="/" alt="작성자 이미지" />
+                여우<br />
+                <span class="buyer">구매자 &#183; 부산광역시 해운대구 &#183; 4개월전</span>
+                <span class="sprite spriteMore"></span>
+              </dt>
               <dd class="dealReview__review">너무 감사합니다&#33;</dd>
             </dl>
           </a>
