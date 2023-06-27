@@ -248,7 +248,7 @@
   }
 
   &Explanation {
-    @include whbp($size: rem(14px), $bpX: rem(-60px), $bpY: rem(-240px));
+    @include whbp($size: rem(15px), $bpX: rem(-60px), $bpY: rem(-240px));
   }
 
   &Person {
