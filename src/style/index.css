@@ -430,6 +430,7 @@ iframe {
   margin-right: auto;
   margin-left: auto;
   margin-right: auto;
+  padding: 0.75rem;
 }
 
 .boardNav,
@@ -535,6 +536,7 @@ iframe {
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 150%;
+  text-align: center;
 }
 
 .cabbageMarket {
@@ -542,12 +544,14 @@ iframe {
   height: 100vh;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  gap: 0.25rem;
 }
 .cabbageMarket__img {
   height: auto;
   max-width: 18.75rem;
+  margin-top: 9.375rem;
 }
 .cabbageMarket__title {
   text-align: center;
@@ -559,6 +563,35 @@ iframe {
 .cabbageMarket__brief {
   text-align: center;
   font-size: 1.125rem;
+}
+
+.startButton {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0;
+  border: none;
+  background-color: #008F22;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 12.5rem;
+}
+
+.asign {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  gap: 0.5rem;
+}
+.asign__login {
+  color: #008F22;
 }
 
 /*# sourceMappingURL=index.css.map */
