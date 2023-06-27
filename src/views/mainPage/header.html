@@ -31,8 +31,8 @@
       </ul>
     </div>
     <ul class="statusBar">
-      <li class="selectLocation sprite spriteDown">
-        <select name="지역">
+      <li class="selectLocation">
+        <label for="headerSelect">거래지역 ▼</label><select id="headerSelect">
           <option value="mainLocation" selected> 태백시 철암동
           <option value="subLocation"> 왕산면 대기리
         </select>
@@ -43,7 +43,7 @@
       <li class="locationHeader__menu">
         <a class="sprite spriteMenu" href="/"><span class="a11yHidden">메뉴</span></a>
       </li>
-      <li class="locationHeader__alarm spriteAlarm">
+      <li class="llocationHeader__menuspriteAlarm">
         <a class="sprite" href="/"><span class="a11yHidden">키워드 알람</span></a>
       </li>
     </ul>
@@ -70,7 +70,7 @@
       </ul>
     </div>
     <ul class="statusBar">
-      <li class="statusBar__item">
+      <li class="statusBar__item profileHeader__item">
         <p class="profileHeader__description">프로필 수정</p>
       </li>
       <li class="statusBar__item">
@@ -101,7 +101,7 @@
     </div>
     <ul class="statusBar">
       <li class="statusBar__item">
-        <a href="/" class="statusBar__link backHeader__link a11yHidden sprite spriteBack">뒤로가기</a>
+        <a href="/" class="statusBar__link backHeader__link sprite spriteBack"><span class="a11yHidden">뒤로가기</span></a>
       </li>
     </ul>
   </header>
@@ -127,11 +127,11 @@
       </ul>
     </div>
     <ul class="statusBar">
-      <li class="statusBar__item">
-        <a href="/" class="statusBar__link backHeader__back a11yHidden sprite spriteBack">뒤로가기</a>
+      <li class="statusBar__item backHeader__back">
+        <a href="/" class="statusBar__link sprite spriteBack"><span class="a11yHidden">뒤로가기</span></a>
       </li>
-      <li class="statusBar__item">
-        <p class="backHeader__title">같이해요</p>
+      <li class="statusBar__item backHeader__title">
+        <p>같이해요</p>
       </li>
     </ul>
   </header>
@@ -159,11 +159,11 @@
     </div>
 
     <ul class="statusBar">
-      <li class="statusBar__item">
-        <a href="/" class="statusBar__link backHeader__back sprite spriteBack"><span class="a11yHidden">뒤로가기</span></a>
+      <li class="statusBar__item backHeader__backicon">
+        <a href="/" class="statusBar__link  sprite spriteBack"><span class="a11yHidden">뒤로가기</span></a>
       </li>
-      <li class="statusBar__item">
-        <a href="/" class="statusBar__link backHeader__share sprite spriteShare"><span class="a11yHidden">공유</span></a>
+      <li class="statusBar__item backHeader__share">
+        <a href="/" class="statusBar__link  sprite spriteShare"><span class="a11yHidden">공유</span></a>
       </li>
       <li class="statusBar__item">
         <a href="/" class="statusBar__link backHeader__more sprite spriteMore"><span class="a11yHidden">더보기</span></a>
@@ -194,10 +194,10 @@
 
     <ul class="statusBar">
       <li class="statusBar__item">
-        <a href="/" class="statusBar__link backHeader__back sprite spriteBack"><span class="a11yHidden">뒤로가기</span></a>
+        <a href="/" class="statusBar__link backHeader__backicon sprite spriteBack"><span class="a11yHidden">뒤로가기</span></a>
       </li>
-      <li class="statusBar__item">
-        <a href="/" class="statusBar__link backHeader__home sprite spritHome"><span class="a11yHidden">홈</span></a>
+      <li class="statusBar__item backHeader__home">
+        <a href="/" class="statusBar__link  sprite spriteHome"><span class="a11yHidden">홈</span></a>
       </li>
       <li class="statusBar__item">
         <a href="/" class="statusBar__link backHeader__share sprite spriteShare"><span class="a11yHidden">공유</span></a>
@@ -233,7 +233,7 @@
       <li class="statusBar__item">
         <a href="/" class="statusBar__link qnaHeader__exit sprite spriteExit"><span class="a11yHidden">취소</span></a>
       </li>
-      <li class="statusBar__item">
+      <li class="statusBar__item qnaHeader__textItem">
         <p class="qnaHeader__text">Q&A 글쓰기</p>
       </li>
       <li class="statusBar__item">
@@ -263,8 +263,8 @@
       </ul>
     </div>
     <ul class="statusBar">
-      <li class="statusBar__item">
-        <p class="qnaHeader__qChat">질문채팅</p>
+      <li class="statusBar__item qnaHeader__qChat">
+        <p>질문채팅</p>
       </li>
       <li class="statusBar__item">
         <a href="/" class="statusBar__link qnaHeader__qr sprite spriteQr"><span class="a11yHidden">Q.R. 스캔</span></a>
@@ -299,39 +299,53 @@
       <li class="statusBar__item">
         <a href="/" class="statusBar__link qnaHeader__Call sprite spriteBack"><span class="a11yHidden">뒤로가기</span></a>
       </li>
-      <li class="statusBar__item">
-        <p class="qnaHeader__chatText">카페인조아<span class="qnaHeader__chatText__span">보통 3일 내 응답</span></p>
+      <li class="statusBar__item statusBar__qchat">
+        <p class="qnaHeader__chatText">카페인조아</p>
+        <span class="qnaHeader__chatText__span">보통 3일 내 응답</span>
       </li>
       <li class="statusBar__item">
         <a href="/" class="statusBar__link qnaHeader__Call sprite spriteCall"><span class="a11yHidden">통화하기</span></a>
       </li>
       <li class="statusBar__item">
-        <a href="/" class="statusBar__link qnaHeader__more sprite spriteMore">더보기</a>
+        <a href="/" class="statusBar__link qnaHeader__more sprite spriteMore"><span class="a11yHidden">더보기</span></a>
       </li>
     </ul>
   </header>
-
-  <nav class="appNav">
-    <h2 class="a11yHidden">메뉴</h2>
+  <nav class="commonNav">
+    <h2 class="a11yHidden">전체 메뉴</h2>
     <ul class="commonNav__list">
       <li class="commonNav__item">
-        <a href="" class="commonNav__link sprite spriteHome">홈</a>
+        <a href="" class="commonNav__link">
+          <span class="sprite spriteFillHome"></span>
+          <span>홈</span>
+        </a>
       </li>
       <li class="commonNav__item">
-        <a href="" class="commonNav__link sprite spriteNavBoard">게시판</a>
+        <a href="" class="commonNav__link">
+          <span class="sprite spriteBoard"></span>
+          <span>게시판</span>
+        </a>
       </li>
       <li class="commonNav__item">
-        <a href="" class="commonNav__link sprite spriteMap">내 근처</a>
+        <a href="" class="commonNav__link">
+          <span class="sprite spritePlace"></span>
+          <span>내 근처</span>
+        </a>
       </li>
       <li class="commonNav__item">
-        <a href="" class="commonNav__link sprite spriteChat">채팅</a>
+        <a href="" class="commonNav__link">
+          <span class="sprite spriteChat"></span>
+          <span>채팅</span>
+        </a>
       </li>
       <li class="commonNav__item">
-        <a href="" class="commonNav__link sprite spriteMyPage">내 정보</a>
+        <a href="" class="commonNav__link">
+          <span class="sprite spriteMyPage"></span>
+          <span>내 정보</span>
+        </a>
       </li>
     </ul>
   </nav>
-
 
 </body>
 

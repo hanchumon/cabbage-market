@@ -1,1 +1,41 @@
-// navigation.scss
+@use "../utils/" as *;
+@use "../themes/" as *;
+
+.sizingWrapper {
+  position: relative;
+}
+
+.commonNav {
+  &__list {
+    width: calc(100% - 24px);
+    max-width: rem(599px);
+    @include flexbox($justify: space-between);
+    font-weight: 400;
+    font-size: rem(11px);
+    position: fixed;
+    bottom: 0;
+    padding: 8px 12px 24px 12px;
+    background: $white;
+  }
+
+  &__link {
+    @include flexbox($direction:column, $items:center);
+    text-align: center;
+  }
+}
+
+.mainNav__list {
+  width: 100%;
+
+  color: rgba($white, 0.5);
+  @include flexbox($justify: space-between);
+  font-weight: 400;
+  @include paddingY(12px);
+  @include paddingX(8px);
+  gap: 8px;
+}
+
+.accentColor {
+  font-weight: 700;
+  color: rgba($white, 1);
+}

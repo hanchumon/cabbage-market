@@ -1,1 +1,151 @@
-// header.scss
+@use "../utils/" as *;
+@use "../themes/" as *;
+
+//기본정보
+.timeInfo {
+  @include paddingX(16px);
+  @include flexbox($justify: space-between, $items: center);
+  &__date{
+    font-size: 14px;
+  }
+}
+
+.celluarInfo {
+  @include flexbox($items: flex-start);
+  font-family: inherit;
+  border: 0;
+  :nth-child(2){
+    margin-left: -4px;
+    margin-right: 4px;
+  }
+}
+
+
+
+//헤더 공통디자인
+.statusBar {
+  // background: pink;
+  @include flexbox($items:center);
+  column-gap: $spacing-2;
+  width: 100%;
+  height: rem(40px);  
+  @include marginX(16px);
+}
+
+//location 헤더 디자인
+.locationHeader__search, .locationHeader__menu, .locationHeader__menu{
+  flex-shrink: 0;
+}
+
+.selectLocation{
+  flex-grow: 1;
+  position: relative;
+  z-index: 1;
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 0;
+    height: 0;
+    margin-top: -1px;
+    margin-left: 30px;
+    border-left: 5px transparent;
+    border-right: 5px transparent;
+    border-bottom: 5px $gray-600;
+  }
+  label{
+    position: absolute;
+    width: 100%; 
+    top: rem(3px);  /* 위치정렬 */ 
+    @include paddingY(8px);
+    color: $tertiary;  
+    z-index: -1;  /* IE8에서 label이 위치한 곳이 클릭되지 않는 것 해결 */
+    font-size: $text-md;
+    font-weight: 700;
+  }
+  select{
+    width: 100%; 
+    height: auto;  /* 높이 초기화 */
+    line-height: normal;  /* line-height 초기화 */
+    font-family: inherit;  /* 폰트 상속 */
+    @include paddingX(13px);
+    @include paddingY(8px);
+    border: 0;
+    opacity: 0;  /* 숨기기 */
+    filter:alpha(opacity=0);  /* IE8 숨기기 */
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
+
+//profile 헤더 디자인
+.profileHeader{
+  &__item{
+    flex-grow: 1;
+  }
+  
+  &__description{
+    font-size: $text-sm;
+    font-weight: 700;
+  }
+}
+
+//뒤로가기 관련
+.backHeader{
+  &__title{
+    text-align: center;
+    font-size: $text-sm;
+    font-weight: 700;
+    flex-grow: 1;
+    margin-left: -5%;
+  }
+
+  &__backicon{
+    flex-grow: 1;
+  }
+  &__home{
+    flex-grow: 1;
+  }
+}
+
+//qna 헤더 디자인
+.qnaHeader{
+  &__textItem{
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 700;
+    font-size: $text-sm;
+  }
+
+  &__done{
+    color: $gray-600;
+    font-size: $text-sm;
+  }
+}
+
+.qnaHeader__qChat{
+  font-size: $text-md;
+  font-weight: 700;
+  flex-grow: 1;
+}
+
+.statusBar__qchat{
+  @include flexbox(column);
+  flex-grow: 1
+  ;
+}
+
+.qnaHeader__chatText{
+  font-size: $text-sm;
+  text-align: center;
+  &__span{
+    color: $gray-400;
+    font-weight: 400;
+    font-size: $text-sm;
+    text-align: center;
+  }
+
+}
