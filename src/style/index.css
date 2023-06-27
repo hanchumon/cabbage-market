@@ -347,7 +347,7 @@ legend {
 
 .sprite {
   content: "";
-  background-image: url(./../../images/icon_1x.png);
+  background-image: url(/images/icon_1x.png);
   background-repeat: no-repeat;
   float: left;
 }
@@ -864,7 +864,6 @@ iframe {
 }
 
 .sizingWrapper {
-  margin: 5px;
   width: 100%;
   height: 100%;
 }
@@ -1095,426 +1094,484 @@ iframe {
   height: 20px;
 }
 
-@media (min-width: 320px) and (max-width: 599px) {
-  .qnaChat__list {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-  }
-  .qnaChat__item {
-    border: solid 0.03rem #919191;
-    height: 4.25rem;
-    padding: 0.8rem 1.15rem 1rem 1.15rem;
-  }
-  .qnaChat__link {
-    align-items: center;
-    display: flex;
-    margin-right: 6rem;
-  }
-  .qnaChatProfile__img {
-    width: 2.3rem;
-    height: 2.3rem;
-    background-color: #919191;
-    border-radius: 5rem;
-    margin-right: 1rem;
-  }
-  .qnaChat__profile {
-    flex-shrink: 0;
-    width: 100%;
-  }
-  .qnaChat__name {
-    font-size: 0.875rem;
-    font-family: Pretendard;
-    font-weight: 600;
-    line-height: 150%;
-  }
-  .qnaChat__info {
-    font-size: 0.65rem;
-    font-family: Pretendard;
-    line-height: 160%;
-  }
-  .qnaChat__message {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 0.875rem;
-    font-family: Pretendard;
-    line-height: 160%;
-  }
-  .qnaChat__img {
-    width: 2.25rem;
-    height: 2.25rem;
-  }
+.qnaChat__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
 }
-@media (min-width: 320px) and (max-width: 599px) {
-  .sizingWrapper {
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .qnaBoardTopBox {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem;
-    margin-left: 0.2rem;
-  }
-  .qnaBoard__topic {
-    padding: 0.125rem 0.8rem;
-    border-radius: 4px;
-    background: #C4C7D2;
-    color: white;
-    font-size: 0.65rem;
-    font-family: Pretendard;
-    font-weight: 600;
-    line-height: 150%;
-  }
-  .qnaBoardProfileBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .qnaBoardProfile__group {
-    margin-left: 0.3rem;
-  }
-  .qnaBoardProfile__img {
-    border-radius: 50px;
-    background: #919191;
-  }
-  .qnaBoardProfile__name {
-    font-size: 0.65rem;
-    font-family: Pretendard;
-  }
-  .qnaBoardProfile__detail {
-    color: #9DA1B4;
-    font-size: 0.65644rem;
-    font-family: Pretendard;
-    line-height: 160%;
-  }
-  .qnaBoardPost__title {
-    font-size: 1.16rem;
-    font-family: Pretendard;
-    font-weight: 600;
-    line-height: 150%;
-    width: 17rem;
-  }
-  .qBlue {
-    color: #5A85EE;
-  }
-  .qnaBoardPost__detail {
-    font-size: 0.875rem;
-    font-family: Pretendard;
-    line-height: 160%;
-    margin-top: 0.3rem;
-  }
-  .qnaBoardPost__img {
-    margin-top: 0.75rem;
-    width: 18rem;
-    height: 22rem;
-    border-radius: 8px;
-    background: #919191;
-  }
-  .qnaBoardCommentForm {
-    width: 100%;
-    height: 100;
-  }
-  .qnaBoardBar__list {
-    display: flex;
-    width: 20rem;
-    padding: 0.5rem 0.75rem 2rem 0.75rem;
-    justify-content: flex-end;
-  }
-  .qnaBoardBar__input {
-    margin-right: 0.3rem;
-  }
-  .commentInput__bar {
-    padding: 0.5rem 0.75rem;
-    border-radius: 20px;
-    background: #EBECF0;
-    font-size: 0.875rem;
-    font-family: Pretendard;
-    line-height: 160%;
-    color: #9DA1B4;
-    border: 0;
-    margin-right: 0.7rem;
-    width: 14rem;
-  }
-  .qnaBoardBottomBox {
-    display: flex;
-    padding: 0.625rem 0rem;
-    justify-content: center;
-    width: 18.5rem;
-  }
-  .qnaBoardAdv__box {
-    display: flex;
-    padding: 0.75rem 1.125rem 0.75rem 0.125rem;
-    border-radius: 8px;
-    background: #5C9F27;
-  }
-  .qnaBoardAdv__link {
-    display: inline-flex;
-    padding: 0rem 0.625rem;
-    flex-direction: column;
-    margin-right: 1rem;
-  }
-  .qnaBoardAdvText__main {
-    color: #FFF;
-    font-size: 0.65rem;
-    font-family: Pretendard;
-    font-weight: 600;
-    line-height: 150%;
-    margin-left: 0.7rem;
-  }
-  .qnaBoardAdvText__sub {
-    color: #9DA1B4;
-    font-size: 0.65rem;
-    font-family: Pretendard;
-    line-height: 200%;
-  }
-  .medalBox {
-    padding: 0rem 0.625rem;
-    border-radius: 10px;
-    background: #FFF;
-  }
-  .medalImage {
-    width: 2rem;
-    height: 2rem;
-    margin-top: 0.6rem;
-  }
-  .qnaBoardEmpty {
-    display: flex;
-    flex-direction: column;
-    padding: 3.75rem 0rem 8.75rem 0rem;
-    justify-content: center;
-    text-align: center;
-    width: 20rem;
-  }
-  .qnaBoardEmpty__text {
-    color: #9DA1B4;
-    font-size: 0.875rem;
-    font-family: Pretendard;
-    line-height: 160%;
-  }
-  .sprite {
-    background: url(/images/cabbageMarket_icon.png) no-repeat;
-  }
-  .spriteFlag {
-    background: url(/images/cabbageMarket_icon.png) no-repeat;
-    background-position: -60px -260px;
-    width: 14px;
-    height: 14px;
-    white-space: nowrap;
-  }
-  .spritePicture {
-    background: url(/images/cabbageMarket_icon.png) no-repeat;
-    background-position: 0px -100px;
-    width: 20px;
-    height: 20px;
-    margin-top: 0.5rem;
-  }
-  .spritePlace {
-    background: url(/images/cabbageMarket_icon.png) no-repeat;
-    background-position: -60px 0px;
-    width: 20px;
-    height: 20px;
-    margin-top: 0.5rem;
-    margin-right: 0.8rem;
-    margin-left: 0.9rem;
-  }
-  .spriteEmoticon {
-    background: url(/images/cabbageMarket_icon.png) no-repeat;
-    background-position: -80px -80px;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    left: 17rem;
-    top: 33.9rem;
-  }
+
+.qnaChat__item {
+  border: solid 0.03rem #919191;
+  height: 4.25rem;
+  padding: 0.8rem 1.15rem 1rem 1.15rem;
 }
-@media (min-width: 320px) and (max-width: 599px) {
-  .qnaProfile {
-    width: auto;
-    height: auto;
-    padding: 0.75rem 1.125rem;
-    border-bottom: 0.5rem solid #BDBDBD;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .qnaProfile__mini {
-    margin-left: -1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .qnaProfile__img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .qnaState {
-    font-family: Pretendard;
-    font-weight: 600;
-    margin-left: 1rem;
-  }
-  .spriteAttend {
-    padding: 0.4rem 0.75rem;
-    border-radius: 8px;
-    background: #9DA1B4;
-    color: #FFF;
-    font-size: 0.65rem;
-    font-family: Pretendard;
-    font-weight: 600;
-    margin-left: 8rem;
-  }
-  .qnaPost__list {
-    display: flex;
-    flex-direction: column;
-    font-family: Pretendard;
-    width: auto;
-  }
-  .qnaPost__item {
-    padding: 0.75rem 5.0625rem 0.75rem 0.75rem;
-  }
-  .qnaPost__link {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-    align-items: flex-start;
-  }
-  .qnaPost__topic {
-    padding: 0rem 0.75rem;
-    border-radius: 4px;
-    background: #C4C7D2;
-    color: #FFF;
-    font-size: 0.6rem;
-    font-weight: 600;
-  }
-  .qnaPost__title {
-    font-size: 0.8rem;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 14rem;
-  }
-  .qnaPost__content {
-    color: #B1B4C3;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 0.65rem;
-    font-family: Pretendard;
-    line-height: 160%;
-  }
-  .qnaPost__info {
-    color: #9DA1B4;
-    font-size: 0.65rem;
-    font-family: Pretendard;
-  }
-  .qnaPost__img {
-    width: rem(62px);
-    height: rem(62px);
-    border-radius: 10px;
-  }
-  .spriteRecommend {
-    color: #9DA1B4;
-    font-size: 0.6rem;
-    font-family: Pretendard;
-    line-height: 160%;
-  }
+
+.qnaChat__link {
+  align-items: center;
+  display: flex;
+  margin-right: 6rem;
 }
-@media (min-width: 320px) and (max-width: 599px) {
-  .spriteMoveRight {
-    background: url(/images/cabbagemarket_icon.png);
-    width: 18px;
-    height: 18px;
-    background-position: -20px -60px;
-  }
-  .qnaTopBox {
-    display: flex;
-    flex-direction: row;
-    padding: 0.75rem 0rem;
-    align-items: flex-start;
-    border-bottom: 0.3px solid #919191;
-  }
-  .qnaTopBox__topic {
-    font-size: 0.875rem;
-    font-family: Pretendard;
-    font-weight: 600;
-    margin-left: 0.5rem;
-  }
-  .qnaNoticeBox {
-    padding: 0.5rem 0rem;
-  }
-  .blueNoticeBox {
-    padding: 0.75rem 3.5rem 0.75rem 1rem;
-    border-radius: 10px;
-    background: #8DB0F9;
-    color: #FFF;
-    font-size: 0.65644rem;
-    font-family: Pretendard;
-  }
-  .qnaNotice__highlight {
-    font-weight: 600;
-    line-height: 150%;
-    margin-right: 0.3rem;
-    white-space: nowrap;
-  }
-  .qnaNotice__message {
-    width: 15rem;
-  }
-  .qnaNotice__detail {
-    font-weight: 600;
-    line-height: 150%;
-    margin-right: 0.3rem;
-    text-decoration: underline;
-  }
-  .writeQnaTitle__group {
-    display: flex;
-    height: 2.5rem;
-    padding: 0.375rem 0rem;
-    justify-content: center;
-  }
-  .writeQna__title {
-    width: 16.5rem;
-    height: 1.375rem;
-    color: #9DA1B4;
-    font-size: 1.16rem;
-    font-family: Pretendard;
-    font-weight: 600;
-    border: 0;
-  }
-  .writeQnaContent__group {
-    display: flex;
-    height: 2.5rem;
-    padding: 0.75rem 0rem 6.5rem 0rem;
-    justify-content: center;
-    align-items: center;
-  }
-  .writeQna__content {
-    color: #919191;
-    font-size: 0.875rem;
-    font-family: Pretendard;
-    line-height: 160%;
-    border: 0;
-    width: 19rem;
-    margin-top: 2rem;
-    resize: none;
-  }
-  .qnaBottomBar__list {
-    display: flex;
-    flex-direction: row;
-    padding: 0.75rem;
-    justify-content: center;
-    align-items: center;
-    gap: 11.5rem;
-  }
-  .qnaKeyboard__img {
-    width: 100%;
-    height: 15rem;
-  }
+
+.qnaChatProfile__img {
+  width: 2.3rem;
+  height: 2.3rem;
+  background-color: #919191;
+  border-radius: 5rem;
+  margin-right: 1rem;
+}
+
+.qnaChat__profile {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.qnaChat__name {
+  font-size: 0.875rem;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.qnaChat__info {
+  font-size: 0.65rem;
+  font-family: Pretendard;
+  line-height: 160%;
+}
+
+.qnaChat__message {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  font-family: Pretendard;
+  line-height: 160%;
+}
+
+.qnaChat__img {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.sizingWrapper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.qnaBoardTopBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-left: 0.2rem;
+}
+
+.qnaBoard__topic {
+  padding: 0.125rem 0.8rem;
+  border-radius: 4px;
+  background: #C4C7D2;
+  color: white;
+  font-size: 0.65rem;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.qnaBoardProfileBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qnaBoardProfile__group {
+  margin-left: 0.3rem;
+}
+
+.qnaBoardProfile__img {
+  border-radius: 50px;
+  background: #919191;
+}
+
+.qnaBoardProfile__name {
+  font-size: 0.65rem;
+  font-family: Pretendard;
+}
+
+.qnaBoardProfile__detail {
+  color: #9DA1B4;
+  font-size: 0.65644rem;
+  font-family: Pretendard;
+  line-height: 160%;
+}
+
+.qnaBoardPost__title {
+  font-size: 1.16rem;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 150%;
+  width: 17rem;
+}
+
+.qBlue {
+  color: #5A85EE;
+}
+
+.qnaBoardPost__detail {
+  font-size: 0.875rem;
+  font-family: Pretendard;
+  line-height: 160%;
+  margin-top: 0.3rem;
+}
+
+.qnaBoardPost__img {
+  margin-top: 0.75rem;
+  width: 18rem;
+  height: 22rem;
+  border-radius: 8px;
+  background: #919191;
+}
+
+.qnaBoardCommentForm {
+  width: 100%;
+  height: 100;
+}
+
+.qnaBoardBar__list {
+  display: flex;
+  width: 20rem;
+  padding: 0.5rem 0.75rem 2rem 0.75rem;
+  justify-content: flex-end;
+}
+
+.qnaBoardBar__input {
+  margin-right: 0.3rem;
+}
+
+.commentInput__bar {
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  background: #EBECF0;
+  font-size: 0.875rem;
+  font-family: Pretendard;
+  line-height: 160%;
+  color: #9DA1B4;
+  border: 0;
+  margin-right: 0.7rem;
+  width: 14rem;
+}
+
+.qnaBoardBottomBox {
+  display: flex;
+  padding: 0.625rem 0rem;
+  justify-content: center;
+  width: 18.5rem;
+}
+
+.qnaBoardAdv__box {
+  display: flex;
+  padding: 0.75rem 1.125rem 0.75rem 0.125rem;
+  border-radius: 8px;
+  background: #5C9F27;
+}
+
+.qnaBoardAdv__link {
+  display: inline-flex;
+  padding: 0rem 0.625rem;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.qnaBoardAdvText__main {
+  color: #FFF;
+  font-size: 0.65rem;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 150%;
+  margin-left: 0.7rem;
+}
+
+.qnaBoardAdvText__sub {
+  color: #9DA1B4;
+  font-size: 0.65rem;
+  font-family: Pretendard;
+  line-height: 200%;
+}
+
+.medalBox {
+  padding: 0rem 0.625rem;
+  border-radius: 10px;
+  background: #FFF;
+}
+
+.medalImage {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.6rem;
+}
+
+.qnaBoardEmpty {
+  display: flex;
+  flex-direction: column;
+  padding: 3.75rem 0rem 8.75rem 0rem;
+  justify-content: center;
+  text-align: center;
+  width: 20rem;
+}
+
+.qnaBoardEmpty__text {
+  color: #9DA1B4;
+  font-size: 0.875rem;
+  font-family: Pretendard;
+  line-height: 160%;
+}
+
+.sprite {
+  background: url(/images/cabbageMarket_icon.png) no-repeat;
+}
+
+.spriteFlag {
+  background: url(/images/cabbageMarket_icon.png) no-repeat;
+  background-position: -60px -260px;
+  width: 14px;
+  height: 14px;
+  white-space: nowrap;
+}
+
+.spritePicture {
+  background: url(/images/cabbageMarket_icon.png) no-repeat;
+  background-position: 0px -100px;
+  width: 20px;
+  height: 20px;
+  margin-top: 0.5rem;
+}
+
+.spritePlace {
+  background: url(/images/cabbageMarket_icon.png) no-repeat;
+  background-position: -60px 0px;
+  width: 20px;
+  height: 20px;
+  margin-top: 0.5rem;
+  margin-right: 0.8rem;
+  margin-left: 0.9rem;
+}
+
+.spriteEmoticon {
+  background: url(/images/cabbageMarket_icon.png) no-repeat;
+  background-position: -80px -80px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 17rem;
+  top: 33.9rem;
+}
+
+.qnaProfile {
+  width: auto;
+  height: auto;
+  padding: 0.75rem 1.125rem;
+  border-bottom: 0.5rem solid #BDBDBD;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.qnaProfile__mini {
+  margin-left: -1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qnaProfile__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qnaState {
+  font-family: Pretendard;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.spriteAttend {
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  background: #9DA1B4;
+  color: #FFF;
+  font-size: 0.65rem;
+  font-family: Pretendard;
+  font-weight: 600;
+  margin-left: 8rem;
+}
+
+.qnaPost__list {
+  display: flex;
+  flex-direction: column;
+  font-family: Pretendard;
+  width: auto;
+}
+
+.qnaPost__item {
+  padding: 0.75rem 5.0625rem 0.75rem 0.75rem;
+}
+
+.qnaPost__link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  align-items: flex-start;
+}
+
+.qnaPost__topic {
+  padding: 0rem 0.75rem;
+  border-radius: 4px;
+  background: #C4C7D2;
+  color: #FFF;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.qnaPost__title {
+  font-size: 0.8rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 14rem;
+}
+
+.qnaPost__content {
+  color: #B1B4C3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0.65rem;
+  font-family: Pretendard;
+  line-height: 160%;
+}
+
+.qnaPost__info {
+  color: #9DA1B4;
+  font-size: 0.65rem;
+  font-family: Pretendard;
+}
+
+.qnaPost__img {
+  width: rem(62px);
+  height: rem(62px);
+  border-radius: 10px;
+}
+
+.spriteRecommend {
+  color: #9DA1B4;
+  font-size: 0.6rem;
+  font-family: Pretendard;
+  line-height: 160%;
+}
+
+.spriteMoveRight {
+  background: url(/images/cabbagemarket_icon.png);
+  width: 18px;
+  height: 18px;
+  background-position: -20px -60px;
+}
+
+.qnaTopBox {
+  display: flex;
+  flex-direction: row;
+  padding: 0.75rem 0rem;
+  align-items: flex-start;
+  border-bottom: 0.3px solid #919191;
+}
+
+.qnaTopBox__topic {
+  font-size: 0.875rem;
+  font-family: Pretendard;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.qnaNoticeBox {
+  padding: 0.5rem 0rem;
+}
+
+.blueNoticeBox {
+  padding: 0.75rem 3.5rem 0.75rem 1rem;
+  border-radius: 10px;
+  background: #8DB0F9;
+  color: #FFF;
+  font-size: 0.65644rem;
+  font-family: Pretendard;
+}
+
+.qnaNotice__highlight {
+  font-weight: 600;
+  line-height: 150%;
+  margin-right: 0.3rem;
+  white-space: nowrap;
+}
+
+.qnaNotice__message {
+  width: 15rem;
+}
+
+.qnaNotice__detail {
+  font-weight: 600;
+  line-height: 150%;
+  margin-right: 0.3rem;
+  text-decoration: underline;
+}
+
+.writeQnaTitle__group {
+  display: flex;
+  height: 2.5rem;
+  padding: 0.375rem 0rem;
+  justify-content: center;
+}
+
+.writeQna__title {
+  width: 16.5rem;
+  height: 1.375rem;
+  color: #9DA1B4;
+  font-size: 1.16rem;
+  font-family: Pretendard;
+  font-weight: 600;
+  border: 0;
+}
+
+.writeQnaContent__group {
+  display: flex;
+  height: 2.5rem;
+  padding: 0.75rem 0rem 6.5rem 0rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.writeQna__content {
+  color: #919191;
+  font-size: 0.875rem;
+  font-family: Pretendard;
+  line-height: 160%;
+  border: 0;
+  width: 19rem;
+  margin-top: 2rem;
+  resize: none;
+}
+
+.qnaBottomBar__list {
+  display: flex;
+  flex-direction: row;
+  padding: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 11.5rem;
+}
+
+.qnaKeyboard__img {
+  width: 100%;
+  height: 15rem;
 }
 
 /*# sourceMappingURL=index.css.map */
