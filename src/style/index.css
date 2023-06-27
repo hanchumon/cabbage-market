@@ -346,72 +346,163 @@ legend {
 }
 
 .sprite {
-  content: "";
-  min-width: 1.25rem;
-  min-height: 1.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
   background-image: url(/images/icon_sprite_1x.png);
   background-repeat: no-repeat;
   padding-left: 1.25rem;
 }
+
 .spriteHome {
   background-position: 0 0;
 }
+
 .spriteBoard {
   background-position: -20px 0;
 }
+
 .spriteChat {
   background-position: -40px 0;
 }
-.spriteMap {
+
+.spritePlace {
   background-position: -60px 0;
 }
+
 .spriteMyPage {
   background-position: -80px 0;
 }
+
 .spritePpl {
   background-position: -100px 0;
 }
-.spriteN {
-  background-position: -120px 0;
-}
-.spriteCall {
-  background-position: -140px 0;
-}
+
 .spriteFillHome {
   background-position: 0 -20px;
 }
+
 .spriteFillBoard {
   background-position: -20px -20px;
 }
+
 .spriteFillChat {
   background-position: -40px -20px;
 }
+
 .spriteFillMap {
   background-position: -60px -20px;
 }
+
 .spriteFillMyPage {
   background-position: -80px -20px;
 }
-.spritePictureBlack {
-  background-position: -100px -20px;
-}
-.spriteMore {
+
+.spriteMenu {
   background-position: 0 -40px;
 }
+
 .spritePlus {
   background-position: -20px -40px;
 }
-.spriteMinus {
-  background-position: -40px -40px;
-}
-.spriteCheck {
-  background-position: -60px -40px;
-}
+
 .spriteExit {
   background-position: -80px -40px;
 }
+
 .spriteSelect {
   background-position: -100px -40px;
+}
+
+.spriteBack {
+  background-position: 0 -60px;
+}
+
+.spriteMoreRight {
+  background-position: -20px -60px;
+}
+
+.spriteAlarm {
+  background-position: -100px -60px;
+}
+
+.spriteSex {
+  background-position: -60px -80px;
+}
+
+.spriteSmile {
+  background-position: -80px -80px;
+}
+
+.spriteQr {
+  background-position: -100px -80px;
+}
+
+.spritePictureBlack {
+  background-position: 0 -100px;
+}
+
+.spriteKeyBoard {
+  background-position: -20px -100px;
+}
+
+.spriteShare {
+  background-position: -40px -100px;
+}
+
+.spriteTime {
+  background-position: -60px -100px;
+}
+
+.spriteSearch {
+  background-position: -80px -100px;
+}
+
+.spriteRecommand {
+  background-position: -80px -120px;
+}
+
+.spriteCall {
+  background-position: -100px -120px;
+}
+
+.spriteCal {
+  background-position: 0 -140px;
+}
+
+.spriteWon {
+  background-position: -40px -140px;
+}
+
+.spriteLock {
+  background-position: -60px -140px;
+}
+
+.spriteMark {
+  background-position: -120px -140px;
+}
+
+.spriteReceptionSensitivity {
+  background-position: 0 -160px;
+}
+
+.spriteLte {
+  background-position: -20px -160px;
+}
+
+.spriteBattery {
+  background-position: -40px -160px;
+}
+
+.spriteMore {
+  background-position: -60px -160px;
+}
+
+.spriteComment {
+  background-position: -80px -160px;
+}
+
+.spriteCheck {
+  background-position: -100px -160px;
 }
 
 body {
