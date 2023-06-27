@@ -333,8 +333,6 @@ a {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-=======
 /* Accessibility Styles */
 .a11yHidden,
 legend {
@@ -401,7 +399,6 @@ legend {
   background-position: -100px -40px;
 }
 
->>>>>>> 8a3d661d6c5badc4daad08efcb1d7b6c5bfaec00
 body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font: inherit;
@@ -424,7 +421,6 @@ iframe {
   height: 100%;
 }
 
-<<<<<<< HEAD
 .bigBox {
   margin: 10px;
   width: 300px;
@@ -491,7 +487,6 @@ img {
   width: 40px;
 }
 
-=======
 .sizingWrapper {
   max-width: 37.4375rem;
   margin-left: auto;
@@ -608,5 +603,4 @@ img {
   line-height: 150%;
 }
 
->>>>>>> 8a3d661d6c5badc4daad08efcb1d7b6c5bfaec00
 /*# sourceMappingURL=index.css.map */
