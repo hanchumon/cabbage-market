@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,35 +19,55 @@
 
   <!-- 보드 내비 -->
   <nav class="boardNav">
-    <h3 class="a11yHidden" >내비게이션</h3>
-    <form>
+    <h3 class="a11yHidden">내비게이션</h3>
+    
+    <ul class="boardNav__list">
+      <li class="boardNav__item"><a href="./togetherBoard.html" class="boardNav__link">주제</a></li>
+      <li class="boardNav__item"><a href="./togetherBoard.html" class="boardNav__link">인기글</a></li>
+      <li class="boardNav__item"><a href="./togetherBoard.html" class="boardNav__link">같이해요</a></li>
+      <li class="boardNav__item"><a href="./togetherBoard.html" class="boardNav__link">질의응답</a></li>
+      <li class="boardNav__item"><a href="./togetherBoard.html" class="boardNav__link">자유게시판</a></li>
+    </ul>
+    
+    
+    
+    
+    
+    <!-- <form>
       <input type="button" class="boardNav__topic" value="주제">
-      <input type="radio" id="popular" class="boardNav__input" name="topic" value="인기글">
-      <label for="popular" class="boardNav__label" >인기글</label>
-      <input type="radio" id="together" class="boardNav__input" name="topic" value="같이해요">
-      <label for="together" class="boardNav__label">같이해요</label>
-      <input type="radio" id="Q.N.A." class="boardNav__input" name="topic" value="질의응답">
-      <label for="Q.N.A." class="boardNav__label">질의응답</label>
-      <input type="radio" id="freeBoard" class="boardNav__input" name="topic" value="자유게시판">
-      <label for="freeBoard" class="boardNav__label">자유게시판</label>
-    </form>
+
+      <label for="popular" class="boardNav__label">
+        <input type="radio" id="popular" class="boardNav__input" name="topic" value="인기글">인기글</label>
+
+      <label for="together" class="boardNav__label">
+        <input type="radio" id="together" class="boardNav__input" name="topic" value="같이해요">같이해요</label>
+
+      <label for="Q.N.A." class="boardNav__label">
+        <input type="radio" id="Q.N.A." class="boardNav__input" name="topic" value="질의응답">질의응답</label>
+
+      <label for="freeBoard" class="boardNav__label">
+        <input type="radio" id="freeBoard" class="boardNav__input" name="topic" value="자유게시판">
+        자유게시판</label>
+    </form> -->
   </nav>
 
   <!-- 보드 메인 -->
   <main class="boardMain">
-    <h3 class="a11yHidden" >목록</h3>
+    <h3 class="a11yHidden">목록</h3>
     <ul class="boardMain__list">
+
       <!-- 1번 아이템  -->
       <li class="boardMain__item">
         <a class="boardMain__link" href="/">
           <span class="boardMain__item__kind"> 같이해요</span>
           <p class="boardMain__item__title">youtube 클론 프젝 같이 하실분~!</p>
-          <p class="boardMain__item__content">내용</p>
-          <p class="boardMain__item__who sprite sprite__who">참여가능여부</p>
-          <p class="boardMain__item__date sprite sprite__date">날짜</p>
-          <p class="boardMain__item__info">북가좌동 &#183;<time datetime="2023-06-24T11:39">9분 전</time></p>
-          <img src="/" class="boardMain__item__img" alt="이미지">
-          <p class="boardMain__item__NOP sprite sprite__NOP">인원</p>
+          <p class="boardMain__item__who">
+            <span class="sprite sprite__who"></span>누구나 참여가능
+          </p>
+          <p class="boardMain__item__date"><time datetime="2023-06-14T14:24:30">
+              <span class="sprite sprite__date"></span>내일, 오후 7:00</time></p>
+          <p class="boardMain__item__info">응암제 3동 &#183;<time datetime="2023-06-24T11:39">9분 전</time></p>
+          <p class="boardMain__item__NOP"><span class="sprite sprite__NOP"></span>1/3명</p>
         </a>
       </li>
 
@@ -64,8 +85,7 @@
         </a>
       </li>
 
-      <!-- 3번 아이템  -->
-      <li class="boardMain__item">
+      <!-- <li class="boardMain__item">
         <a class="boardMain__link" href="/">
           <span class="boardMain__item__kind"> 같이해요</span>
           <p class="boardMain__item__title">youtube 클론 프젝 같이 하실분~!</p>
@@ -76,7 +96,7 @@
           <img src="/" class="boardMain__item__img" alt="이미지">
           <p class="boardMain__item__NOP sprite sprite__NOP">인원</p>
         </a>
-      </li>
+      </li> -->
 
     </ul>
   </main>

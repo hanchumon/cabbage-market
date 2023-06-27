@@ -1,0 +1,8 @@
+@use "./../../components" as *;
+@use "./../../utils" as *;
+@use "./../../base" as *;
+@use "./../../themes" as *;
+
+.button_next{
+  @include mainButton($padding : rem(12px));
+}
