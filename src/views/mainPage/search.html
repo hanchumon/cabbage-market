@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>배추마켓 - 검색 페이지</title>
+  <link rel="stylesheet preload" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
+  <link rel="stylesheet" href="/style/index.css" />
+</head>
+
+<body>
+  <h1 class="a11yHidden">배추마켓</h1>
+
+  <div class="sizingWrpper">
+    <header class="mainHeader searchHeader">
+      <h2 class="a11yHidden">기본 정보</h2>
+      <div class="timeInfo">
+        <time class="timeInfo__date" datetime="2023-06-25T02:26">2:26</time>
+        <ul class="celluarInfo">
+          <li class="celluarInfo__item">
+            <span class="sprite spriteReceptionSensitivity"></span>
+            <p class="a11yHidden">수신감도</p>
+          </li>
+          <li class="celluarInfo__item">
+            <span class="sprite spriteLte"></span>
+            <p class="a11yHidden">데이터 종류</p>
+          </li>
+          <li class="celluarInfo__item">
+            <span class="sprite spriteBattery"></span>
+            <p class="a11yHidden">배터리 잔량</p>
+          </li>
+        </ul>
+      </div>
+      <form action="/">
+        <div class="searchHeader__wrapper">
+          <fieldset>
+            <legend>검색 폼</legend>
+            <label for="search">
+              <span class="sprite spriteBack searchHeaderBack"></span><span class="a11yHidden">검색</span>
+            </label>
+            <input type="search" id="search" class="searchHeaderInput" placeholder="장천동 근처에서 검색" />
+          </fieldset>
+        </div>
+      </form>
+    </header>
+    
+    <main>
+      <h2 class="a11yHidden">많이 찾는 검색어</h2>
+      <p class="searchKeyword">
+        친구들이 많이 찾고 있어요!
+      </p>
+      <ul class="searchKeyword__list">
+        <li class="searchKeyword__item">
+          <button type="button" class="searchKeyword__button">노트북</button>
+        </li>
+        <li class="searchKeyword__item">
+          <button type="button" class="searchKeyword__button">노트북 거치대</button>
+        </li>
+        <li class="searchKeyword__item">
+          <button type="button" class="searchKeyword__button">키보드</button>
+        </li>
+        <li class="searchKeyword__item">
+          <button type="button" class="searchKeyword__button">마우스</button>
+        </li>
+        <li class="searchKeyword__item">
+          <button type="button" class="searchKeyword__button">헤드셋</button>
+        </li>
+      </ul>
+      
+      <button type="submit" class="submitButton">완료</button>
+    </main>
+  </div>
+</body>
+
+</html>

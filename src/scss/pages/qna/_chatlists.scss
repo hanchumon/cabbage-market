@@ -1,0 +1,58 @@
+  .qnaChat__list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .qnaChat__item{
+    border: solid 0.03rem #919191;
+    height: 4.25rem;
+    padding: 0.8rem 1.15rem 1rem 1.15rem;
+  }
+  
+  .qnaChat__link{
+    align-items: center;
+    display: flex;
+    margin-right: 6rem;
+  }
+  
+  .qnaChatProfile__img{
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: #919191;
+    border-radius: 5rem;
+    margin-right: 1rem;
+  }
+  
+  .qnaChat__profile{
+    flex-shrink: 0;
+    width: 100%;
+  }
+  
+  .qnaChat__name{
+    font-size: 0.875rem;
+    font-family: Pretendard;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  
+  .qnaChat__info{
+    font-size: 0.65rem;
+    font-family: Pretendard;
+    line-height: 160%;
+  }
+  
+  .qnaChat__message{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.875rem;
+    font-family: Pretendard;
+    line-height: 160%;
+  }
+  
+  .qnaChat__img{
+    width: 2.25rem;
+    height: 2.25rem;
+  }

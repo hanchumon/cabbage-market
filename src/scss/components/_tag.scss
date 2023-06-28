@@ -1,0 +1,48 @@
+@use "./../themes" as *;
+@use "./../utils" as *;
+
+@mixin stateTag ($bgcolor :$gray-500) {
+  background-color: $bgcolor;
+  padding : rem(5px) rem(8px);
+  border-radius : rem(5px);
+  color : $white;
+  font-size : $text-xxs;
+  font-weight : 600;
+  line-height : 1.5;
+  margin-right: rem(4px);
+  margin-bottom: rem(10px);
+}
+
+@mixin spanTag ($padding : rem(4px)) {
+  padding: 0 $padding;
+  background-color: $gray-300;
+  border-radius: rem(4px);
+  color: $white;
+  font-size: $text-xxs;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+@mixin itemTitle ( $width: 100%, $font-weight:400){
+  width: $width;
+
+  color: $black;
+  font-size: $text-sm;
+  font-weight: $font-weight;
+  line-height: 160%;
+  @include textOver;
+  font-family: Pretendard;
+}
+
+@mixin itemContent ($color: $gray-500, $line-height: 160%){
+  color: $color;
+  font-size: $text-xxs;
+  line-height: $line-height;
+   font-family: Pretendard;
+}
+
+@mixin itemContentOver($color: $gray-500, $line-height: 160%, $width : 100%){
+  width: $width;
+  @include itemContent($color, $line-height);
+  @include textOver;
+}

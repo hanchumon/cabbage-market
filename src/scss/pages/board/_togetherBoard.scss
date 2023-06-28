@@ -1,0 +1,72 @@
+@use "./../../components" as *;
+@use "./../../utils" as *;
+@use "./../../base" as *;
+@use "./../../themes" as *;
+
+
+.togetherBoardSorting {
+  padding: rem(8px) 0 rem(12px) rem(2px);
+  border-bottom: solid 1px $gray-300;
+
+  &__form {
+    display: flex;
+    flex-flow: row;
+    gap: rem(7px);
+  }
+
+  &__select {
+    @include keywordButton;
+    text-align: center;
+    appearance: none;
+  }
+}
+
+.newContent{
+  @include plusButton;
+}
+
+
+.togetherBoardMain {
+  &__item {
+    
+    position: relative;
+    padding: rem(12px) rem(3px);
+    border-bottom: solid 1px $gray-300;
+    
+    
+    &__title{
+      @include itemTitle(calc(100% - 6.5625rem),$font-weight:600);
+      margin-bottom: rem(8px);
+    }
+    
+    &__info,&__NOP{
+      @include itemContentOver($width: calc(100% - 6.5625rem));
+    }
+
+    &__who,&__date{
+      @include itemContentOver($color:$black, $width: calc(100% - 6.5625rem));
+      padding-left: 4px;
+    }
+
+    &__profile{
+      margin-top: 8px;
+      float: left;
+    }
+    &__NOP{
+      margin-top: 8px;
+      line-height: 200%;
+      padding-left: 2px;
+    }
+
+    &__befor{
+      @include itemContent;
+      position: absolute;
+      @include posbottomRight($b: rem(12px), $r: rem(12px)); 
+    }
+    
+  }
+}
+.spanHighligth{
+  color: $primary; 
+}
+
