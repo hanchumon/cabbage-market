@@ -554,7 +554,7 @@ legend {
 .spriteEdit {
   min-width: 1.125rem;
   min-height: 1.125rem;
-  background-position: -2.5rem -10rem;
+  background-position: -2.5rem -11.25rem;
 }
 .spriteMessage {
   min-width: 1rem;
@@ -587,8 +587,8 @@ legend {
   background-position: -8.75rem -12.5rem;
 }
 .spriteBell {
-  min-width: 1.625rem;
-  min-height: 1.625rem;
+  min-width: 1.875rem;
+  min-height: 1.875rem;
   background-position: -10rem -12.5rem;
 }
 .spriteTwoPeople {
@@ -606,14 +606,19 @@ legend {
   min-height: 0.875rem;
   background-position: -5rem -13.75rem;
 }
+.spriteSmHeart {
+  min-width: 0.875rem;
+  min-height: 0.875rem;
+  background-position: -6.25rem -13.75rem;
+}
 .spriteCertificate {
   min-width: 0.875rem;
   min-height: 0.875rem;
   background-position: -7.5rem -13.75rem;
 }
 .spriteCirclePlus {
-  min-width: 0.875rem;
-  min-height: 0.875rem;
+  min-width: 1rem;
+  min-height: 1rem;
   background-position: -1.25rem -15rem;
 }
 .spriteClose {
@@ -622,13 +627,13 @@ legend {
   background-position: -2.5rem -15rem;
 }
 .spriteExplanation {
-  min-width: 0.875rem;
-  min-height: 0.875rem;
+  min-width: 1rem;
+  min-height: 1rem;
   background-position: -3.75rem -15rem;
 }
 .spritePerson {
-  min-width: 1.625rem;
-  min-height: 1.625rem;
+  min-width: 1.875rem;
+  min-height: 1.875rem;
   background-position: -10rem -15rem;
 }
 .spriteDateBlack {
@@ -646,7 +651,7 @@ legend {
   min-height: 0.75rem;
   background-position: -3.75rem -16.25rem;
 }
-.spritePostioning {
+.spritePositioning {
   min-width: 0.5rem;
   min-height: 0.5rem;
   background-position: -5rem -16.25rem;

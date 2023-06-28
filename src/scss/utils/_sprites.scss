@@ -87,7 +87,7 @@
    &TwoPeople{@include whbp($size:rem(14px),$bpX:rem(-20px),$bpY:rem(-220px));}
    &TwoPeopleGray{@include whbp($size:rem(14px),$bpX:rem(-60px),$bpY:rem(-220px));}
    &Who{@include whbp($size:rem(14px),$bpX:rem(-80px),$bpY:rem(-220px));}
-   &SmHeart{@include whbp($bpX:rem(14px),$bpX:rem(-100px),$bpY:rem(-220px));}
+   &SmHeart{@include whbp($size:rem(14px),$bpX:rem(-100px),$bpY:rem(-220px));}
    &Certificate{@include whbp($size:rem(14px),$bpX:rem(-120px),$bpY:rem(-220px));}
    // ------------24-----------
    &CirclePlus{@include whbp($size:rem(16px),$bpX:rem(-20px),$bpY:rem(-240px));}

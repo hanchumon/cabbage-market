@@ -4,9 +4,10 @@
     "start": "run-p watch server",
     "sass": "sass src/scss:src/style",
     "watch": "npm run sass -- --watch",
+    "nomap": "npm run sass -- --no-map",
     "server": "live-server src",
     "clear": "rimraf src/style",
-    "build": "postcss src/style/index.css -o src/style/main.css"
+    "build": "postcss src/style/index.css -o src/style/index.css --minify"
   },
   "dependencies": {
     "cssnano": "^6.0.1",
