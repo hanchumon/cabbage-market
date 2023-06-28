@@ -1,23 +1,62 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>profile page</title>
-  <link rel="stylesheet" href="/style/profile.css" />
+  <link rel="stylesheet preload" as="style" crossorigin
+  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
+  <link rel="stylesheet" href="/style/index.css" />
 </head>
+
 <body>
   <h1 class="a11yHidden">배추마켓</h1>
 
   <div class="sizingWrapper">
     <h2 class="a11yHidden">프로필 화면</h2>
 
+    <nav class="commonNav">
+      <h2 class="a11yHidden">메뉴</h2>
+      <ul class="commonNav__list">
+        <li class="commonNav__item">
+          <a href="./main.html" class="commonNav__link">
+            <span class="sprite spriteFillHome"></span>
+            <span>홈</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="../board/board.html" class="commonNav__link">
+            <span class="sprite spriteBoard"></span>
+            <span>게시판</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="./exchange.html" class="commonNav__link">
+            <span class="sprite spritePlace"></span>
+            <span>내 근처</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="../qna/chatlists.html" class="commonNav__link">
+            <span class="sprite spriteChat"></span>
+            <span>채팅</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="../profile/profile.html" class="commonNav__link">
+            <span class="sprite spriteMyPage"></span>
+            <span>내 정보</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
     <section class="profileMain">
       <h3 class="a11yHidden">프로필 주요 메뉴</h3>
 
-      <a href="/profileCard.html" class="profileMain__link" id="goProfileCardEdit">
-        <img class="profileMain__img" src="/" alt="프로필 이미지" />
+      <a href="profileCard.html" class="profileMain__link" id="goProfileCardEdit">
+        <img class="profileMain__img" src="./../../images/rabbit.png" alt="프로필 이미지" />
         <span class="sprite spriteEdit"></span>
       </a>
 
@@ -52,7 +91,7 @@
 
       <div class="profileStats__passionTemperature">
         <p class="passionTemperature" title="열정온도는 여러 활동 내역을 기반으로 종합해서 만든 열정 지표입니다">
-          <span class="sprite spriteExplanation"></span>
+          <span class="sprite spriteExplanation noticeicon"></span>
           열정온도
         </p>
 
@@ -71,7 +110,7 @@
       </div>
 
       <div class="profileStats__percent">
-        <p class="percent__getLike sprite spriteHeart">
+        <p class="percent__getLike">
           <span class="sprite spriteMdHeart"></span>
           받은 좋아요 100&#37;<br />
           <span class="getLike">11개 중 11명이 만족</span>
@@ -91,20 +130,17 @@
       <ul class="profileDoit__list">
         <li class="profileDoit__item">
           <a href="/" class="profileDoit__link" id="activityBadge">
-            <span class="sprite spriteMoreRight"></span>
-            활동배지 10개</a>
+            활동배지 10개<span class="sprite spriteMoreRight"></span></a>
         </li>
 
         <li class="profileDoit__item">
           <a href="/" class="profileDoit__link" id="saleProduct">
-            <span class="sprite spriteMoreRight"></span>
-            판매상품 3개</a>
+            판매상품 3개<span class="sprite spriteMoreRight"></span></a>
         </li>
 
         <li class="profileDoit__item">
           <a href="/" class="profileDoit__link" id="getMannerValue">
-            <span class="sprite spriteMoreRight"></span>
-            받은 매너 평가</a>
+            받은 매너 평가<span class="sprite spriteMoreRight"></span></a>
 
           <a href="/" class="profileDoit__link" id="goMannerValuePage">
             <ol class="mannerValueList">
@@ -135,20 +171,19 @@
 
         <li class="profileDoit__item">
           <a href="/" class="profileDoit__link" id="getDealReview">
-            <span class="sprite spriteMoreRight"></span>
-            받은 거래 후기 1</a>
+            받은 거래 후기 1<span class="sprite spriteMoreRight"></span></a>
 
           <a href="/" class="profileDoit__link" id="goDealReviewPage">
             <dl class="dealReview">
 
               <dt class="dealReview__writer">
-                <img class="dealReview__img" src="/" alt="작성자 이미지" />
-                여우<br />
+                <img class="dealReview__img" src="./../../images/fox.png" alt="작성자 이미지" />
+                <span class="writer">여우</span><br />
                 <span class="buyer">구매자 &#183; 부산광역시 해운대구 &#183; 4개월전</span>
-                <span class="sprite spriteMore"></span>
               </dt>
               <dd class="dealReview__review">너무 감사합니다&#33;</dd>
             </dl>
+            <span class="sprite spriteMore moreDot"></span>
           </a>
         </li> 
       </ul>
@@ -180,7 +215,7 @@
             공지사항</a>
         </li>
         <li class="profileBottom__item">
-          <a href="/" class="profileBottom__link" id="logout">
+          <a href="/" class="profileBottom__link logout" id="logout">
             로그아웃 <span class="loginId">rabbit</span></a>
         </li>
       </ul>

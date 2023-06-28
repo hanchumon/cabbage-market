@@ -1,0 +1,284 @@
+@use "./../../utils/" as *;
+@use "./../../themes/" as *;
+// 전체 속성
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+// 프로필 주요 메뉴
+.profileMain {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// 프로필 링크 이미지
+.profileMain__link {
+  position: relative;
+}
+
+.profileMain__img {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+}
+
+.spriteEdit {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+}
+
+// 프로필 이름
+.profileMain__name {
+  line-height: 150%;
+  width: 100px;
+  height: 45px;
+  text-align: center;
+}
+
+.profileId {
+  color: $black;
+  font-size: rem(18px);
+  font-weight: 600;
+}
+
+.ordinalBagde {
+  color: $tertiary;
+  font-size: 10px;
+  font-weight: 400;
+  border: 1px solid $primary;
+  border-radius: 50px;
+  padding: 0 4px;
+}
+
+.answer {
+  color: $contents-secondary;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+// 마이페이지들
+.profileMainMyPage__list {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.profileMainMyPage__item {
+  font-size: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  margin-top: 40px;
+}
+
+.profileMainMyPage__link {
+  font-weight: 500;
+  position: relative;
+  top: 10px;
+  bottom: 0;
+}
+
+.spriteCircleCheck {
+  position: absolute;
+  right: 7px;
+  top: -35px;
+}
+
+.spritePerson {
+  position: absolute;
+  right: 7px;
+  top: -35px;
+}
+
+.spriteBell {
+  position: absolute;;
+  right: -2px;
+  top: -35px;
+}
+
+// 활동 능력치 부분
+// 열정온도
+.profileStats__passionTemperature {
+  position: relative;
+}
+
+ .profileStats {
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   gap: 80px;
+ }
+
+ .passionTemperature {
+   font-size: 12px;
+   width: 60px;
+   height: 15px;
+  position: relative;
+}
+
+ .noticeicon {
+   position: absolute;
+   top: -2px;
+   right: 0;
+ }
+
+ // 첫 온도
+ .passionTemperature__first {
+   font-size: 10px;
+   width: 65px;
+   height: 18px;
+   color: $contents-primary;
+   position: relative;
+   left: 25%;
+ }
+
+ .spritePositioning {
+   position: absolute;
+   bottom: 0px;
+   right: 50%;
+ }
+
+// 현재온도
+.passionTemperature__myTemperature {
+  font-size: 14px;
+  font-weight: 700;
+  color: $primary;
+  position: absolute;
+  top: 18px;
+  right: 10px;
+}
+
+// 온도 바
+.passionTemperature__view {
+  width: 100%;
+  height: 8px;
+  background-color: $gray-200;
+  border-radius: 15px;
+}
+
+.passionTemperature__nowView {
+  width: 200px;
+  height: 8px;
+  background-color: $primary;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+// 좋아요
+.profileStats__percent {
+ position: relative;
+ font-size: 10px;
+ white-space: nowrap;
+}
+
+.percent__getLike {
+  position: absolute;
+  top: -50px;
+  left: 20px;
+}
+
+.getLike,
+.responseRate {
+  color: $gray-400;
+}
+
+.percent__responseRate {
+  position: absolute;
+  top: -50px;
+  right: 10px;
+}
+
+// 활동 내역
+.profileDoit__list {
+  display: flex;
+  flex-flow: column;
+}
+
+.profileDoit__item {
+padding: 5px 8px 5px 5px;
+
+}
+
+.mannerValue {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5px;
+}
+
+.spriteTwoPeople {
+  position: absolute;
+  left: 10px;
+}
+
+.messageShape {
+  background-color: $secondary;
+  display: block;
+  text-align: center;
+  width: 200px;
+  height: 30px;
+  padding-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 0 10px 10px 10px;
+}
+
+.profileDoit__link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid $contents-secondary;
+}
+
+
+
+.dealReview__img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.buyer {
+  font-size: 10px;
+  line-height: 160%;
+  color: $contents-secondary;
+}
+
+.moreDot {
+  width: 20px;
+  height: 20px;
+}
+
+//하단 목록
+.profileBottom {
+  font-size: 14px;
+}
+
+.profileBottom__item {
+  padding: 10px;
+}
+
+.logout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loginId {
+  color: $primary;
+}

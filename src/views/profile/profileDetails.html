@@ -1,21 +1,86 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>profileDetails page</title>
+  <link rel="stylesheet preload" as="style" crossorigin
+  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
+  <link rel="stylesheet" href="/style/index.css" />
 </head>
+
 <body>
+
   <h1 class="a11yHidden">배추마켓</h1>
 
   <div class="sizingWrapper">
     <h2 class="a11yHidden">기본정보 수정화면</h2>
 
-    <p class="profilelInformationEdit__page">
-      기본정보
-      <a href="/profileCard.html" class="backProfileCard"></a>
-    </p>
+    <header class="mainHeader profileHeader">
+      <h2 class="a11yHidden">기본 정보</h2>
+      <div class="timeInfo">
+        <time class="timeInfo__date" datetime="2023-06-25T02:26">2:26</time>
+        <ul class="celluarInfo">
+          <li class="celluarInfo__item">
+            <span class="sprite spriteReceptionSensitivity"></span>
+            <p class="a11yHidden">수신감도</p>
+          </li>
+          <li class="celluarInfo__item">
+            <span class="sprite spriteLte"></span>
+            <p class="a11yHidden">데이터 종류</p>
+          </li>
+          <li class="celluarInfo__item">
+            <span class="sprite spriteBattery"></span>
+            <p class="a11yHidden">배터리 잔량</p>
+          </li>
+        </ul>
+      </div>
+      <ul class="statusBar">
+        <li class="statusBar__item profileHeader__item">
+          <p class="profileHeader__description">기본정보</p>
+        </li>
+        <li class="statusBar__item">
+          <a href="./profileCard.html" class="statusBar__link profileHeader__exit sprite spriteExit"><span class="a11yHidden">창 닫기</span></a>
+        </li>
+      </ul>
+    </header>
+
+    <nav class="commonNav">
+      <h2 class="a11yHidden">메뉴</h2>
+      <ul class="commonNav__list">
+        <li class="commonNav__item">
+          <a href="./main.html" class="commonNav__link">
+            <span class="sprite spriteFillHome"></span>
+            <span>홈</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="../board/board.html" class="commonNav__link">
+            <span class="sprite spriteBoard"></span>
+            <span>게시판</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="./exchange.html" class="commonNav__link">
+            <span class="sprite spritePlace"></span>
+            <span>내 근처</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="../qna/chatlists.html" class="commonNav__link">
+            <span class="sprite spriteChat"></span>
+            <span>채팅</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="../profile/profile.html" class="commonNav__link">
+            <span class="sprite spriteMyPage"></span>
+            <span>내 정보</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
     <form action="/" method="post" id="profilelInformation" target="_blank">
 
@@ -27,7 +92,8 @@
 
           <div class="textPluseBox">
             <label class="formTitle" for="job">하는 일</label>
-            <input class="jobStyle sprite spriteCirclePlus" type="text" id="job" name="job" placeholder="본인이 하는 일을 추가해보세요"/>
+            <input class="jobStyle" type="text" id="job" name="job" placeholder="본인이 하는 일을 추가해보세요"/>
+            <span class="sprite spriteCirclePlus"></span>
           </div>
         </fieldset>
 
@@ -36,7 +102,8 @@
 
           <div class="textPluseBox">
             <label class="formTitle" for="keyWord">프로필 키워드</label>
-            <input class="keyWordStyle sprite spriteCirclePlus" type="text" id="keyWord" name="keyWord" placeholder="프로필 키워드를 추가해보세요"/>
+            <input class="keyWordStyle" type="text" id="keyWord" name="keyWord" placeholder="프로필 키워드를 추가해보세요"/>
+            <span class="sprite spriteCirclePlus"></span>
           </div>
         </fieldset>
 
@@ -102,16 +169,19 @@
         <fieldset class="inputForm">
           <legend>취득 자격증 파일 불러오기</legend>
 
-          <div class="certificateBox">
-            <label class="formTitle" for="Certificate" title="자격증 이미지를 바로 불러올 수 있습니다">
-              취득자격<span class="sprite spriteExplanation"></span>
+          <div class="certificateForm">
+            <label class="formTitle certificate" for="Certificate" title="자격증 이미지를 바로 불러올 수 있습니다">
+              취득자격<span class="sprite spriteExplanation explanationIcon"></span>
             </label>
 
             <input class="fileCertificate" type="file" id="Certificate" />
-            <p class="certificateMent">
-            <span class="spriteCertificate"></span>
-            국가 자격증을 간편하게 등록해보세요&#33;
-          </p>
+
+            <div class="certificateBox">
+              <span class="spriteCertificate"></span>
+              <p class="certificateMent">
+              국가 자격증을 간편하게 등록해보세요&#33;
+            </p>
+            </div>
           </div>
         </fieldset>
 
@@ -122,20 +192,20 @@
         
         <div class="allCheck">
           <input class="checkboxStyle" type="checkbox" id="allAgree"/>
-          <label for="allAgree">아래 내용에 전체 동의합니다<span>필수동의</span></label>
+          <label class="allAgree" for="allAgree">아래 내용에 전체 동의합니다<span class="essentialAgree">필수동의</span></label>
         </div>
 
         <input class="checkboxStyle" type="checkbox" id="personalAgree"/>
-        <label for="personalAgree">&#91;필수&#93; 개인 정보 수집 및 이용 동의</label>
-          <p>
+        <label class="personalAgree" for="personalAgree">&#91;필수&#93; 개인 정보 수집 및 이용 동의</label>
+          <p class="personalAgreeNotice">
             입력한 별명, 프로필 사진, 하는 일, 프로필 키워드, 성별, 회사, 학교, 자격은 배추마켓 서비스 내 프로필 페이지, 답변자 정보 영역, 배추마켓 홈 및 서비스 내 프로필 공개를 목적으로 합니다<span>수집된 정보는 언제든지 직접 삭제할 수 있고, 탈퇴 시에는 바로 파기됩니다</span>
           </p>
 
         <input class="checkboxStyle" type="checkbox" id="infoAgree" />
-        <label for="infoAgree">&#91;필수&#93; 프로필 정보 노출 영역 확인<span><a href="/">자세히</a></span></label>
+        <label class="infoAgree" for="infoAgree">&#91;필수&#93; 프로필 정보 노출 영역 확인<span><a href="/">자세히</a></span></label>
 
         <input class="checkboxStyle" type="checkbox" id="responsibilityAgree" />
-        <label for="responsibilityAgree">&#91;필수&#93; 사실과 다른 정보를 기재하여 발생한 문제에 대해서는 본인이 일체의 책임을 부담하겠습니다</label>
+        <label class="responsibilityAgree" for="responsibilityAgree">&#91;필수&#93; 사실과 다른 정보를 기재하여 발생한 문제에 대해서는 본인이 일체의 책임을 부담하겠습니다</label>
       </fieldset>
 
       <div>

@@ -347,7 +347,7 @@ legend {
 
 .sprite {
   content: "";
-  background-image: url(/images/icon_1x.png);
+  background-image: url(../../images/icon_1x.png);
   background-repeat: no-repeat;
   float: left;
 }
@@ -605,11 +605,6 @@ legend {
   min-width: 0.875rem;
   min-height: 0.875rem;
   background-position: -5rem -13.75rem;
-}
-.spriteSmHeart {
-  min-width: 0.875rem;
-  min-height: 0.875rem;
-  background-position: -6.25rem -13.75rem;
 }
 .spriteCertificate {
   min-width: 0.875rem;
@@ -1204,11 +1199,6 @@ iframe {
   height: 2.25rem;
 }
 
-.sizingWrapper {
-  width: 100%;
-  height: 100%;
-}
-
 .qnaBoardTopBox {
   width: 100%;
   display: flex;
@@ -1375,24 +1365,6 @@ iframe {
   font-size: 0.875rem;
   font-family: Pretendard;
   line-height: 160%;
-}
-
-.spriteFlag {
-  background: url(/images/cabbageMarket_icon.png) no-repeat;
-  background-position: -60px -260px;
-  width: 14px;
-  height: 14px;
-  white-space: nowrap;
-}
-
-.spriteEmoticon {
-  background: url(/images/cabbageMarket_icon.png) no-repeat;
-  background-position: -80px -80px;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  left: 17rem;
-  top: 33.9rem;
 }
 
 .qnaProfile {
@@ -2181,6 +2153,490 @@ iframe {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.profileMain {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileMain__link {
+  position: relative;
+}
+
+.profileMain__img {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+}
+
+.spriteEdit {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+}
+
+.profileMain__name {
+  line-height: 150%;
+  width: 100px;
+  height: 45px;
+  text-align: center;
+}
+
+.profileId {
+  color: #121212;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.ordinalBagde {
+  color: #003F21;
+  font-size: 10px;
+  font-weight: 400;
+  border: 1px solid #008F22;
+  border-radius: 50px;
+  padding: 0 4px;
+}
+
+.answer {
+  color: #D3D3D3;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.profileMainMyPage__list {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.profileMainMyPage__item {
+  font-size: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  margin-top: 40px;
+}
+
+.profileMainMyPage__link {
+  font-weight: 500;
+  position: relative;
+  top: 10px;
+  bottom: 0;
+}
+
+.spriteCircleCheck {
+  position: absolute;
+  right: 7px;
+  top: -35px;
+}
+
+.spritePerson {
+  position: absolute;
+  right: 7px;
+  top: -35px;
+}
+
+.spriteBell {
+  position: absolute;
+  right: -2px;
+  top: -35px;
+}
+
+.profileStats__passionTemperature {
+  position: relative;
+}
+
+.profileStats {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 80px;
+}
+
+.passionTemperature {
+  font-size: 12px;
+  width: 60px;
+  height: 15px;
+  position: relative;
+}
+
+.noticeicon {
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+
+.passionTemperature__first {
+  font-size: 10px;
+  width: 65px;
+  height: 18px;
+  color: #919191;
+  position: relative;
+  left: 25%;
+}
+
+.spritePositioning {
+  position: absolute;
+  bottom: 0px;
+  right: 50%;
+}
+
+.passionTemperature__myTemperature {
+  font-size: 14px;
+  font-weight: 700;
+  color: #008F22;
+  position: absolute;
+  top: 18px;
+  right: 10px;
+}
+
+.passionTemperature__view {
+  width: 100%;
+  height: 8px;
+  background-color: #D3D3D3;
+  border-radius: 15px;
+}
+
+.passionTemperature__nowView {
+  width: 200px;
+  height: 8px;
+  background-color: #008F22;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.profileStats__percent {
+  position: relative;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.percent__getLike {
+  position: absolute;
+  top: -50px;
+  left: 20px;
+}
+
+.getLike,
+.responseRate {
+  color: #A7A7A7;
+}
+
+.percent__responseRate {
+  position: absolute;
+  top: -50px;
+  right: 10px;
+}
+
+.profileDoit__list {
+  display: flex;
+  flex-flow: column;
+}
+
+.profileDoit__item {
+  padding: 5px 8px 5px 5px;
+}
+
+.mannerValue {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5px;
+}
+
+.spriteTwoPeople {
+  position: absolute;
+  left: 10px;
+}
+
+.messageShape {
+  background-color: #C1D3BE;
+  display: block;
+  text-align: center;
+  width: 200px;
+  height: 30px;
+  padding-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 0 10px 10px 10px;
+}
+
+.profileDoit__link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.dealReview__img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.buyer {
+  font-size: 10px;
+  line-height: 160%;
+  color: #D3D3D3;
+}
+
+.moreDot {
+  width: 20px;
+  height: 20px;
+}
+
+.profileBottom {
+  font-size: 14px;
+}
+
+.profileBottom__item {
+  padding: 10px;
+}
+
+.logout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loginId {
+  color: #008F22;
+}
+
+.profileCard {
+  background: #BDBDBD;
+  width: 100%;
+  padding: 12px;
+}
+
+.profileCardMentBox {
+  padding: 5px;
+  width: 85px;
+  position: relative;
+}
+
+.profileCard__page {
+  width: 100px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.profileCardIcon {
+  position: absolute;
+  right: 0;
+  bottom: 11px;
+}
+
+.myProfileCard {
+  background: #fff;
+  border-radius: 8px;
+  width: 100%;
+  height: 70px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.profileCard__name {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.profileCard__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profilelInformation {
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+}
+.profilelInformation__section {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #E9E9E9;
+}
+.profilelInformation__link {
+  font-size: 10px;
+  color: #008F22;
+}
+.profilelInformation__title {
+  float: left;
+  margin-left: 12px;
+}
+.profilelInformation__item {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 12px;
+  padding: 5px;
+  margin: 10px;
+  font-size: 10px;
+  color: #D3D3D3;
+}
+.profilelInformation__img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.nameItem {
+  color: #121212;
+}
+
+.additionalInformation {
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+}
+.additionalInformation__section {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #E9E9E9;
+}
+.additionalInformation__edit {
+  font-size: 10px;
+  color: #008F22;
+}
+.additionalInformation__title {
+  float: left;
+  margin-left: 12px;
+}
+.additionalInformation__item {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 12px;
+  padding: 5px;
+  margin: 10px;
+  font-size: 10px;
+  color: #D3D3D3;
+}
+
+label {
+  display: block;
+}
+
+.profilelInformation {
+  display: grid;
+  grid-template-columns: 16;
+  grid-template-rows: 1;
+}
+
+.formTitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.Notice {
+  font-size: 10px;
+  line-height: 160%;
+  color: #BDBDBD;
+}
+
+.certificate {
+  position: relative;
+  padding: 15px;
+}
+
+.explanationIcon {
+  position: absolute;
+  top: 17px;
+  left: 65px;
+}
+
+.fileCertificate {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.certificateBox {
+  width: 230px;
+  height: 130px;
+  background-color: #E9E9E9;
+  position: relative;
+  border-radius: 5px;
+}
+
+.spriteCertificate {
+  position: absolute;
+  top: 30px;
+  left: 90px;
+}
+
+.certificateMent {
+  color: #A7A7A7;
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+}
+
+.allAgree {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.personalAgree,
+.infoAgree,
+.responsibilityAgree {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 150%;
+  display: block;
+}
+
+.personalAgreeNotice {
+  font-size: 10px;
+  color: #BDBDBD;
+}
+
+.agreeInformation {
+  font-size: 10.503px;
+  line-height: 160%;
+  color: #BDBDBD;
 }
 
 /*# sourceMappingURL=index.css.map */
