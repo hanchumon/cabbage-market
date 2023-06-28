@@ -562,9 +562,9 @@ legend {
   background-position: -1.25rem -11.25rem;
 }
 .spriteEdit {
-  min-width: 1.125rem;
-  min-height: 1.125rem;
-  background-position: -2.5rem -10rem;
+  min-width: 1.1875rem;
+  min-height: 1.1875rem;
+  background-position: -2.5rem -11.25rem;
 }
 .spriteMessage {
   min-width: 1rem;
@@ -587,8 +587,8 @@ legend {
   background-position: -8.75rem -12.5rem;
 }
 .spriteBell {
-  min-width: 1.625rem;
-  min-height: 1.625rem;
+  min-width: 1.875rem;
+  min-height: 1.875rem;
   background-position: -10rem -12.5rem;
 }
 .spriteTwoPeople {
@@ -622,13 +622,13 @@ legend {
   background-position: -2.5rem -15rem;
 }
 .spriteExplanation {
-  min-width: 0.875rem;
-  min-height: 0.875rem;
+  min-width: 0.9375rem;
+  min-height: 0.9375rem;
   background-position: -3.75rem -15rem;
 }
 .spritePerson {
-  min-width: 1.625rem;
-  min-height: 1.625rem;
+  min-width: 1.875rem;
+  min-height: 1.875rem;
   background-position: -10rem -15rem;
 }
 .spriteDateBlack {
@@ -646,7 +646,7 @@ legend {
   min-height: 0.75rem;
   background-position: -3.75rem -16.25rem;
 }
-.spritePostioning {
+.spritePositioning {
   min-width: 0.5rem;
   min-height: 0.5rem;
   background-position: -5rem -16.25rem;
@@ -684,6 +684,197 @@ iframe {
   margin-left: auto;
   margin-right: auto;
   padding: 0.75rem;
+}
+
+.timeInfo {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.timeInfo__date {
+  font-size: 14px;
+}
+
+.celluarInfo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: inherit;
+  border: 0;
+}
+.celluarInfo :nth-child(2) {
+  margin-left: -4px;
+  margin-right: 4px;
+}
+
+.statusBar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 0.5rem;
+  width: 100%;
+  height: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.locationHeader__search, .locationHeader__menu, .locationHeader__menu {
+  flex-shrink: 0;
+}
+
+.selectLocation {
+  flex-grow: 1;
+  position: relative;
+  z-index: 1;
+}
+.selectLocation::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 0;
+  height: 0;
+  margin-top: -1px;
+  margin-left: 30px;
+  border-left: 5px transparent;
+  border-right: 5px transparent;
+  border-bottom: 5px #747474;
+}
+.selectLocation label {
+  position: absolute;
+  width: 100%;
+  top: 0.1875rem; /* 위치정렬 */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #003F21;
+  z-index: -1; /* IE8에서 label이 위치한 곳이 클릭되지 않는 것 해결 */
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.selectLocation select {
+  width: 100%;
+  height: auto; /* 높이 초기화 */
+  line-height: normal; /* line-height 초기화 */
+  font-family: inherit; /* 폰트 상속 */
+  padding-left: 0.8125rem;
+  padding-right: 0.8125rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 0;
+  opacity: 0; /* 숨기기 */
+  filter: alpha(opacity=0); /* IE8 숨기기 */
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.profileHeader__item {
+  flex-grow: 1;
+}
+.profileHeader__description {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.backHeader__title {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  flex-grow: 1;
+  margin-left: -5%;
+}
+.backHeader__backicon {
+  flex-grow: 1;
+}
+.backHeader__home {
+  flex-grow: 1;
+}
+
+.qnaHeader__textItem {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+.qnaHeader__done {
+  color: #747474;
+  font-size: 0.875rem;
+}
+
+.qnaHeader__qChat {
+  font-size: 1.125rem;
+  font-weight: 700;
+  flex-grow: 1;
+}
+
+.statusBar__qchat {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+.qnaHeader__chatText {
+  font-size: 0.875rem;
+  text-align: center;
+}
+.qnaHeader__chatText__span {
+  color: #A7A7A7;
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.sizingWrapper {
+  position: relative;
+}
+
+.commonNav__list {
+  width: calc(100% - 24px);
+  max-width: 37.4375rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  font-weight: 400;
+  font-size: 0.6875rem;
+  position: fixed;
+  bottom: 0;
+  padding: 8px 12px 24px 12px;
+  background: #fff;
+}
+.commonNav__link {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.mainNav__list {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  font-weight: 400;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  gap: 8px;
+}
+
+.accentColor {
+  font-weight: 700;
+  color: white;
 }
 
 .sizingWrapper {
@@ -1624,195 +1815,420 @@ iframe {
   color: #008F22;
 }
 
-.timeInfo {
-  padding-left: 1rem;
-  padding-right: 1rem;
+a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.profileMain {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileMain__link {
+  position: relative;
+}
+
+.profileMain__img {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+}
+
+.spriteEdit {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+}
+
+.profileMain__name {
+  line-height: 150%;
+  width: 100px;
+  height: 45px;
+  text-align: center;
+}
+
+.profileId {
+  color: #121212;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.ordinalBagde {
+  color: #003F21;
+  font-size: 10px;
+  font-weight: 400;
+  border: 1px solid #008F22;
+  border-radius: 50px;
+  padding: 0 4px;
+}
+
+.answer {
+  color: #D3D3D3;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.profileMainMyPage__list {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
 }
-.timeInfo__date {
+
+.profileMainMyPage__item {
+  font-size: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  margin-top: 40px;
+}
+
+.profileMainMyPage__link {
+  font-weight: 500;
+  position: relative;
+  top: 10px;
+  bottom: 0;
+}
+
+.spriteCircleCheck {
+  position: absolute;
+  right: 7px;
+  top: -35px;
+}
+
+.spritePerson {
+  position: absolute;
+  right: 7px;
+  top: -35px;
+}
+
+.spriteBell {
+  position: absolute;
+  right: -2px;
+  top: -35px;
+}
+
+.profileStats__passionTemperature {
+  position: relative;
+}
+
+.profileStats {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 80px;
+}
+
+.passionTemperature {
+  font-size: 12px;
+  width: 60px;
+  height: 15px;
+  position: relative;
+}
+
+.spriteExplanation {
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+
+.passionTemperature__first {
+  font-size: 10px;
+  width: 65px;
+  height: 18px;
+  color: #919191;
+  position: relative;
+  left: 25%;
+}
+
+.spritePositioning {
+  position: absolute;
+  bottom: 0px;
+  right: 50%;
+}
+
+.passionTemperature__myTemperature {
+  font-size: 14px;
+  font-weight: 700;
+  color: #008F22;
+  position: absolute;
+  top: 18px;
+  right: 10px;
+}
+
+.passionTemperature__view {
+  width: 100%;
+  height: 8px;
+  background-color: #D3D3D3;
+  border-radius: 15px;
+  position: absolute;
+  left: 10px;
+  top: 40px;
+}
+
+.passionTemperature__nowView {
+  width: 150px;
+  height: 8px;
+  background-color: #008F22;
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.profileStats__percent {
+  position: relative;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.percent__getLike {
+  position: absolute;
+  top: -50px;
+  left: 20px;
+}
+
+.getLike,
+.responseRate {
+  color: #A7A7A7;
+}
+
+.percent__responseRate {
+  position: absolute;
+  top: -50px;
+  right: 10px;
+}
+
+.profileDoit__list {
+  display: flex;
+  flex-flow: column;
+}
+
+.profileDoit__item {
+  padding: 5px 8px 5px 5px;
+}
+
+.mannerValue {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5px;
+}
+
+.spriteTwoPeople {
+  position: absolute;
+  left: 10px;
+}
+
+.messageShape {
+  background-color: #C1D3BE;
+  display: block;
+  text-align: center;
+  width: 200px;
+  height: 30px;
+  padding-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 0 10px 10px 10px;
+}
+
+.profileDoit__link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.dealReview__img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.buyer {
+  font-size: 10px;
+  line-height: 160%;
+  color: #D3D3D3;
+}
+
+.moreDot {
+  width: 20px;
+  height: 20px;
+}
+
+.profileBottom {
   font-size: 14px;
 }
 
-.celluarInfo {
+.profileBottom__item {
+  padding: 10px;
+}
+
+.logout {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  font-family: inherit;
-  border: 0;
-}
-.celluarInfo :nth-child(2) {
-  margin-left: -4px;
-  margin-right: 4px;
-}
-
-.statusBar {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  column-gap: 0.5rem;
-  width: 100%;
-  height: 2.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.locationHeader__search, .locationHeader__menu, .locationHeader__menu {
-  flex-shrink: 0;
-}
-
-.selectLocation {
-  flex-grow: 1;
-  position: relative;
-  z-index: 1;
-}
-.selectLocation::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  width: 0;
-  height: 0;
-  margin-top: -1px;
-  margin-left: 30px;
-  border-left: 5px transparent;
-  border-right: 5px transparent;
-  border-bottom: 5px #747474;
-}
-.selectLocation label {
-  position: absolute;
-  width: 100%;
-  top: 0.1875rem; /* 위치정렬 */
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  color: #003F21;
-  z-index: -1; /* IE8에서 label이 위치한 곳이 클릭되지 않는 것 해결 */
-  font-size: 1.125rem;
-  font-weight: 700;
-}
-.selectLocation select {
-  width: 100%;
-  height: auto; /* 높이 초기화 */
-  line-height: normal; /* line-height 초기화 */
-  font-family: inherit; /* 폰트 상속 */
-  padding-left: 0.8125rem;
-  padding-right: 0.8125rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border: 0;
-  opacity: 0; /* 숨기기 */
-  filter: alpha(opacity=0); /* IE8 숨기기 */
-  -webkit-appearance: none; /* 네이티브 외형 감추기 */
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.profileHeader__item {
-  flex-grow: 1;
-}
-.profileHeader__description {
-  font-size: 0.875rem;
-  font-weight: 700;
-}
-
-.backHeader__title {
-  text-align: center;
-  font-size: 0.875rem;
-  font-weight: 700;
-  flex-grow: 1;
-  margin-left: -5%;
-}
-.backHeader__backicon {
-  flex-grow: 1;
-}
-.backHeader__home {
-  flex-grow: 1;
-}
-
-.qnaHeader__textItem {
-  flex-grow: 1;
-  text-align: center;
-  font-weight: 700;
-  font-size: 0.875rem;
-}
-.qnaHeader__done {
-  color: #747474;
-  font-size: 0.875rem;
-}
-
-.qnaHeader__qChat {
-  font-size: 1.125rem;
-  font-weight: 700;
-  flex-grow: 1;
-}
-
-.statusBar__qchat {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  flex-grow: 1;
-}
-
-.qnaHeader__chatText {
-  font-size: 0.875rem;
-  text-align: center;
-}
-.qnaHeader__chatText__span {
-  color: #A7A7A7;
-  font-weight: 400;
-  font-size: 0.875rem;
-  text-align: center;
-}
-
-.sizingWrapper {
-  position: relative;
-}
-
-.commonNav__list {
-  width: calc(100% - 24px);
-  max-width: 37.4375rem;
-  display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: stretch;
-  font-weight: 400;
-  font-size: 0.6875rem;
-  position: fixed;
-  bottom: 0;
-  padding: 8px 12px 24px 12px;
+}
+
+.loginId {
+  color: #008F22;
+}
+
+.profileCard {
+  background: #BDBDBD;
+  width: 100%;
+  padding: 12px;
+}
+
+.profileCard__page {
+  width: 400px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.spriteExplanation {
+  position: absolute;
+  top: 1px;
+  right: 320px;
+}
+
+.myProfileCard {
   background: #fff;
-}
-.commonNav__link {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-}
-
-.mainNav__list {
+  border-radius: 8px;
   width: 100%;
-  color: rgba(255, 255, 255, 0.5);
+  height: 70px;
+  padding: 0 15px;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
   align-items: center;
-  font-weight: 400;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  gap: 8px;
+  justify-content: space-between;
+  margin-bottom: 12px;
 }
 
-.accentColor {
-  font-weight: 700;
-  color: white;
+.profileCard__name {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.profileCard__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profilelInformation {
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+}
+.profilelInformation__section {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #E9E9E9;
+}
+.profilelInformation__link {
+  font-size: 10px;
+  color: #008F22;
+}
+.profilelInformation__title {
+  float: left;
+  margin-left: 12px;
+}
+.profilelInformation__item {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 12px;
+  padding: 5px;
+  margin: 10px;
+  font-size: 10px;
+  color: #D3D3D3;
+}
+.profilelInformation__img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.nameItem {
+  color: #121212;
+}
+
+.additionalInformation {
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+}
+.additionalInformation__section {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #E9E9E9;
+}
+.additionalInformation__edit {
+  font-size: 10px;
+  color: #008F22;
+}
+.additionalInformation__title {
+  float: left;
+  margin-left: 12px;
+}
+.additionalInformation__item {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 12px;
+  padding: 5px;
+  margin: 10px;
+  font-size: 10px;
+  color: #D3D3D3;
+}
+
+.formTitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.Notice {
+  font-size: 10px;
+  line-height: 160%;
+  color: #BDBDBD;
+}
+
+.allAgree {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.personalAgreeNotice {
+  font-size: 10px;
+  color: #BDBDBD;
 }
 
 /*# sourceMappingURL=index.css.map */
