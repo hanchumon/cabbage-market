@@ -21,9 +21,9 @@
 
 .selectCategory{
   padding: rem(16px) rem(12px);
-
+  &__summary::marker{font-size:0;}
 }
-.selectCategory:marker{font-size:0;}
+
 
 
 .aroundPopular{
