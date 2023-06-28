@@ -3,7 +3,7 @@
 
 .sprite {
   content: "";
-  background-image: url(./../../images/icon_1x.png);
+  background-image: url(/images/icon_1x.png);
   background-repeat: no-repeat;
   float: left;
   // ----------0-------------
@@ -55,7 +55,7 @@
 
 
 
-   &Recommand{@include whbp($bpX:rem(-80px),$bpY:rem(-120px));}
+  //  &Recommand{@include whbp($bpX:rem(-80px),$bpY:rem(-120px));}
    &Call{@include whbp($bpX:rem(-100px),$bpY:rem(-120px));}
    // ----------14-------------
    &Cal{@include whbp($bpX:rem(-0px),$bpY:rem(-140px));}
@@ -70,7 +70,7 @@
    &Lte{@include whbp($bpX:rem(-20px),$bpY:rem(-160px));}
    &Battery{@include whbp($bpX:rem(-40px),$bpY:rem(-160px));}
    &More{@include whbp($bpX:rem(-60px),$bpY:rem(-160px));}
-   &Comment{@include whbp($bpX:rem(-80px),$bpY:rem(-160px));}
+  //  &Comment{@include whbp($bpX:rem(-80px),$bpY:rem(-160px));}
    &Check{@include whbp($bpX:rem(-100px),$bpY:rem(-160px));}
    &CircleCheck{@include whbp($size:rem(26px),$bpX:rem(-160px),$bpY:rem(-160px));}
    // ----------18-------------
@@ -78,6 +78,8 @@
    &Edit{@include whbp($size:rem(18px),$bpX:rem(-40px),$bpY:rem(-160px));}
    // ----------20-------------
    &Message{@include whbp($size:rem(16px),$bpX:rem(-20px),$bpY:rem(-200px));}
+   &Recommand{@include whbp($size:rem(16px),$bpX:rem(-40px),$bpY:rem(-200px));}
+   &Comment{@include whbp($size:rem(16px),$bpX:rem(-60px),$bpY:rem(-200px));}
    &PlaceGray{@include whbp($size:rem(16px),$bpX:rem(-100px),$bpY:rem(-200px));}
    &PictureGray{@include whbp($size:rem(16px),$bpX:rem(-120px),$bpY:rem(-200px));}
    &MdHeart{@include whbp($size:rem(16px),$bpX:rem(-140px),$bpY:rem(-200px));}
