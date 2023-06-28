@@ -15,7 +15,6 @@
   @include pos;
   top: $t;
   right: $r;
-
 }
 
 @mixin posbottomRight($b: 0, $r: 0){
