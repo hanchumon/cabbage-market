@@ -11,40 +11,60 @@
 </head>
 
 <body>
-  <h1 class="a11yHidden">배추마켓</h1>
+  <div class="sizingWrapper">
+    <h1 class="a11yHidden">배추마켓</h1>
 
-  <!-- 보드 작성 -->
-  <h2 class="a11yHidden">게시판 작성</h2>
+    <!-- 보드 작성 -->
+    <h2 class="a11yHidden">게시판 작성</h2>
 
-  <span>어떤학생과 함께 할까요?</span>
-  <div>
-    <span></span><span>성별</span><span>누구나</span>
-  </div>
-  <div>
-    <span>누구나 또는 같은 성별 모임으로 설정해주세요.</span>
+    <!-- <form>
+      <input type="button" class="boardNav__topic" value="주제">
+
+      <label for="popular" class="boardNav__label">
+        <input type="radio" id="popular" class="boardNav__input" name="topic" value="인기글">인기글</label>
+
+      <label for="together" class="boardNav__label">
+        <input type="radio" id="together" class="boardNav__input" name="topic" value="같이해요">같이해요</label>
+
+      <label for="Q.N.A." class="boardNav__label">
+        <input type="radio" id="Q.N.A." class="boardNav__input" name="topic" value="질의응답">질의응답</label>
+
+      <label for="freeBoard" class="boardNav__label">
+        <input type="radio" id="freeBoard" class="boardNav__input" name="topic" value="자유게시판">
+        자유게시판</label>
+    </form> -->
+
+    <span>어떤학생과 함께 할까요?</span>
+    <div class="writeBoard3Main">
+      <span></span><span>성별</span><span>누구나</span>
+
+      <div>
+        <span>누구나 또는 같은 성별 모임으로 설정해주세요.</span>
+        <form>
+          <input type="checkbox" id="male" name="gender" value="male">
+          <label for="male">모두</label><br>
+          <input type="checkbox" id="male" name="gender" value="male">
+          <label for="male">누구나</label><br>
+          <input type="checkbox" id="female" name="gender" value="female">
+          <label for="female">여자만</label><br>
+          <input type="checkbox" id="other" name="gender" value="other">
+          <label for="other">남자만ss</label>
+        </form>
+      </div>
+      <form>
+        <span></span><label for="" class="">나이</label><input type="number">
+      </form>
+    </div>
+
     <form>
-      <input type="checkbox" id="male" name="gender" value="male">
-      <label for="male">모두</label><br>
-      <input type="checkbox" id="male" name="gender" value="male">
-      <label for="male">누구나</label><br>
-      <input type="checkbox" id="female" name="gender" value="female">
-      <label for="female">여자만</label><br>
-      <input type="checkbox" id="other" name="gender" value="other">
-      <label for="other">남자만ss</label>
+      <span></span>
+      <label for="" class="">승인 후 참여</label>
+      <input type="checkbox">
+    </form>
+
+    <form>
+      <input type="button" onClick="location.href='/views/board/boardContent.html'" class="writeBoard2__button__next"
+        value="일정만들기">
     </form>
   </div>
-  <form>
-    <span></span><label for="" class="">나이</label><input type="number">
-  </form>
-
-  <form>
-    <span></span>
-    <label for="" class="">승인 후 참여</label>
-    <input type="checkbox">
-  </form>
-
-  <form>
-    <input type="button" class="button_next" value="일정 만들기">
-  </form>
-  
 </body>

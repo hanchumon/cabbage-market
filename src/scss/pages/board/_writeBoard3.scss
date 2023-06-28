@@ -3,9 +3,10 @@
 @use "./../../base" as *;
 @use "./../../themes" as *;
 
-.writeBoard2Main{
+.writeBoard3Main{
   flex-flow: column;
   position: relative;
+  background-color: aqua;
   height: 100vh;
 }
 
