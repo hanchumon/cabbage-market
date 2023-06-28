@@ -14,6 +14,44 @@
   <h2 class="a11yHidden">QNA 게시글 페이지</h2>
 
   <div class="sizingWrapper">
+
+    <!-- 메인/qna 뒤로가기 홈 공유 더보기-->
+    <header class="mainHeader backHeader__Button">
+      <h2 class="a11yHidden">기본 정보</h2>
+      <div class="timeInfo">
+        <time class="timeInfo__date" datetime="2023-06-25T02:26">2:26</time>
+        <ul class="celluarInfo">
+          <li class="celluarInfo__item">
+            <span class="sprite spriteReceptionSensitivity"></span>
+            <p class="a11yHidden">수신감도</p>
+          </li>
+          <li class="celluarInfo__item">
+            <span class="sprite spriteLte"></span>
+            <p class="a11yHidden">데이터 종류</p>
+          </li>
+          <li class="celluarInfo__item">
+            <span class="sprite spriteBattery"></span>
+            <p class="a11yHidden">배터리 잔량</p>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="statusBar">
+        <li class="statusBar__item">
+          <a href="/" class="statusBar__link backHeader__backicon sprite spriteBack"><span class="a11yHidden">뒤로가기</span></a>
+        </li>
+        <li class="statusBar__item backHeader__home">
+          <a href="/" class="statusBar__link  sprite spriteHome"><span class="a11yHidden">홈</span></a>
+        </li>
+        <li class="statusBar__item">
+          <a href="/" class="statusBar__link backHeader__share sprite spriteShare"><span class="a11yHidden">공유</span></a>
+        </li>
+        <li class="statusBar__item">
+          <a href="/" class="statusBar__link backHeader__more sprite spriteMore"><span class="a11yHidden">더보기</span></a>
+        </li>
+      </ul>
+    </header>
+
     <main>
       <div class="qnaBoardTopBox">
         <span class="qnaBoard__topic">Q&A</span>
@@ -42,17 +80,17 @@
           <legend>댓글 작성 폼</legend>
 
           <ul class="qnaBoardBar__list">
-            <li class="spritePicture">
+            <li class="sprite spritePicture">
               <a href="/" class="a11yHidden">사진</a>
             </li>
-            <li class="spritePlace">
+            <li class="sprite spritePlace">
               <a href="/" class="a11yHidden">장소</a>
             </li>
             <li class="qnaBoardBar__input">
               <label for="commentInput" class="a11yHidden">댓글</label>
               <input type="text" id="commentInput" name="commentInput" required
-              class="commentInput__bar spriteSmile" placeholder="댓글을 입력해주세요." />
-              <span class="spriteEmoticon"></span>
+              class="commentInput__bar" placeholder="댓글을 입력해주세요." />
+              <span class="sprite spriteEmoticon"></span>
             </li>
           </ul>
 
@@ -63,7 +101,7 @@
         <!-- 초록색 박스 -->
         <div class="qnaBoardAdv__box">
           <a href="/" class="qnaBoardAdv__link">
-            <span class="spriteFlag">
+            <span class="sprite spriteFlag">
               <p class="qnaBoardAdvText__main">5개의 친구질문 글에 댓글 남기기</p>
             </span>
             <span class="qnaBoardAdvText__sub">미션 완료 시 '우수답변가' 배지를 받아요</span>

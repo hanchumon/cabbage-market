@@ -14,10 +14,43 @@
   <h2 class="a11yHidden">QNA 게시글 작성페이지</h2>
 
   <div class="sizingWrapper">
+    <!-- Q&A cancle + p + done -->
+    <header class="mainHeader qnaHeader">
+      <h2 class="a11yHidden">기본 정보</h2>
+      <div class="timeInfo">
+        <time class="timeInfo__date" datetime="2023-06-25T02:26">2:26</time>
+        <ul class="celluarInfo">
+          <li class="celluarInfo__item">
+            <span class="sprite spriteReceptionSensitivity"></span>
+            <p class="a11yHidden">수신감도</p>
+          </li>
+          <li class="celluarInfo__item">
+            <span class="sprite spriteLte"></span>
+            <p class="a11yHidden">데이터 종류</p>
+          </li>
+          <li class="celluarInfo__item">
+            <span class="sprite spriteBattery"></span>
+            <p class="a11yHidden">배터리 잔량</p>
+          </li>
+        </ul>
+      </div>
+      <ul class="statusBar">
+        <li class="statusBar__item">
+          <a href="/" class="statusBar__link qnaHeader__exit sprite spriteExit"><span class="a11yHidden">취소</span></a>
+        </li>
+        <li class="statusBar__item qnaHeader__textItem">
+          <p class="qnaHeader__text">Q&A 글쓰기</p>
+        </li>
+        <li class="statusBar__item">
+          <a href="/" class="statusBar__link qnaHeader__done">완료</a>
+        </li>
+      </ul>
+    </header>
+
     <main>
       <div class="qnaTopBox">
         <p class="qnaTopBox__topic">FRONTEND</p>
-        <span class="spriteMoveRight"></span>
+        <span class="sprite spriteMoveRight"></span>
       </div>
     
       <div class="qnaNoticeBox">

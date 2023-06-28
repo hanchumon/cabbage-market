@@ -34,8 +34,8 @@
         </ul>
       </div>
       <ul class="statusBar">
-        <li class="selectLocation sprite spriteSelect">
-          <select name="지역">
+        <li class="selectLocation">
+          <label for="headerSelect">거래지역 ▼</label><select id="headerSelect">
             <option value="mainLocation" selected> 태백시 철암동
             <option value="subLocation"> 왕산면 대기리
           </select>
@@ -46,7 +46,7 @@
         <li class="locationHeader__menu">
           <a class="sprite spriteMenu" href="/"><span class="a11yHidden">메뉴</span></a>
         </li>
-        <li class="locationHeader__alarm">
+        <li class="locationHeader__menu">
           <a class="sprite spriteAlarm" href="/"><span class="a11yHidden">키워드 알람</span></a>
         </li>
       </ul>
@@ -58,10 +58,12 @@
         <li class="commonNav__item">
           <a href="./main.html" class="commonNav__link">
             <span class="sprite spriteFillHome"></span>
+            <span class="sprite spriteFillHome"></span>
             <span>홈</span>
           </a>
         </li>
         <li class="commonNav__item">
+          <a href="../board/board.html" class="commonNav__link">
           <a href="../board/board.html" class="commonNav__link">
             <span class="sprite spriteBoard"></span>
             <span>게시판</span>
@@ -70,10 +72,13 @@
         <li class="commonNav__item">
           <a href="./exchange.html" class="commonNav__link">
             <span class="sprite spritePlace"></span>
+          <a href="./exchange.html" class="commonNav__link">
+            <span class="sprite spritePlace"></span>
             <span>내 근처</span>
           </a>
         </li>
         <li class="commonNav__item">
+          <a href="../qna/chatlists.html" class="commonNav__link">
           <a href="../qna/chatlists.html" class="commonNav__link">
             <span class="sprite spriteChat"></span>
             <span>채팅</span>
@@ -81,18 +86,20 @@
         </li>
         <li class="commonNav__item">
           <a href="../profile/profile.html" class="commonNav__link">
+          <a href="../profile/profile.html" class="commonNav__link">
             <span class="sprite spriteMyPage"></span>
             <span>내 정보</span>
           </a>
         </li>
       </ul>
     </nav>
+    <button onclick="location.href='/views/board/writeBoard.html' " class="components_button">+</button>
     <main>
       <h2 class="a11yHidden">메인 메뉴</h2>
       <nav class="mainNav">
         <ul class="mainNav__list">
-          <li class="mainNav__item"><a href="/" class="mainNav__link">선배님 스토리</a></li>
-          <li class="mainNav__item"><a href="/" class="mainNav__link accentColor">기기 거래</a></li>
+          <li class="mainNav__item"><a href="./main.html" class="mainNav__link">선배님 스토리</a></li>
+          <li class="mainNav__item"><a href="exchange.html" class="mainNav__link accentColor">기기 거래</a></li>
           <li class="mainNav__item"><a href="/" class="mainNav__link">질의 응답</a></li>
           <li class="mainNav__item"><a href="/" class="mainNav__link">함께 해요</a></li>
         </ul>
@@ -104,10 +111,14 @@
             <p class="exchange__title">2017 mac pro</p>
             <p class="exchange__placetime">마포구 신수동<span aria-hidden="true"> &middot; </span><time
                 datetime="2023-06-25T02:29">44분전</time></p>
-            <p class="exchange__status">예약중</p>
-            <p class="exchange__price">800,000원</p>
+            <p class="exchange__price">
+              <span class="exchange__status__reserve">예약중</span>800,000원
+            </p>
             <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchange__img" />
-            <p class="exchange__like"><span class=" sprite spriteWho">좋아요</span>4</p>
+            <p class="exchange__like">
+              <span class="sprite spriteSmHeart"></span>
+              <span class="a11yHidden">좋아요</span>4
+            </p>
           </a>
         </li>
         <li class="exchange_item">
@@ -117,7 +128,10 @@
                 datetime="2023-06-25T02:29">time</time></p>
             <p class="exchange__price">150,000원</p>
             <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchange__img"/>
-            <p class="exchange__like sprite spriteSmHeart"><span class="a11yHidden">좋아요</span>4</p>
+            <p class="exchange__like">
+              <span class="sprite spriteSmHeart"></span>
+              <span class="a11yHidden">좋아요</span>4
+            </p>
           </a>
         </li>
         <li class="exchange__item">
@@ -125,30 +139,27 @@
             <p class="exchange__title">text</p>
             <p class="exchange__placetime">text<span aria-hidden="true"> &middot; </span><time
                 datetime="2023-06-25T02:29">44분전</time></p>
-            <p class="exchange__status">예약중</p>
+                <p class="exchange__price">
+                  <span class="exchange__status__done">거래 완료</span>800,000원
+                </p>
+            <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchange__img" />
+            <p class="exchange__like">
+              <span class="sprite spriteSmHeart"></span>
+              <span class="a11yHidden">좋아요</span>4
+            </p>
+          </a>
+        </li>
+        <li class="exchange__item">
+          <a href="/" class="exchange__link">
+            <p class="exchange__title">text</p>
+            <p class="exchange__placetime">text<span aria-hidden="true"> &middot; </span><time
+                datetime="2023-06-25T02:29">time</time></p>
             <p class="exchange__price">150,000원</p>
             <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchange__img" />
-            <p class="exchange__like sprite spriteSmHeart"><span class="a11yHidden">좋아요</span>4</p>
-          </a>
-        </li>
-        <li class="exchange__item">
-          <a href="/" class="exchange__link">
-            <p class="exchange__title">text</p>
-            <p class="exchange__placetime">text<span aria-hidden="true"> &middot; </span><time
-                datetime="2023-06-25T02:29">time</time></p>
-            <p class="exchange__price">150,000원</p>
-            <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchange__img" />
-            <p class="exchange__like sprite spriteSmHeart"><span class="a11yHidden">좋아요</span>4</p>
-          </a>
-        </li>
-        <li class="exchange__item">
-          <a href="/" class="exchange__link">
-            <p class="exchange__title">text</p>
-            <p class="exchange__placetime">text<span aria-hidden="true"> &middot; </span><time
-                datetime="2023-06-25T02:29">time</time></p>
-            <p class="exchange__price">150,000원</p>
-            <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchange__img"/>
-            <p class="exchange__like sprite spriteSmHeart"><span class="a11yHidden">좋아요</span>4</p>
+            <p class="exchange__like">
+              <span class="sprite spriteSmHeart"></span>
+              <span class="a11yHidden">좋아요</span>4
+            </p>
           </a>
         </li>
         <li class="exchange__item">
@@ -158,7 +169,10 @@
                 datetime="2023-06-25T02:29">time</time></p>
             <p class="exchange__price">150,000원</p>
             <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchange__img"/>
-            <p class="exchange__like sprite spriteSmHeart"><span class="a11yHidden">좋아요</span>4</p>
+            <p class="exchange__like">
+              <span class="sprite spriteSmHeart"></span>
+              <span class="a11yHidden">좋아요</span>4
+            </p>
           </a>
         </li>
         <li class="exchange__item">
@@ -168,7 +182,23 @@
                 datetime="2023-06-25T02:29">time</time></p>
             <p class="exchange__price">150,000원</p>
             <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchange__img"/>
-            <p class="exchange__like sprite spriteSmHeart"><span class="a11yHidden">좋아요</span>4</p>
+            <p class="exchange__like">
+              <span class="sprite spriteSmHeart"></span>
+              <span class="a11yHidden">좋아요</span>4
+            </p>
+          </a>
+        </li>
+        <li class="exchange__item">
+          <a href="/" class="exchange__link">
+            <p class="exchange__title">text</p>
+            <p class="exchange__placetime">text<span aria-hidden="true"> &middot; </span><time
+                datetime="2023-06-25T02:29">time</time></p>
+            <p class="exchange__price">150,000원</p>
+            <img src="/images/imglightgray_bg.png" alt="제품 이미지" class="exchange__img"/>
+            <p class="exchange__like">
+              <span class="sprite spriteSmHeart"></span>
+              <span class="a11yHidden">좋아요</span>4
+            </p>
           </a>
         </li>
       </ul>

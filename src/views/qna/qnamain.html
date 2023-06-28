@@ -13,6 +13,71 @@
   <h1 class="a11yHidden">배추마켓</h1>
   <h2 class="a11yHidden">QNA 게시판 페이지</h2>
   <div class="sizingWrapper">
+    <!-- 로그인/보드 뒤로가기 버튼  -->
+    <header class="mainHeader backHeader">
+      <h2 class="a11yHidden">기본 정보</h2>
+      <div class="timeInfo">
+        <time class="timeInfo__date" datetime="2023-06-25T02:26">2:26</time>
+        <ul class="celluarInfo">
+          <li class="celluarInfo__item">
+            <span class="sprite spriteReceptionSensitivity"></span>
+            <p class="a11yHidden">수신감도</p>
+          </li>
+          <li class="celluarInfo__item">
+            <span class="sprite spriteLte"></span>
+            <p class="a11yHidden">데이터 종류</p>
+          </li>
+          <li class="celluarInfo__item">
+            <span class="sprite spriteBattery"></span>
+            <p class="a11yHidden">배터리 잔량</p>
+          </li>
+        </ul>
+      </div>
+      <ul class="statusBar">
+        <li class="statusBar__item">
+          <a href="/" class="statusBar__link backHeader__link sprite spriteBack"><span class="a11yHidden">뒤로가기</span></a>
+        </li>
+      </ul>
+    </header>
+
+    <nav class="commonNav">
+      <h2 class="a11yHidden">메뉴</h2>
+      <ul class="commonNav__list">
+        <li class="commonNav__item">
+          <a href="./main.html" class="commonNav__link">
+            <span class="sprite spriteHome"></span>
+            <span>홈</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="../board/board.html" class="commonNav__link">
+            <span class="sprite spriteFillBoard"></span>
+            <span>게시판</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="./exchange.html" class="commonNav__link">
+            <span class="sprite spritePlace"></span>
+            <span>내 근처</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="../qna/chatlists.html" class="commonNav__link">
+            <span class="sprite spriteChat"></span>
+            <span>채팅</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="../profile/profile.html" class="commonNav__link">
+            <span class="sprite spriteMyPage"></span>
+            <span>내 정보</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <button onclick="location.href='/views/qna/writeqna.html'" class="newContent">+</button>
+
     <main>
       <!-- 프로필 박스 -->
       <div class="qnaProfile">
@@ -32,7 +97,7 @@
             <p class="qnaPost__title">JS에서 함수 선언문과 표현식의 차이를 아직 잘 모르겠네요...</p>
             <p class="qnaPost__content">함수 선언문과 표현식의 차이를 아직 잘 모르겠네요...</p>
             <p class="qnaPost__info">북가좌동 &#183; 
-              <time datetime="2023-06-24T11:39">2일 전</time></p>
+              <time datetime="2023-06-24T11:39"> 2일 전</time></p>
           </a>
         </li>
   
@@ -43,7 +108,7 @@
               <p class="qnaPost__title">아니 auto Layout 했는데 왜 이러냐 진짜로..</p>
               <p class="qnaPost__content">아니 이거 묶으려고 auto Layout했는데 왜 어그러지냐 진짜</p>
               <p class="qnaPost__info">망원동 &#183; 
-              <time datetime="2023-06-24T11:39">2일 전</time>&#183; 조회 132</p>
+              <time datetime="2023-06-24T11:39">2일 전 </time>&#183; 조회 132</p>
             </div>
   
             <div class="qnsPost__img">
@@ -51,7 +116,7 @@
             
             <div class="qnaboard_emo qnaboard_first">
               <p class="qnaPost__info">
-                <span class="sprite spriteRecommand"></span>
+                <span class="sprite spriteRecommend"></span>
                 <span class="a11yHidden">추천</span>2
               </p>
               <p class="qnaPost__info">
@@ -82,7 +147,7 @@
             </p>
             <div class="qnaboard_emo qnaboard_emoposition">
               <p class="qnaPost__info">
-                <span class="sprite spriteRecommand"></span>
+                <span class="sprite spriteRecommend"></span>
                 <span class="a11yHidden">추천</span>6
               </p>
               <p class="qnaPost__info">
@@ -106,10 +171,11 @@
             
             <div class="qnsPost__img">
               <img src="/images/qnalistImage.png" alt="QNA 게시글 첨부 이미지" class="qnaPost__img" />
+            </div>
               
               <div class="qnaboard_emo qnaboard_first">
                 <p class="qnaPost__info">
-                  <span class="sprite spriteRecommand"></span>
+                  <span class="sprite spriteRecommend"></span>
                   <span class="a11yHidden">추천</span>2
                 </p>
                 <p class="qnaPost__info">
@@ -122,6 +188,8 @@
       </ul>
       
     </main>
+
+
   </div>
 
 </body>
