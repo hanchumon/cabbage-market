@@ -1817,6 +1817,40 @@ iframe {
   color: #008F22;
 }
 
+.exchange__list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-bottom: 3.125rem;
+}
+.exchange__link {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 1rem;
+  grid-row-gap: 0rem;
+  grid-template-areas: "img title title title" "img pt pt pt" "img status price like";
+}
+.exchange__title {
+  grid-area: title;
+}
+.exchange__placetime {
+  grid-area: pt;
+}
+.exchange__price {
+  grid-area: price;
+}
+.exchange__status {
+  grid-area: status;
+}
+.exchange__img {
+  grid-area: img;
+}
+.exchange__like {
+  grid-area: like;
+}
+
 .sizingWrapper {
   height: 100%;
 }

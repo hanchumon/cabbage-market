@@ -24,17 +24,11 @@
 
 //헤더 공통디자인
 .statusBar {
-  // background: pink;
   @include flexbox($items:center);
   column-gap: $spacing-2;
   width: 100%;
   height: rem(40px);  
   @include marginX(16px);
-}
-
-//location 헤더 디자인
-.locationHeader__search, .locationHeader__menu, .locationHeader__menu{
-  // flex-shrink: 0;
 }
 
 .selectLocation{
