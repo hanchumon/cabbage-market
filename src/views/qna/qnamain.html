@@ -12,81 +12,117 @@
 <body>
   <h1 class="a11yHidden">배추마켓</h1>
   <h2 class="a11yHidden">QNA 게시판 페이지</h2>
-  
-  <main>
-    <!-- 프로필 박스 -->
-    <div class="qnaProfile">
-      <div class="qnaProfile__mini">
-        <img class="qnaProfile__img" src="/images/profileImage.png" alt="사용자 프로필 이미지" />
-          <p class="qnaState">Q&A</p>
-          <p class="spriteAttend">참여중</p>
+  <div class="sizingWrapper">
+    <main>
+      <!-- 프로필 박스 -->
+      <div class="qnaProfile">
+        <div class="qnaProfile__mini">
+          <img class="qnaProfile__img" src="/images/profileImage.png" alt="사용자 프로필 이미지" />
+            <p class="qnaState">Q&A</p>
+            <span class="sprite spriteAttend"></span>
+            <p class="attendMessage">참여중</p>
+        </div>
       </div>
-    </div>
+  
+      <!-- 게시글 목록 -->
+      <ul class="qnaPost__list">
+        <li class="qnaPost__item">
+          <a href="qnaboard.html" class="qnaPost__link" >
+            <span class="qnaPost__topic">JS</span>
+            <p class="qnaPost__title">JS에서 함수 선언문과 표현식의 차이를 아직 잘 모르겠네요...</p>
+            <p class="qnaPost__content">함수 선언문과 표현식의 차이를 아직 잘 모르겠네요...</p>
+            <p class="qnaPost__info">북가좌동 &#183; 
+              <time datetime="2023-06-24T11:39">2일 전</time></p>
+          </a>
+        </li>
+  
+        <li class="qnaPost__item">
+          <a href="qnaboard.html" class="qnaPost__link">
+            <div class="qnaPost__text">
+              <span class="qnaPost__topic">UI&#183;UX</span>
+              <p class="qnaPost__title">아니 auto Layout 했는데 왜 이러냐 진짜로..</p>
+              <p class="qnaPost__content">아니 이거 묶으려고 auto Layout했는데 왜 어그러지냐 진짜</p>
+              <p class="qnaPost__info">망원동 &#183; 
+              <time datetime="2023-06-24T11:39">2일 전</time>&#183; 조회 132</p>
+            </div>
+  
+            <div class="qnsPost__img">
+            <img src="/images/qnalistImage.png" alt="QNA 게시글 첨부 이미지" class="qnaPost__img" />
+            
+            <div class="qnaboard_emo qnaboard_first">
+              <p class="qnaPost__info">
+                <span class="sprite spriteRecommand"></span>
+                <span class="a11yHidden">추천</span>2
+              </p>
+              <p class="qnaPost__info">
+                <span class="sprite spriteComment"></span>
+                <span class="a11yHidden">댓글</span>1
+              </p>
+            </div>
+          </a>
+        </li>
+  
+        <li class="qnaPost__item">
+          <a href="qnaboard.html" class="qnaPost__link" >
+            <span class="qnaPost__topic">HTML</span>
+            <p class="qnaPost__title">웹 접근성 적용해서 코드 짜려는데 여기에 어떤거 넣어야 하나요?</p>
+            <p class="qnaPost__content">aria-hidden 적용하면 보이는 거 안들리는 거 맞나요?</p>
+            <p class="qnaPost__info">남가좌제2동 &#183; 
+              <time datetime="2023-06-22T12:54">4일 전</time> &#183; 조회 19</p>
+          </a>
+        </li>
+  
+        <li class="qnaPost__item">
+          <a href="qnaboard.html" class="qnaPost__link" >
+            <span class="qnaPost__topic">css</span>
+            <p class="qnaPost__title">CSS flex 적용했는데 왜 이러는지 모르겠어요ㅠㅠ</p>
+            <p class="qnaPost__content">flex justify-content : center 적용했는데 왜 이렇게 될까요..</p>
+            <p class="qnaPost__info">성산제3동 &#183; 
+              <time datetime="2023-06-19T14:22">7일 전</time>
+            </p>
+            <div class="qnaboard_emo qnaboard_emoposition">
+              <p class="qnaPost__info">
+                <span class="sprite spriteRecommand"></span>
+                <span class="a11yHidden">추천</span>6
+              </p>
+              <p class="qnaPost__info">
+                <span class="sprite spriteComment"></span>
+                <span class="a11yHidden">댓글</span>3
+              </p>
+            </div>
+          </a>
+        </li>
+  
+        <li class="qnaPost__item">
+          <a href="qnaboard.html" class="qnaPost__link" >
+            <div class="qnaPost__text">
+              <span class="qnaPost__topic">UI&#183;UX</span>
+              <p class="qnaPost__title">Figma 하는 중인데 어두운 화면이면 어떻게 해야하나요?</p>
+              <p class="qnaPost__content">다른 화면 만드는데 어두운 배경이 깔리고 또 다른 화면이 나와요.</p>
+              <p class="qnaPost__info">북가좌동 &#183; 
+                <time datetime="2023-06-24T15:20">2일 전</time>
+              </p>
+            </div>
+            
+            <div class="qnsPost__img">
+              <img src="/images/qnalistImage.png" alt="QNA 게시글 첨부 이미지" class="qnaPost__img" />
+              
+              <div class="qnaboard_emo qnaboard_first">
+                <p class="qnaPost__info">
+                  <span class="sprite spriteRecommand"></span>
+                  <span class="a11yHidden">추천</span>2
+                </p>
+                <p class="qnaPost__info">
+                  <span class="sprite spriteComment"></span>
+                  <span class="a11yHidden">댓글</span>1
+                </p>
+              </div>
+          </a>
+        </li>
+      </ul>
+      
+    </main>
+  </div>
 
-    <!-- 게시글 목록 -->
-    <ul class="qnaPost__list">
-      <li class="qnaPost__item">
-        <a href="qnaboard.html" class="qnaPost__link" >
-          <span class="qnaPost__topic">JS</span>
-          <p class="qnaPost__title">JS에서 함수 선언문과 표현식의 차이를 아직 잘 모르겠네요...</p>
-          <p class="qnaPost__content">함수 선언문과 표현식의 차이를 아직 잘 모르겠네요...</p>
-          <p class="qnaPost__info">북가좌동 &#183; 
-            <time datetime="2023-06-24T11:39">2일 전</time></p>
-        </a>
-      </li>
-
-      <li class="qnaPost__item">
-        <a href="qnaboard.html" class="qnaPost__link">
-          <span class="qnaPost__topic">UI&#183;UX</span>
-          <p class="qnaPost__title">아니 auto Layout 했는데 왜 이러냐 진짜로..</p>
-          <p class="qnaPost__content">아니 이거 묶으려고 auto Layout했는데 왜 어그러지냐 진짜</p>
-          <p class="qnaPost__info">망원동 &#183; 
-            <time datetime="2023-06-24T11:39">2일 전</time>&#183; 조회 132</p>
-           
-          <img src="/images/qnalistImage.png" alt="QNA 게시글 첨부 이미지" class="qnaPost__img" />
-          <p class="qnaPost__info"><span class="a11yHidden sprite spriteRecommend">추천</span>2</p>
-          <p class="qnaPost__info"><span class="a11yHidden sprite spriteComment">댓글</span>1</p>
-        </a>
-      </li>
-
-      <li class="qnaPost__item">
-        <a href="qnaboard.html" class="qnaPost__link" >
-          <span class="qnaPost__topic">HTML</span>
-          <p class="qnaPost__title">웹 접근성 적용해서 코드 짜려는데 여기에 어떤거 넣어야 하나요?</p>
-          <p class="qnaPost__content">aria-hidden 적용하면 보이는 거 안들리는 거 맞나요?</p>
-          <p class="qnaPost__info">남가좌제2동 &#183; 
-            <time datetime="2023-06-22T12:54">4일 전</time> &#183; 조회 19</p>
-        </a>
-      </li>
-
-      <li class="qnaPost__item">
-        <a href="qnaboard.html" class="qnaPost__link" >
-          <span class="qnaPost__topic">css</span>
-          <p class="qnaPost__title">CSS flex 적용했는데 왜 이러는지 모르겠어요ㅠㅠ</p>
-          <p class="qnaPost__content">flex justify-content : center 적용했는데 왜 이렇게 될까요..</p>
-          <p class="qnaPost__info">성산제3동 &#183; 
-            <time datetime="2023-06-19T14:22">7일 전</time>
-          </p>
-          <p class="qnaPost__info"><span class="a11yHidden sprite spriteRecommend">추천</span>6</p>
-          <p class="qnaPost__info"><span class="a11yHidden sprite spriteComment">댓글</span>3</p>
-        </a>
-      </li>
-
-      <li class="qnaPost__item">
-        <a href="qnaboard.html" class="qnaPost__link" >
-          <span class="qnaPost__topic">UI&#183;UX</span>
-          <p class="qnaPost__title">Figma 하는 중인데 어두운 화면이면 어떻게 해야하나요?</p>
-          <p class="qnaPost__content">다른 화면 만드는데 어두운 배경이 깔리고 또 다른 화면이 나와요.</p>
-          <p class="qnaPost__info">북가좌동 &#183; 
-            <time datetime="2023-06-24T15:20">2일 전</time>
-          </p>
-          <img src="/images/qnalistImage.png" alt="QNA 게시글 첨부 이미지" />
-          <p class="qnaPost__info"><span class="a11yHidden sprite spriteRecommend">추천</span>1</p>
-          <p class="qnaPost__info"><span class="a11yHidden sprite spriteComment">댓글</span>4</p>
-        </a>
-      </li>
-    </ul>
-    
-  </main>
 </body>
 </html>
