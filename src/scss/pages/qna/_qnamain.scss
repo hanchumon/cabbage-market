@@ -1,10 +1,8 @@
   .qnaProfile{
-    width: auto;
-    height: auto;
+    display: flex;
+    align-items: center;
     padding: 0.75rem 1.125rem;
-    border-bottom: 0.5rem solid #BDBDBD;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
 
   .qnaProfile__mini{
@@ -12,6 +10,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 1.2rem;
+    border-bottom: 0.5rem solid #BDBDBD;
   }
 
   .qnaProfile__img{
@@ -26,18 +26,6 @@
     margin-left: 1rem;
   }
 
-  .spriteAttend{
-    padding: 0.4rem 0.75rem;
-    border-radius: 8px;
-    background: #9DA1B4;
-    color: #FFF;
-    font-size: 0.65rem;
-    font-family: Pretendard;
-    font-weight: 600;
-    margin-left: 8rem;
-  }
-
-
   .qnaPost__list{
     display: flex;
     flex-direction: column;
@@ -47,6 +35,8 @@
 
   .qnaPost__item{
     padding: 0.75rem 5.0625rem 0.75rem 0.75rem;
+    width: 100%;
+    position: relative;
   }
 
   .qnaPost__link{
@@ -54,6 +44,18 @@
     flex-direction: column;
     gap: 0.2rem;
     align-items: flex-start;
+  }
+
+  .qnaPost__text{
+    position: absolute;
+    width: 26.5rem;
+    line-height: 120%;
+  }
+
+  .qnsPost__img{
+    position: relative;
+    left: 17rem;
+    top: 1rem;
   }
 
   .qnaPost__topic{
@@ -87,6 +89,7 @@
     color: #9DA1B4;
     font-size: 0.65rem;
     font-family: Pretendard;
+
   }
 
   .qnaPost__img{
@@ -95,12 +98,38 @@
     border-radius: 10px;
   }
 
-  .spriteRecommend{
-    color:#9DA1B4;
-    font-size: 0.6rem;
-    font-family: Pretendard;
-    line-height: 160%;
+  .qnaboard_emo{
+    display: flex;
+    justify-content: flex-end;
+
   }
 
+  .qnaboard_first{
+    margin-left: 1rem;
+  }
 
+  
+  .attendMessage{
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    background: #9DA1B4;
+    color: #FFF;
+    font-size: 0.65rem;
+    font-family: Pretendard;
+    font-weight: 600;
+    margin-left: 12rem;
+  }
+
+  // .spriteRecommend .spriteComment{
+  //   color:#9DA1B4;
+  //   font-size: 0.6rem;
+  //   font-family: Pretendard;
+  //   line-height: 160%;
+  // }
+
+  .qnaboard_emoposition{
+    position: absolute;
+    left: 18.6rem;
+    bottom: 0.2rem;
+  }
 
