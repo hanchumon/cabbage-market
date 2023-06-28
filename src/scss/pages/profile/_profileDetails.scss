@@ -1,0 +1,33 @@
+@use "./../../utils/" as *;
+@use "./../../themes/" as *;
+
+
+// 전체 라벨
+.formTitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+// 성별, 연령 안내
+.Notice {
+  font-size: 10px;
+  line-height: 160%;
+  color: $gray-300;
+}
+
+// 동의서 파트
+.agreeCentent {
+  
+}
+
+.allAgree {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.personalAgreeNotice {
+  font-size: 10px;
+  color: $gray-300;
+}
