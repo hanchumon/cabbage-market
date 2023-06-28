@@ -3,91 +3,66 @@
 @use "./../../base" as *;
 @use "./../../themes" as *;
 
-.togetherBoardNav {
-  &__form {
-    display: flex;
-    flex-flow: row;
-    gap: rem(12px);
-    align-items: center;
-    height: rmx(91px);
-    // background-color: aqua;
-    overflow: hidden;
-    padding: 8px 20px;
-  }
-
-  &__box {
-    display: flex;
-    flex-flow: column;
-    gap: rem(6px);
-    text-align: center;
-  }
-
-  &__button {
-    width: rem(54px);
-    height: rem(54px);
-    border-radius: 50%;
-    border: none;
-    background-color: $gray-100;
-    font-size: $text-lg;
-  }
-  &__button:hover{
-    border: $deep-green solid rem(2px);
-  }
-
-  &__label {
-    color: var(--contents-content-primary, #000);
-    text-align: center;
-    font-size: $text-xxs;
-    font-family: Pretendard;
-    font-weight: 600;
-    line-height: 150%;
-  }
-}
 
 .togetherBoardSorting {
-  padding: rem(8px) 0 rem(12px) rem(14px);
+  padding: rem(8px) 0 rem(12px) rem(2px);
   border-bottom: solid 1px $gray-300;
 
   &__form {
     display: flex;
     flex-flow: row;
-    gap: rem(7px)
+    gap: rem(7px);
   }
 
   &__select {
     @include keywordButton;
     text-align: center;
     appearance: none;
-
-  }
-
-  &__button {
-    @include keywordButton(rem(26px));
   }
 }
 
+.newContent{
+  @include pulsButton;
+  
+}
+
+
 .togetherBoardMain {
   &__item {
-    // background-color: aqua;
+    
     position: relative;
-    padding: rem(12px) rem(15px);
+    padding: rem(12px) rem(3px);
     border-bottom: solid 1px $gray-300;
+    
+    
     &__title{
-      @include itemTitle;
+      @include itemTitle(calc(100% - 6.5625rem),$font-weight:600);
+      margin-bottom: rem(8px);
     }
     
-    &__info{
-      @include itemContent;
+    &__info,&__NOP{
+      @include itemContentOver($width: calc(100% - 6.5625rem));
     }
 
-    &__who,&__date,&__NOP,&__befor{
-      @include itemContent($color:$black);
+    &__who,&__date{
+      @include itemContentOver($color:$black, $width: calc(100% - 6.5625rem));
+      padding-left: 4px;
+    }
+
+    &__profile{
+      margin-top: 8px;
+      float: left;
+    }
+    &__NOP{
+      margin-top: 8px;
+      line-height: 200%;
+      padding-left: 2px;
     }
 
     &__befor{
+      @include itemContent;
       position: absolute;
-      bottom: rem(12px);
-      right: rem(15px);
+      @include posbottomRight($b: rem(12px), $r: rem(12px)); 
     }
     
   }

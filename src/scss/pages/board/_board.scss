@@ -4,57 +4,43 @@
 @use "./../../themes" as *;
 
 
-.boardNav {
-  border-bottom: solid 1px $gray-300;
-  padding: rem(8px) 0 rem(8px) rem(12px);
-
-  &__item {
-    display: inline-block;
-  }
-
-  &__link {
-    display: block;
-    @include keywordButton;
-  }
-}
 
 .boardMain {
   &__item {
     border-bottom: solid 1px $gray-300;
-    padding: rem(12px);
     position: relative;
+    padding: rem(12px) 0;
 
     &__kind {
       @include spanTag;
     }
 
     &__title {
-      @include itemTitle(rem(190px));
+      @include itemTitle(calc(100% - 6.5625rem));
     }
 
     &__content,
     &__who,
     &__date,
-    &__info,
+    &__info{
+      @include itemContentOver($width: calc(100% - 6.5625rem));
+      
+    }
+
     &__NOP {
       @include itemContent;
+      position: absolute;
+      @include posbottomRight($b: rem(12px), $r: rem(12px)) 
     }
 
-    &__NOP {
+    &__img{
       position: absolute;
-      right: rem(13px);
-      bottom: rem(12px);
+      @include posTopRight($t: rem(12px), $r: rem(13px));
+      width: rem(60px);
+      height: rem(60px);
+      border-radius: rem(4px);
+      background-color: $gray-800;
     }
   }
-}
 
-
-.boardMain__item__img {
-  position: absolute;
-  top: rem(12px);
-  right: rem(13px);
-  width: rem(60px);
-  height: rem(60px);
-  border-radius: rem(4px);
-  background-color: $gray-800;
 }

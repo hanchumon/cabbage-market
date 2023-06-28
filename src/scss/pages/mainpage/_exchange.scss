@@ -1,3 +1,77 @@
+@use "../../themes/" as *;
+@use "../../utils/" as *;
+@use "../../components/" as *;
 
 
+.components_button{
+  @include plusButton;
+}
 
+.exchange {
+  &__list {
+    @include flexbox(column);
+    margin-bottom: rem(50%);
+  
+  }
+
+  &__link {
+    @include gridbox;
+    grid-template-areas: 
+    "img title title title"
+    "img pt pt pt"
+    "img price price like"
+    ;
+    @include padding(12px);
+    border-bottom:1px solid $gray-300;
+    aline-item:center;
+  }
+  
+  &__title {
+    // align-self: center;
+    grid-area: title;
+    font-size: rem(14px);
+    font-family: Pretendard;
+    line-height: 1.6;
+  }
+  
+  &__placetime {
+    // align-self: center;
+    grid-area: pt;
+    font-size: rem(10px);
+    font-family: Pretendard;
+    line-height: 1.6;
+    color: $gray-500;
+  }
+  
+  &__price {
+    align-self: center;
+    grid-area: price;
+    
+  }
+  
+  &__status {
+    display: inline-block;
+    line-height: 1.5;
+    font-size: rem(14px);
+    font-family: Pretendard;
+    font-weight: 600;
+
+    &__done{
+      @include stateTag
+    }
+    &__reserve{
+      @include stateTag($primary)
+    }
+  }
+  
+  &__img {
+    grid-area: img;
+  }
+  
+  &__like {
+    grid-area: like;
+    display: inline-block;
+
+    justify-self: end;
+  }
+}
