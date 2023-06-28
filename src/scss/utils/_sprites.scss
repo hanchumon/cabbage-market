@@ -3,274 +3,102 @@
 
 .sprite {
   content: "";
-  background-image: url(/images/icon_1x.png);
+  background-image: url(../../images/icon_1x.png);
   background-repeat: no-repeat;
   float: left;
-
   // ----------0-------------
-  &Home {
-    @include whbp();
-  }
-
-  &Board {
-    @include whbp($bpX: rem(-20px));
-  }
-
-  &Chat {
-    @include whbp($bpX: rem(-40px));
-  }
-
-  &Place {
-    @include whbp($bpX: rem(-60px));
-  }
-
-  &MyPage {
-    @include whbp($bpX: rem(-80px));
-  }
-
-  &Ppl {
-    @include whbp($bpX: rem(-100px));
-  }
-
+  &Home{@include whbp();}
+  &Board{@include whbp($bpX:rem(-20px));}
+  &Chat{@include whbp($bpX:rem(-40px));}
+  &Place{@include whbp($bpX:rem(-60px));}
+  &MyPage{@include whbp($bpX:rem(-80px));}
+  &Ppl{@include whbp($bpX:rem(-100px));}
   // ----------2-------------
-  &FillHome {
-    @include whbp($bpX: rem(0px), $bpY: rem(-20px));
-  }
-
-  &FillBoard {
-    @include whbp($bpX: rem(-20px), $bpY: rem(-20px));
-  }
-
-  &FillChat {
-    @include whbp($bpX: rem(-40px), $bpY: rem(-20px));
-  }
-
-  &FillPlace {
-    @include whbp($bpX: rem(-60px), $bpY: rem(-20px));
-  }
-
-  &FillMyPage {
-    @include whbp($bpX: rem(-80px), $bpY: rem(-20px));
-  }
-
-  // ---------4--------------
-  &Menu {
-    @include whbp($bpX: rem(0px), $bpY: rem(-40px));
-  }
-
-  &Plus {
-    @include whbp($bpX: rem(-20px), $bpY: rem(-40px));
-  }
-
-
-  &Exit {
-    @include whbp($bpX: rem(-80px), $bpY: rem(-40px));
-  }
-
-  &Select {
-    @include whbp($bpX: rem(-100px), $bpY: rem(-40px));
-  }
-
-  &LgSearch {
-    @include whbp($size: rem(22px), $bpX: rem(-160px), $bpY: rem(-40px));
-  }
-
+  &FillHome{@include whbp($bpX:rem(0px),$bpY:rem(-20px));}
+  &FillBoard{@include whbp($bpX:rem(-20px),$bpY:rem(-20px));}
+  &FillChat{@include whbp($bpX:rem(-40px),$bpY:rem(-20px));}
+  &FillPlace{@include whbp($bpX:rem(-60px),$bpY:rem(-20px));}
+  &FillMyPage{@include whbp($bpX:rem(-80px),$bpY:rem(-20px));}
+  
+   // ---------4--------------
+  &Menu{@include whbp($bpX:rem(0px),$bpY:rem(-40px));}
+  &Plus{@include whbp($bpX:rem(-20px),$bpY:rem(-40px));}
+   
+  
+  &Exit{@include whbp($bpX:rem(-80px),$bpY:rem(-40px));}
+  &Select{@include whbp($bpX:rem(-100px),$bpY:rem(-40px));}
+  &LgSearch{@include whbp($size:rem(22px),$bpX:rem(-160px),$bpY:rem(-40px));}
   // -----------6------------
-  &Back {
-    @include whbp($bpX: rem(-40px), $bpY: rem(-60px));
-  }
+  &Back{@include whbp($bpX:rem(-40px),$bpY:rem(-60px));}
+  &MoreRight{@include whbp($bpX:rem(-20px),$bpY:rem(-60px));}
+  
+  
 
-  &MoreRight {
-    @include whbp($bpX: rem(-20px), $bpY: rem(-60px));
-  }
+  &Alarm{@include whbp($bpX:rem(-100px),$bpY:rem(-60px));}
+   // ----------8-------------
+   
+   
 
-
-
-  &Alarm {
-    @include whbp($bpX: rem(-100px), $bpY: rem(-60px));
-  }
-
-  // ----------8-------------
-
-
-
-  &Sex {
-    @include whbp($bpX: rem(-60px), $bpY: rem(-80px));
-  }
-
-  &Smile {
-    @include whbp($bpX: rem(-80px), $bpY: rem(-80px));
-  }
-
-  &Qr {
-    @include whbp($bpX: rem(-100px), $bpY: rem(-80px));
-  }
-
-  &Pencil {
-    @include whbp($size: rem(24x), $bpX: rem(-160px), $bpY: rem(-80px));
-  }
-
-  // -----------10------------
-  &PictureBlack {
-    @include whbp($bpX: rem(-0px), $bpY: rem(-100px));
-  }
-
-  &KeyBoard {
-    @include whbp($bpX: rem(-20px), $bpY: rem(-100px));
-  }
-
-  &Share {
-    @include whbp($bpX: rem(-40px), $bpY: rem(-100px));
-  }
-
-  &Time {
-    @include whbp($bpX: rem(-60px), $bpY: rem(-100px));
-  }
-
-  &Search {
-    @include whbp($bpX: rem(-80px), $bpY: rem(-100px));
-  }
-
-  // ----------12-------------
+   &Sex{@include whbp($bpX:rem(-60px),$bpY:rem(-80px));}
+   &Smile{@include whbp($bpX:rem(-80px),$bpY:rem(-80px));}
+   &Qr{@include whbp($bpX:rem(-100px),$bpY:rem(-80px));}
+   &Pencil{@include whbp($size:rem(24x),$bpX:rem(-160px),$bpY:rem(-80px));}
+   // -----------10------------
+   &PictureBlack{@include whbp($bpX:rem(-0px),$bpY:rem(-100px));}
+   &KeyBoard{@include whbp($bpX:rem(-20px),$bpY:rem(-100px));}
+   &Share{@include whbp($bpX:rem(-40px),$bpY:rem(-100px));}
+   &Time{@include whbp($bpX:rem(-60px),$bpY:rem(-100px));}
+   &Search{@include whbp($bpX:rem(-80px),$bpY:rem(-100px));}
+   
+   // ----------12-------------
+   
 
 
 
+  //  &Recommand{@include whbp($bpX:rem(-80px),$bpY:rem(-120px));}
+   &Call{@include whbp($bpX:rem(-100px),$bpY:rem(-120px));}
+   // ----------14-------------
+   &Cal{@include whbp($bpX:rem(-0px),$bpY:rem(-140px));}
 
-  &Recommand {
-    @include whbp($bpX: rem(-80px), $bpY: rem(-120px));
-  }
-
-  &Call {
-    @include whbp($bpX: rem(-100px), $bpY: rem(-120px));
-  }
-
-  // ----------14-------------
-  &Cal {
-    @include whbp($bpX: rem(-0px), $bpY: rem(-140px));
-  }
-
-  &Won {
-    @include whbp($bpX: rem(-40px), $bpY: rem(-140px));
-  }
-
-  &Lock {
-    @include whbp($bpX: rem(-60px), $bpY: rem(-140px));
-  }
+   &Won{@include whbp($bpX:rem(-40px),$bpY:rem(-140px));}
+   &Lock{@include whbp($bpX:rem(-60px),$bpY:rem(-140px));}
 
 
-  &Mark {
-    @include whbp($bpX: rem(-120px), $bpY: rem(-140px));
-  }
-
-  // -----------16------------
-  &ReceptionSensitivity {
-    @include whbp($bpX: rem(-0px), $bpY: rem(-160px));
-  }
-
-  &Lte {
-    @include whbp($bpX: rem(-20px), $bpY: rem(-160px));
-  }
-
-  &Battery {
-    @include whbp($bpX: rem(-40px), $bpY: rem(-160px));
-  }
-
-  &More {
-    @include whbp($bpX: rem(-60px), $bpY: rem(-160px));
-  }
-
-  &Comment {
-    @include whbp($bpX: rem(-80px), $bpY: rem(-160px));
-  }
-
-  &Check {
-    @include whbp($bpX: rem(-100px), $bpY: rem(-160px));
-  }
-
-  &CircleCheck {
-    @include whbp($size: rem(26px), $bpX: rem(-160px), $bpY: rem(-160px));
-  }
-
-  // ----------18-------------
-  &Send {
-    @include whbp($size: rem(18px), $bpX: rem(-20px), $bpY: rem(-180px));
-  }
-
-  &Edit {
-    @include whbp($size: rem(19px), $bpX: rem(-40px), $bpY: rem(-180px));
-  }
-
-  // ----------20-------------
-  &Message {
-    @include whbp($size: rem(16px), $bpX: rem(-20px), $bpY: rem(-200px));
-  }
-
-  &PlaceGray {
-    @include whbp($size: rem(16px), $bpX: rem(-100px), $bpY: rem(-200px));
-  }
-
-  &PictureGray {
-    @include whbp($size: rem(16px), $bpX: rem(-120px), $bpY: rem(-200px));
-  }
-
-  &MdHeart {
-    @include whbp($size: rem(16px), $bpX: rem(-140px), $bpY: rem(-200px));
-  }
-
-  &Bell {
-    @include whbp($size: rem(30px), $bpX: rem(-160px), $bpY: rem(-200px));
-  }
-
-  // -----------22------------
-  &TwoPeople {
-    @include whbp($size: rem(14px), $bpX: rem(-20px), $bpY: rem(-220px));
-  }
-
-  &TwoPeopleGray {
-    @include whbp($size: rem(14px), $bpX: rem(-60px), $bpY: rem(-220px));
-  }
-
-  &Who {
-    @include whbp($size: rem(14px), $bpX: rem(-80px), $bpY: rem(-220px));
-  }
-
-  &Certificate {
-    @include whbp($size: rem(43px), $bpX: rem(-120px), $bpY: rem(-220px));
-  }
-
-  // ------------24-----------
-  &CirclePlus {
-    @include whbp($size: rem(16px), $bpX: rem(-20px), $bpY: rem(-240px));
-  }
-
-  &Close {
-    @include whbp($size: rem(14px), $bpX: rem(-40px), $bpY: rem(-240px));
-  }
-
-  &Explanation {
-    @include whbp($size: rem(15px), $bpX: rem(-60px), $bpY: rem(-240px));
-  }
-
-  &Person {
-    @include whbp($size: rem(30px), $bpX: rem(-160px), $bpY: rem(-240px));
-  }
-
-  // ------------26-----------
-  &DateBlack {
-    @include whbp($size: rem(14px), $bpX: rem(-20px), $bpY: rem(-260px));
-  }
-
-  &CalGray {
-    @include whbp($size: rem(14px), $bpX: rem(-40px), $bpY: rem(-260px));
-  }
-
-  &Flag {
-    @include whbp($size: rem(12px), $bpX: rem(-60px), $bpY: rem(-260px));
-  }
-
-  &Positioning {
-    @include whbp($size: rem(8px), $bpX: rem(-80px), $bpY: rem(-260px));
-  }
-
-
+   &Mark{@include whbp($bpX:rem(-120px),$bpY:rem(-140px));}
+   // -----------16------------
+   &ReceptionSensitivity{@include whbp($bpX:rem(-0px),$bpY:rem(-160px));}
+   &Lte{@include whbp($bpX:rem(-20px),$bpY:rem(-160px));}
+   &Battery{@include whbp($bpX:rem(-40px),$bpY:rem(-160px));}
+   &More{@include whbp($bpX:rem(-60px),$bpY:rem(-160px));}
+  //  &Comment{@include whbp($bpX:rem(-80px),$bpY:rem(-160px));}
+   &Check{@include whbp($bpX:rem(-100px),$bpY:rem(-160px));}
+   &CircleCheck{@include whbp($size:rem(26px),$bpX:rem(-160px),$bpY:rem(-160px));}
+   // ----------18-------------
+   &Send{@include whbp($size:rem(18px),$bpX:rem(-20px),$bpY:rem(-180px));}
+   &Edit{@include whbp($size:rem(18px),$bpX:rem(-40px),$bpY:rem(-160px));}
+   // ----------20-------------
+   &Message{@include whbp($size:rem(16px),$bpX:rem(-20px),$bpY:rem(-200px));}
+   &Recommand{@include whbp($size:rem(16px),$bpX:rem(-40px),$bpY:rem(-200px));}
+   &Comment{@include whbp($size:rem(16px),$bpX:rem(-60px),$bpY:rem(-200px));}
+   &PlaceGray{@include whbp($size:rem(16px),$bpX:rem(-100px),$bpY:rem(-200px));}
+   &PictureGray{@include whbp($size:rem(16px),$bpX:rem(-120px),$bpY:rem(-200px));}
+   &MdHeart{@include whbp($size:rem(16px),$bpX:rem(-140px),$bpY:rem(-200px));}
+   &Bell{@include whbp($size:rem(26px),$bpX:rem(-160px),$bpY:rem(-200px));}
+   // -----------22------------
+   &TwoPeople{@include whbp($size:rem(14px),$bpX:rem(-20px),$bpY:rem(-220px));}
+   &TwoPeopleGray{@include whbp($size:rem(14px),$bpX:rem(-60px),$bpY:rem(-220px));}
+   &Who{@include whbp($size:rem(14px),$bpX:rem(-80px),$bpY:rem(-220px));}
+   &Certificate{@include whbp($size:rem(14px),$bpX:rem(-120px),$bpY:rem(-220px));}
+   // ------------24-----------
+   &CirclePlus{@include whbp($size:rem(14px),$bpX:rem(-20px),$bpY:rem(-240px));}
+   &Close{@include whbp($size:rem(14px),$bpX:rem(-40px),$bpY:rem(-240px));}
+   &Explanation{@include whbp($size:rem(14px),$bpX:rem(-60px),$bpY:rem(-240px));}
+   &Person{@include whbp($size:rem(26px),$bpX:rem(-160px),$bpY:rem(-240px));}
+   // ------------26-----------
+   &DateBlack{@include whbp($size:rem(14px),$bpX:rem(-20px),$bpY:rem(-260px));}
+   &CalGray{@include whbp($size:rem(14px),$bpX:rem(-40px),$bpY:rem(-260px));}
+   &Flag{@include whbp($size:rem(12px),$bpX:rem(-60px),$bpY:rem(-260px));}
+   &Postioning{@include whbp($size:rem(8px),$bpX:rem(-80px),$bpY:rem(-260px));}
+   
+   
 }

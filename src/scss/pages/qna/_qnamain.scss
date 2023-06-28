@@ -1,106 +1,135 @@
-  .qnaProfile{
-    width: auto;
-    height: auto;
-    padding: 0.75rem 1.125rem;
-    border-bottom: 0.5rem solid #BDBDBD;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.qnaProfile{
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.125rem;
+  width: 100%;
+}
 
-  .qnaProfile__mini{
-    margin-left: -1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.qnaProfile__mini{
+  margin-left: -1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1.2rem;
+  border-bottom: 0.5rem solid #BDBDBD;
+}
 
-  .qnaProfile__img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.qnaProfile__img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .qnaState{
-    font-family: Pretendard;
-    font-weight: 600;
-    margin-left: 1rem;
-  }
+.qnaState{
+  font-family: Pretendard;
+  font-weight: 600;
+  margin-left: 1rem;
+}
 
-  .spriteAttend{
-    padding: 0.4rem 0.75rem;
-    border-radius: 8px;
-    background: #9DA1B4;
-    color: #FFF;
-    font-size: 0.65rem;
-    font-family: Pretendard;
-    font-weight: 600;
-    margin-left: 8rem;
-  }
+.qnaPost__list{
+  display: flex;
+  flex-direction: column;
+  font-family: Pretendard;
+  width: auto;
+}
+
+.qnaPost__item{
+  padding: 0.75rem 5.0625rem 0.75rem 0.75rem;
+  width: 100%;
+  position: relative;
+}
+
+.qnaPost__link{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  align-items: flex-start;
+}
+
+.qnaPost__text{
+  position: absolute;
+  width: 26.5rem;
+  line-height: 120%;
+}
+
+.qnsPost__img{
+  position: relative;
+  left: 17rem;
+  top: 1rem;
+}
+
+.qnaPost__topic{
+  padding: 0rem 0.75rem;
+  border-radius: 4px;
+  background: #C4C7D2;
+  color: #FFF;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.qnaPost__title{
+  font-size: 0.8rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 14rem;
+}
+
+.qnaPost__content{
+  color: #B1B4C3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0.65rem;
+  font-family: Pretendard;
+  line-height: 160%;
+}
+
+.qnaPost__info{
+  color: #9DA1B4;
+  font-size: 0.65rem;
+  font-family: Pretendard;
+
+}
+
+.qnaPost__img{
+  width: rem(62px);
+  height: rem(62px);
+  border-radius: 10px;
+}
+
+.qnaboard_emo{
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.qnaboard_first{
+  margin-left: 1rem;
+}
 
 
-  .qnaPost__list{
-    display: flex;
-    flex-direction: column;
-    font-family: Pretendard;
-    width: auto;
-  }
+.attendMessage{
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  background: #9DA1B4;
+  color: #FFF;
+  font-size: 0.65rem;
+  font-family: Pretendard;
+  font-weight: 600;
+  margin-left: 12rem;
+}
 
-  .qnaPost__item{
-    padding: 0.75rem 5.0625rem 0.75rem 0.75rem;
-  }
+// .spriteRecommend .spriteComment{
+//   color:#9DA1B4;
+//   font-size: 0.6rem;
+//   font-family: Pretendard;
+//   line-height: 160%;
+// }
 
-  .qnaPost__link{
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-    align-items: flex-start;
-  }
-
-  .qnaPost__topic{
-    padding: 0rem 0.75rem;
-    border-radius: 4px;
-    background: #C4C7D2;
-    color: #FFF;
-    font-size: 0.6rem;
-    font-weight: 600;
-  }
-
-  .qnaPost__title{
-    font-size: 0.8rem;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 14rem;
-  }
-
-  .qnaPost__content{
-    color: #B1B4C3;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 0.65rem;
-    font-family: Pretendard;
-    line-height: 160%;
-  }
-
-  .qnaPost__info{
-    color: #9DA1B4;
-    font-size: 0.65rem;
-    font-family: Pretendard;
-  }
-
-  .qnaPost__img{
-    width: rem(62px);
-    height: rem(62px);
-    border-radius: 10px;
-  }
-
-  .spriteRecommend{
-    color:#9DA1B4;
-    font-size: 0.6rem;
-    font-family: Pretendard;
-    line-height: 160%;
-  }
-
-
+.qnaboard_emoposition{
+  position: absolute;
+  left: 18.6rem;
+  bottom: 0.2rem;
+}
 

@@ -3,42 +3,46 @@
 @use "./../../base" as *;
 @use "./../../themes" as *;
 
-.writeBoardMain {
-
+.writeBoard3Main{
   flex-flow: column;
   position: relative;
+  background-color: aqua;
   height: 100vh;
 }
 
-.insertTitle {
-  &__input {
-    padding-left: rem(4px);
-    border: none;
-    color: $gray-400;
-    font-size: $text-md;
-    font-family: Pretendard;
-    font-weight: 600;
-    line-height: 150%;
-  }
+.insertedTitle{
+  padding-left: rem(4px);
+  color: $black;
+  font-size: $text-md;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 150%;
+  margin: rem(12px) rem(27px);
 }
 
-.aroundPopular {
+.selectCategory{
+  padding: rem(16px) rem(12px);
+  &__summary::marker{font-size:0;}
+}
+
+
+
+.aroundPopular{
   font-size: $text-xxs ;
   margin-top: rem(16px);
 
-  &__box {
+  &__box{
     margin-top: rem(12px);
     // background-color: aqua;
-    @include flexbox ($wrap: wrap);
+    @include flexbox ($wrap:wrap);
     gap: rem(11px) rem(6px);
   }
-
-  &__button {
+  &__button{
     @include keywordButton;
   }
 }
 
-.writeBoard__button__next {
+.writeBoard2__button__next{
   @include mainButton;
   position: absolute;
   bottom: rem(32px);

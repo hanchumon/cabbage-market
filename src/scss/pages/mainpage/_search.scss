@@ -1,0 +1,56 @@
+@use "../../utils/" as *;
+@use "../../themes/" as *;
+@use "../../components/" as *;
+.sizingWrapper{
+  position: relative;
+  height: 100%;
+}
+.searchHeader__wrapper {
+  @include padding(16px);
+}
+
+.searchHeaderBack {
+  margin-right: rem(16px);
+  margin-top: 1%;
+}
+
+.searchHeaderInput {
+  border: 0;
+  background: $gray-200;
+  border-radius: 5px;
+  @include paddingX(10px);
+  @include paddingY(8px);
+  width: calc(100% - 3rem);
+}
+
+
+.searchKeyword {
+  font-size: text-sm;
+  font-family: Pretendard;
+  font-weight: 700;
+  line-height: 1.5%;
+  padding-left: $spacing-3;
+  @include paddingY(12px);
+  
+  &__list{
+    @include flexbox;
+    padding-left: $spacing-3;
+    column-gap: $spacing-1;
+    margin-top: $spacing-3
+  } 
+  &__button{
+    @include keywordButton;
+    background: $white;
+  }
+}
+
+.submitButton{
+  background: transparent;
+  border: 0;
+  line-height: 1.5;
+  font-size: $text-sm;
+  color: $primary;
+  position: absolute;
+  bottom:0;
+  right:0;
+}

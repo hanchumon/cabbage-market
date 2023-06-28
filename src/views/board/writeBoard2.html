@@ -11,32 +11,61 @@
 </head>
 
 <body>
-  <h1 class="a11yHidden">배추마켓</h1>
-  
-  <!-- 보드 작성 -->
-  <h2 class="a11yHidden">게시판 작성</h2>
-  <main>
-  <span>EUID 피그마 스터디 하실분!</span>
-  <details>
-    <summary>더 많은 내용<span>펼치기</span></summary>
-    <ui>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-    </ui>
-  </details>
- 
-  <form>
-    <input type="text" placeholder="검색어를 입력하세요.">
-  </form>
+  <div class="sizingWrapper">
+    <h1 class="a11yHidden">배추마켓</h1>
 
-  <form>
-    <span></span>
-    <label for="" class=""><span></span>인원</label>
-    <input type='button' onclick='count("plus")' value='+' />
-    <span id='result'>0</span>
-    <input type='button' onclick='count("minus")' value='-' />
-    <!-- java code.
+    <header class="mainHeader backHeader">
+      <h2 class="a11yHidden">기본 정보</h2>
+      <div class="timeInfo">
+        <time class="timeInfo__date" datetime="2023-06-25T02:26">2:26</time>
+        <ul class="celluarInfo">
+          <li class="celluarInfo__item">
+            <span class="sprite spriteReceptionSensitivity"></span>
+            <p class="a11yHidden">수신감도</p>
+          </li>
+          <li class="celluarInfo__item">
+            <span class="sprite spriteLte"></span>
+            <p class="a11yHidden">데이터 종류</p>
+          </li>
+          <li class="celluarInfo__item">
+            <span class="sprite spriteBattery"></span>
+            <p class="a11yHidden">배터리 잔량</p>
+          </li>
+        </ul>
+      </div>
+      <ul class="statusBar">
+        <li class="statusBar__item">
+          <a href="/" class="statusBar__link backHeader__link sprite spriteBack"><span
+              class="a11yHidden">뒤로가기</span></a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- 보드 작성 -->
+    <h2 class="a11yHidden">게시판 작성</h2>
+    <main class="writeBoard2Main">
+      <p class="insertedTitle">EUID 피그마 스터디 하실분!</p>
+      
+      <details class="selectCategory">
+        <summary class="selectCategory__summary">카테고리를 선택해주세요<span class=""></span></summary>
+        <ui>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ui>
+      </details>
+
+      <form>
+        <input type="text" placeholder="검색어를 입력하세요.">
+      </form>
+
+      <form>
+        <span></span>
+        <label for="" class=""><span class="sprite spritePpl"></span>인원</label>
+        <input type='button' onclick='count("plus")' value='+' />
+        <span id='result'>0</span>
+        <input type='button' onclick='count("minus")' value='-' />
+        <!-- java code.
       function count(type)  {
     // 결과를 표시할 element
     const resultElement = document.getElementById('result');
@@ -54,20 +83,23 @@
     // 결과 출력
     resultElement.innerText = number;
     } -->
-  
-    <span></span>
-    <label for="" class="">날짜</label>
-    <input type="date">
-    
-    <span></span>
-    <label for="" class="">시간</label>
-    <input type="time">
-  
-    <span></span>
-    <label for="" class="">장소</label>
-    <input type="text" placeholder="입력해주세요">
- 
-    <input type="button" class="button_next" value="다음">
-  </form>
-</main>
+
+        
+        <label for="" class=""><span class="sprite spriteCal"></span>날짜</label>
+        <input type="date">
+
+        <span></span>
+        <label for="" class="">시간</label>
+        <input type="time">
+
+        <span></span>
+        <label for="" class="">장소</label>
+        <input type="text" placeholder="입력해주세요">
+      </form>
+      <form>
+        <input type="button" onClick="location.href='/views/board/writeBoard3.html'" class="writeBoard2__button__next"
+          value="다음">
+      </form>
+
+    </main>
 </body>

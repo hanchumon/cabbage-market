@@ -11,55 +11,110 @@
 </head>
 
 <body>
-
+  <div class="sizingWrapper">
   <h1 class="a11yHidden">배추마켓</h1>
 
-  <!-- 보드 -->
+  <!-- 해더 -->
+  <header class="mainHeader locationHeader">
+    <h2 class="a11yHidden">기본 정보</h2>
+    <div class="timeInfo">
+      <time class="timeInfo__date" datetime="2023-06-25T02:26">2:26</time>
+      <ul class="celluarInfo">
+        <li class="celluarInfo__item">
+          <span class="sprite spriteReceptionSensitivity"></span>
+          <p class="a11yHidden">수신감도</p>
+        </li>
+        <li class="celluarInfo__item">
+          <span class="sprite spriteLte"></span>
+          <p class="a11yHidden">데이터 종류</p>
+        </li>
+        <li class="celluarInfo__item">
+          <span class="sprite spriteBattery"></span>
+          <p class="a11yHidden">배터리 잔량</p>
+        </li>
+      </ul>
+    </div>
+    <ul class="statusBar">
+      <li class="selectLocation">
+        <label for="headerSelect">거래지역 ▼</label><select id="headerSelect">
+          <option value="mainLocation" selected> 태백시 철암동
+          <option value="subLocation"> 왕산면 대기리
+        </select>
+      </li>
+      <li class="locationHeader__search">
+        <a class="sprite spriteSearch" href="/"><span class="a11yHidden">검색</span></a>
+      </li>
+      <li class="locationHeader__menu">
+        <a class="sprite spriteMenu" href="/"><span class="a11yHidden">메뉴</span></a>
+      </li>
+      <li class="llocationHeader__menuspriteAlarm">
+        <a class="sprite" href="/"><span class="a11yHidden">키워드 알람</span></a>
+      </li>
+    </ul>
+  </header>
+
+  <!-- 전체 내비 -->
+  <nav class="commonNav">
+    <h2 class="a11yHidden">메뉴</h2>
+    <ul class="commonNav__list">
+      <li class="commonNav__item">
+        <a href="./main.html" class="commonNav__link">
+          <span class="sprite spriteHome"></span>
+          <span>홈</span>
+        </a>
+      </li>
+      <li class="commonNav__item">
+        <a href="../board/board.html" class="commonNav__link">
+          <span class="sprite spriteFillBoard"></span>
+          <span>게시판</span>
+        </a>
+      </li>
+      <li class="commonNav__item">
+        <a href="./exchange.html" class="commonNav__link">
+          <span class="sprite spritePlace"></span>
+          <span>내 근처</span>
+        </a>
+      </li>
+      <li class="commonNav__item">
+        <a href="../qna/chatlists.html" class="commonNav__link">
+          <span class="sprite spriteChat"></span>
+          <span>채팅</span>
+        </a>
+      </li>
+      <li class="commonNav__item">
+        <a href="../profile/profile.html" class="commonNav__link">
+          <span class="sprite spriteMyPage"></span>
+          <span>내 정보</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- 보더 -->
   <h2 class="a11yHidden">게시판</h2>
 
-  <!-- 보드 내비 -->
+  <!-- 보더 내비 -->
   <nav class="boardNav">
     <h3 class="a11yHidden">내비게이션</h3>
     
     <ul class="boardNav__list">
-      <li class="boardNav__item"><a href="./togetherBoard.html" class="boardNav__link">주제</a></li>
-      <li class="boardNav__item"><a href="./togetherBoard.html" class="boardNav__link">인기글</a></li>
-      <li class="boardNav__item"><a href="./togetherBoard.html" class="boardNav__link">같이해요</a></li>
-      <li class="boardNav__item"><a href="./togetherBoard.html" class="boardNav__link">질의응답</a></li>
-      <li class="boardNav__item"><a href="./togetherBoard.html" class="boardNav__link">자유게시판</a></li>
+      <li class="boardNav__item"><a href="/views/board/board.html" class="boardNav__link">주제</a></li>
+      <li class="boardNav__item"><a href="/views/board/board.html" class="boardNav__link">인기글</a></li>
+      <li class="boardNav__item"><a href="/views/board/togetherBoard.html" class="boardNav__link">같이해요</a></li>
+      <li class="boardNav__item"><a href="/views/qna/qnamain.html" class="boardNav__link">질의응답</a></li>
+      <li class="boardNav__item"><a href="/views/board/board.html" class="boardNav__link">자유게시판</a></li>
     </ul>
-    
-    
-    
-    
-    
-    <!-- <form>
-      <input type="button" class="boardNav__topic" value="주제">
-
-      <label for="popular" class="boardNav__label">
-        <input type="radio" id="popular" class="boardNav__input" name="topic" value="인기글">인기글</label>
-
-      <label for="together" class="boardNav__label">
-        <input type="radio" id="together" class="boardNav__input" name="topic" value="같이해요">같이해요</label>
-
-      <label for="Q.N.A." class="boardNav__label">
-        <input type="radio" id="Q.N.A." class="boardNav__input" name="topic" value="질의응답">질의응답</label>
-
-      <label for="freeBoard" class="boardNav__label">
-        <input type="radio" id="freeBoard" class="boardNav__input" name="topic" value="자유게시판">
-        자유게시판</label>
-    </form> -->
   </nav>
 
   <!-- 보드 메인 -->
-  <main class="boardMain">
+  <main class="boardMain ">
     <h3 class="a11yHidden">목록</h3>
     <ul class="boardMain__list">
 
       <!-- 1번 아이템  -->
       <li class="boardMain__item">
-        <a class="boardMain__link" href="/">
-          <span class="boardMain__item__kind"> 같이해요</span>
+        <a class="boardMain__link" href="/views/board/boardContent.html">
+          <span class="boardMain__item__kind">같이해요</span>
           <p class="boardMain__item__title">youtube 클론 프젝 같이 하실분~!</p>
           <p class="boardMain__item__who"><span class="sprite spriteWho"></span>누구나 참여가능</p>
           <p class="boardMain__item__date"><span class="sprite spriteCalGray"></span><time datetime="2023-06-14T14:24:30"></time>내일, 오후 7:00</time></p>
@@ -67,37 +122,64 @@
           <p class="boardMain__item__NOP"><span class="sprite spriteTwoPeopleGray"></span>1/3명</p>
         </a>
       </li>
-
+    
       <!-- 2번 아이템  -->
       <li class="boardMain__item">
-        <a class="boardMain__link" href="/">
-          <span class="boardMain__item__kind"> 같이해요</span>
-          <p class="boardMain__item__title">youtube 클론 프젝 같이 하실분~!</p>
-          <p class="boardMain__item__content">내용</p>
-          <p class="boardMain__item__who sprite spritePlace">참여가능여부</p>
-          <p class="boardMain__item__date sprite spriteSmile">날짜</p>
-          <p class="boardMain__item__info">북가좌동 &#183;<time datetime="2023-06-24T11:39">9분 전</time></p>
-          <img src="/" class="boardMain__item__img" alt="이미지">
-          <p class="boardMain__item__NOP sprite sprite__NOP">인원</p>
+        <a class="boardMain__link" href="/views/board/boardContent.html">
+          <span class="boardMain__item__kind">질의응답</span>
+          <p class="boardMain__item__title">아니 디버깅 돌려봤는데도 왜 이러냐?</p>
+          <p class="boardMain__item__content">내가 혼자 게임 만들려고 코드 짰는ㄷ ㅔ 왜 작동 안되는거냐 
+          </p>
+          <p class="boardMain__item__info">응암제 3동 &#183;<time datetime="2023-06-24T11:39">9분 전</time></p>
+          <img src="/images/code.png" class="boardMain__item__img" alt="이미지">
         </a>
       </li>
 
-      <!-- <li class="boardMain__item">
-        <a class="boardMain__link" href="/">
-          <span class="boardMain__item__kind"> 같이해요</span>
-          <p class="boardMain__item__title">youtube 클론 프젝 같이 하실분~!</p>
+      <!-- 3번 아이템  -->
+      <li class="boardMain__item">
+        <a class="boardMain__link" href="/views/board/boardContent.html">
+          <span class="boardMain__item__kind">질의응답</span>
+          <p class="boardMain__item__title">깊은 복사 얕은 복사의 차이를 모르곘어요 ㅠㅠ</p>
           <p class="boardMain__item__content">내용</p>
-          <p class="boardMain__item__who sprite sprite__who">참여가능여부</p>
-          <p class="boardMain__item__date sprite sprite__date">날짜</p>
-          <p class="boardMain__item__info">북가좌동 &#183;<time datetime="2023-06-24T11:39">9분 전</time></p>
-          <img src="/" class="boardMain__item__img" alt="이미지">
-          <p class="boardMain__item__NOP sprite sprite__NOP">인원</p>
+          <p class="boardMain__item__info">응암제 3동 &#183;<time datetime="2023-06-24T11:39">9분 전</time></p>
         </a>
-      </li> -->
+      </li>
+
+      <!-- 3번 아이템  -->
+      <li class="boardMain__item">
+        <a class="boardMain__link" href="/views/board/boardContent.html">
+          <span class="boardMain__item__kind">같이해요</span>
+          <p class="boardMain__item__title">CSS flex 중앙정렬 justify-content 말고 또 뭐있더라?</p>
+          <p class="boardMain__item__content">내용</p>
+          <p class="boardMain__item__info">응암제 3동 &#183;<time datetime="2023-06-24T11:39">9분 전</time></p>
+        </a>
+      </li>
+
+      <!-- 4번 아이템  -->
+      <li class="boardMain__item">
+        <a class="boardMain__link" href="/views/board/boardContent.html">
+          <span class="boardMain__item__kind">자유게시판</span>
+          <p class="boardMain__item__title">오늘 점심 뭐먹? 점메추~~~</p>
+          <p class="boardMain__item__content">내용</p>
+          <p class="boardMain__item__info">응암제 3동 &#183;<time datetime="2023-06-24T11:39">9분 전</time></p>
+          <img src="/images/code.png" class="boardMain__item__img" alt="이미지">
+        </a>
+      </li>
+
+      <!-- 2번 아이템  -->
+      <li class="boardMain__item">
+        <a class="boardMain__link" href="/views/board/boardContent.html">
+          <span class="boardMain__item__kind"> 같이해요</span>
+          <p class="boardMain__item__title">오늘 점심 뭐먹? 점메추~~~</p>
+          <p class="boardMain__item__content">내용</p>
+          <p class="boardMain__item__info">응암제 3동 &#183;<time datetime="2023-06-24T11:39">9분 전</time></p>
+          <img src="/images/code.png" class="boardMain__item__img" alt="이미지">
+        </a>
+      </li>
 
     </ul>
   </main>
-
+</div>
 </body>
 
 </html>

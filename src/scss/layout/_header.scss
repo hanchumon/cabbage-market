@@ -24,17 +24,11 @@
 
 //헤더 공통디자인
 .statusBar {
-  // background: pink;
   @include flexbox($items:center);
   column-gap: $spacing-2;
   width: 100%;
   height: rem(40px);  
   @include marginX(16px);
-}
-
-//location 헤더 디자인
-.locationHeader__search, .locationHeader__menu, .locationHeader__menu{
-  flex-shrink: 0;
 }
 
 .selectLocation{
@@ -51,16 +45,13 @@
     height: 0;
     margin-top: -1px;
     margin-left: 30px;
-    border-left: 5px transparent;
-    border-right: 5px transparent;
-    border-bottom: 5px $gray-600;
+
   }
   label{
     position: absolute;
-    width: 100%; 
+    width: 80%; 
     top: rem(3px);  /* 위치정렬 */ 
     @include paddingY(8px);
-    color: $tertiary;  
     z-index: -1;  /* IE8에서 label이 위치한 곳이 클릭되지 않는 것 해결 */
     font-size: $text-md;
     font-weight: 700;

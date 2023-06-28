@@ -35,7 +35,7 @@
       </div>
       <ul class="statusBar">
         <li class="selectLocation">
-          <label for="headerSelect">거래지역</label><select id="headerSelect">
+          <label for="headerSelect">거래지역 ▼</label><select id="headerSelect">
             <option value="mainLocation" selected> 태백시 철암동
             <option value="subLocation"> 왕산면 대기리
           </select>
@@ -46,8 +46,8 @@
         <li class="locationHeader__menu">
           <a class="sprite spriteMenu" href="/"><span class="a11yHidden">메뉴</span></a>
         </li>
-        <li class="llocationHeader__menuspriteAlarm">
-          <a class="sprite" href="/"><span class="a11yHidden">키워드 알람</span></a>
+        <li class="locationHeader__menu">
+          <a class="sprite spriteAlarm" href="/"><span class="a11yHidden">키워드 알람</span></a>
         </li>
       </ul>
     </header>
@@ -56,31 +56,31 @@
       <h2 class="a11yHidden">메뉴</h2>
       <ul class="commonNav__list">
         <li class="commonNav__item">
-          <a href="" class="commonNav__link">
+          <a href="./main.html" class="commonNav__link">
             <span class="sprite spriteFillHome"></span>
             <span>홈</span>
           </a>
         </li>
         <li class="commonNav__item">
-          <a href="" class="commonNav__link">
+          <a href="../board/board.html" class="commonNav__link">
             <span class="sprite spriteBoard"></span>
             <span>게시판</span>
           </a>
         </li>
         <li class="commonNav__item">
-          <a href="" class="commonNav__link">
+          <a href="./exchange.html" class="commonNav__link">
             <span class="sprite spritePlace"></span>
             <span>내 근처</span>
           </a>
         </li>
         <li class="commonNav__item">
-          <a href="" class="commonNav__link">
+          <a href="../qna/chatlists.html" class="commonNav__link">
             <span class="sprite spriteChat"></span>
             <span>채팅</span>
           </a>
         </li>
         <li class="commonNav__item">
-          <a href="" class="commonNav__link">
+          <a href="../profile/profile.html" class="commonNav__link">
             <span class="sprite spriteMyPage"></span>
             <span>내 정보</span>
           </a>
@@ -93,58 +93,71 @@
 
       <section class="mainStory">
         <h3 class="a11yHidden">개발자 이야기</h3>
-        <p class="mainStory__p">풀리지 않는 버그 속 개발자로 살아남기</p>
+        <p class="mainStory__p">풀리지 않는 버그 속<br />개발자로 살아남기</p>
         <img class="mainStory__img" src="/images/mainPage_ad.png" alt="" />
         <a href="/" class="mainStory__link">자세히 보기</a>
+        <div class="mainStory__number">
+          <span class="mainStory__number01">01</span>
+          <img src="/images/bar.png" alt="" class="mainStory__numberImg" aria-hidden="true"/>
+          <span class="mainStory__number03">03</span>
+        </div>
+      
+        
       </section>
 
       <nav class="mainNav">
         <h3 class="a11yHidden">메인페이지 네비게이션</h3>
         <ul class="mainNav__list">
-          <li class="mainNav__item"><a href="/" class="mainNav__link accentColor">선배님 스토리</a></li>
-          <li class="mainNav__item"><a href="/" class="mainNav__link">기기 거래</a></li>
+          <li class="mainNav__item"><a href="./main.html" class="mainNav__link accentColor">선배님 스토리</a></li>
+          <li class="mainNav__item"><a href="./exchange.html" class="mainNav__link">기기 거래</a></li>
           <li class="mainNav__item"><a href="/" class="mainNav__link">질의 응답</a></li>
           <li class="mainNav__item"><a href="/" class="mainNav__link">함께 해요</a></li>
         </ul>
       </nav>
 
-      <section class="storyFeild">
+      <section class="storyField">
         <h2 class="a11yHidden">선배님 스토리</h2>
-        <ul class="storyFeild__list">
-          <li class="storyField___item">
-            <a href="/" class="storyField___link">디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
-              <img class="storyField___img" src="/images/cabbage.png" alt="프로필사진" />
-              <p class="storyField___brief">UIUX <span aria-hidden="true">&#124;</span> 1기 수강생 박치열</p>
+        <ul class="storyField__list">
+          <li class="storyField__item">
+            <a href="/" class="storyField__link">
+              <img class="storyField__img" src="/images/imggray_bg.png" alt="프로필사진" />
+              <p class="storyField__title">디자인에 대해 하나도 알지 못했던<br />내가 취업할 수 있었던 이유</p>
+              <p class="storyField__brief">UIUX <span aria-hidden="true">&#124;</span> 1기 수강생 박치열</p>
             </a>
           </li>
-          <li class="storyField___item">
-            <a href="/" class="storyField___link">영문과 전공생에서 UIUX 디자이너로 취업하기까지
-              <img class="storyField___img" src="/images/cabbage.png" alt="프로필사진" />
-              <p class="storyField___brief">UIUX <span aria-hidden="true">&#124;</span> 3기 수강생 김진우</p>
+          <li class="storyField__item">
+            <a href="/" class="storyField__link">
+              <img class="storyField__img" src="/images/imggray_bg.png" alt="프로필사진" />
+              <p class="storyField__title">영문과 전공생에서 UIUX<br /> 디자이너로 취업하기까지</p>
+              <p class="storyField__brief">UIUX <span aria-hidden="true">&#124;</span> 3기 수강생 김진우</p>
             </a>
           </li>
-          <li class="storyField___item">
-            <a href="/" class="storyField___link">7기 수강생의 삼성으로 가는 피그마 노하우
-              <img class="storyField___img" src="/images/cabbage.png" alt="프로필사진" />
-              <p class="storyField___brief">UIUX <span aria-hidden="true">&#124;</span> 7기 수강생 김삼성</p>
+          <li class="storyField__item">
+            <a href="/" class="storyField__link">
+              <img class="storyField__img" src="/images/imggray_bg.png" alt="프로필사진" />
+              <p class="storyField__title">7기 수강생의 삼성으로 가는<br />피그마 노하우</p>
+              <p class="storyField__brief">UIUX <span aria-hidden="true">&#124;</span> 7기 수강생 김삼성</p>
             </a>
           </li>
-          <li class="storyField___item">
-            <a href="/" class="storyField___title">배울 때 내가 가장 힘들었던 A-Z 야, 너도 할 수 있어!
-              <img class="storyField___img" src="/images/cabbage.png" alt="프로필사진" />
-              <p class="storyField___brief">UIUX <span aria-hidden="true">&#124;</span> 4기 수강생 김환휘</p>
+          <li class="storyField__item">
+            <a href="/" class="storyField__title">
+              <img class="storyField__img" src="/images/imggray_bg.png" alt="프로필사진" />
+              <p class="storyField__title">배울 때 내가 가장 힘들었던 A-Z<br />야, 너도 할 수 있어!</p>
+              <p class="storyField__brief">UIUX <span aria-hidden="true">&#124;</span> 4기 수강생 김환휘</p>
             </a>
           </li>
-          <li class="storyField___item">
-            <a href="/" class="storyField___link">나는 프론트일까? 백일까? 여전히 모르겠다면 물어봐!
-              <img class="storyField___img" src="/images/cabbage.png" alt="프로필사진" />
-              <p class="storyField___brief">UIUX <span aria-hidden="true">&#124;</span> 2기 수강생 최혜수</p>
+          <li class="storyField__item">
+            <a href="/" class="storyField__link">
+              <img class="storyField__img" src="/images/imggray_bg.png" alt="프로필사진" />
+              <p class="storyField__title">나는 프론트일까? 백일까?<br />여전히 모르겠다면 물어봐!</p>
+              <p class="storyField__brief">UIUX <span aria-hidden="true">&#124;</span> 2기 수강생 최혜수</p>
             </a>
           </li>
-          <li class="storyField___item">
-            <a href="/" class="storyField___link">코딩과 디자인의 그 어딘가 두가지 모두 하고 싶은 욕심쟁이
-              <img class="storyField___img" src="/images/cabbage.png" alt="프로필사진" />
-              <p class="storyField___brief">UIUX <span aria-hidden="true">&#124;</span> 5기 수강생 염진희</p>
+          <li class="storyField__item">
+            <a href="/" class="storyField__link">
+              <img class="storyField__img" src="/images/imggray_bg.png" alt="프로필사진" />
+              <p class="storyField__title">코딩과 디자인의 그 어딘가<br />두가지 모두 하고 싶은 욕심쟁이</p>
+              <p class="storyField__brief">UIUX <span aria-hidden="true">&#124;</span> 5기 수강생 염진희</p>
             </a>
           </li>
         </ul>
