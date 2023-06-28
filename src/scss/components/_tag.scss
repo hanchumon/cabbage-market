@@ -12,22 +12,26 @@
   line-height: 150%;
 }
 
-@mixin itemTitle ( $width: 100%){
+@mixin itemTitle ( $width: 100%, $font-weight:400){
   width: $width;
 
   color: $black;
   font-size: $text-sm;
-  font-family: Pretendard;
+  font-weight: $font-weight;
   line-height: 160%;
-
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  @include textOver;
+  font-family: Pretendard;
 }
 
 @mixin itemContent ($color: $gray-500, $line-height: 160%){
   color: $color;
-  font-size: 10.503px;
-  font-family: Pretendard;
+  font-size: $text-xxs;
   line-height: $line-height;
+   font-family: Pretendard;
+}
+
+@mixin itemContentOver($color: $gray-500, $line-height: 160%, $width : 100%){
+  width: $width;
+  @include itemContent($color, $line-height);
+  @include textOver;
 }
