@@ -16,10 +16,46 @@
   <div class="sizingWrapper">
     <h2 class="a11yHidden">프로필 화면</h2>
 
+    <nav class="commonNav">
+      <h2 class="a11yHidden">메뉴</h2>
+      <ul class="commonNav__list">
+        <li class="commonNav__item">
+          <a href="./main.html" class="commonNav__link">
+            <span class="sprite spriteFillHome"></span>
+            <span>홈</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="../board/board.html" class="commonNav__link">
+            <span class="sprite spriteBoard"></span>
+            <span>게시판</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="./exchange.html" class="commonNav__link">
+            <span class="sprite spritePlace"></span>
+            <span>내 근처</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="../qna/chatlists.html" class="commonNav__link">
+            <span class="sprite spriteChat"></span>
+            <span>채팅</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="../profile/profile.html" class="commonNav__link">
+            <span class="sprite spriteMyPage"></span>
+            <span>내 정보</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
     <section class="profileMain">
       <h3 class="a11yHidden">프로필 주요 메뉴</h3>
 
-      <a href="/profileCard.html" class="profileMain__link" id="goProfileCardEdit">
+      <a href="profileCard.html" class="profileMain__link" id="goProfileCardEdit">
         <img class="profileMain__img" src="./../../images/rabbit.png" alt="프로필 이미지" />
         <span class="sprite spriteEdit"></span>
       </a>
@@ -55,7 +91,7 @@
 
       <div class="profileStats__passionTemperature">
         <p class="passionTemperature" title="열정온도는 여러 활동 내역을 기반으로 종합해서 만든 열정 지표입니다">
-          <span class="sprite spriteExplanation"></span>
+          <span class="sprite spriteExplanation noticeicon"></span>
           열정온도
         </p>
 

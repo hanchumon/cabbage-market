@@ -14,21 +14,82 @@
   <h1 class="a11yHidden">배추마켓</h1>
 
   <div class="sizingWrapper">
-    <h2 class="a11yHidden">프로필수정 화면</h2>
+    <header class="mainHeader profileHeader">
+      <h2 class="a11yHidden">기본 정보</h2>
+      <div class="timeInfo">
+        <time class="timeInfo__date" datetime="2023-06-25T02:26">2:26</time>
+        <ul class="celluarInfo">
+          <li class="celluarInfo__item">
+            <span class="sprite spriteReceptionSensitivity"></span>
+            <p class="a11yHidden">수신감도</p>
+          </li>
+          <li class="celluarInfo__item">
+            <span class="sprite spriteLte"></span>
+            <p class="a11yHidden">데이터 종류</p>
+          </li>
+          <li class="celluarInfo__item">
+            <span class="sprite spriteBattery"></span>
+            <p class="a11yHidden">배터리 잔량</p>
+          </li>
+        </ul>
+      </div>
+      <ul class="statusBar">
+        <li class="statusBar__item profileHeader__item">
+          <p class="profileHeader__description">프로필 수정</p>
+        </li>
+        <li class="statusBar__item">
+          <a href="./profile.html" class="statusBar__link profileHeader__exit sprite spriteExit"><span class="a11yHidden">창 닫기</span></a>
+        </li>
+      </ul>
+    </header>
 
-    <p class="profileEdit__page">
-      프로필수정
-      <a href="/profile.html" class="profileEdit__link" id="goProfile"></a>
-    </p>
+    <nav class="commonNav">
+      <h2 class="a11yHidden">메뉴</h2>
+      <ul class="commonNav__list">
+        <li class="commonNav__item">
+          <a href="./main.html" class="commonNav__link">
+            <span class="sprite spriteFillHome"></span>
+            <span>홈</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="../board/board.html" class="commonNav__link">
+            <span class="sprite spriteBoard"></span>
+            <span>게시판</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="./exchange.html" class="commonNav__link">
+            <span class="sprite spritePlace"></span>
+            <span>내 근처</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="../qna/chatlists.html" class="commonNav__link">
+            <span class="sprite spriteChat"></span>
+            <span>채팅</span>
+          </a>
+        </li>
+        <li class="commonNav__item">
+          <a href="../profile/profile.html" class="commonNav__link">
+            <span class="sprite spriteMyPage"></span>
+            <span>내 정보</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
     <div class="profileCard">
       <h3 class="a11yHidden">프로필카드 화면</h3>
 
-      <p class="profileCard__page" title="프로필 카드의 기본정보와 추가정보를 수정할 수 있습니다">
-        프로필카드
-        <span class="sprite spriteExplanation"></span>
-      </p>
+      <div class="profileCardMentBox">
+        <p class="profileCard__page" title="프로필 카드의 기본정보와 추가정보를 수정할 수 있습니다">
+          프로필카드
+          <span class="sprite spriteExplanation profileCardIcon"></span>
+        </p>  
+      </div>
 
+      
       <section class="myProfileCard">
         <h4 class="a11yHidden">나의 프로필카드</h4>
 
@@ -43,7 +104,7 @@
 
         <p class="profilelInformation__section">
           기본 정보
-          <a href="/profileDetails.html" class="profilelInformation__link" id="goProfileInfoEdit">수정하기</a>
+          <a href="profileDetails.html" class="profilelInformation__link" id="goProfileInfoEdit">수정하기</a>
         </p>
 
         <dl class="profilelInformation__list">

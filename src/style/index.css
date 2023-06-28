@@ -607,13 +607,13 @@ legend {
   background-position: -5rem -13.75rem;
 }
 .spriteCertificate {
-  min-width: 0.875rem;
-  min-height: 0.875rem;
+  min-width: 2.6875rem;
+  min-height: 2.6875rem;
   background-position: -7.5rem -13.75rem;
 }
 .spriteCirclePlus {
-  min-width: 0.875rem;
-  min-height: 0.875rem;
+  min-width: 1rem;
+  min-height: 1rem;
   background-position: -1.25rem -15rem;
 }
 .spriteClose {
@@ -1936,7 +1936,7 @@ a {
   position: relative;
 }
 
-.spriteExplanation {
+.noticeicon {
   position: absolute;
   top: -2px;
   right: 0;
@@ -1971,19 +1971,15 @@ a {
   height: 8px;
   background-color: #D3D3D3;
   border-radius: 15px;
-  position: absolute;
-  left: 10px;
-  top: 40px;
 }
 
 .passionTemperature__nowView {
-  width: 150px;
+  width: 200px;
   height: 8px;
   background-color: #008F22;
   border-radius: 15px;
-  position: absolute;
-  left: 0;
-  top: 0;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .profileStats__percent {
@@ -2092,19 +2088,23 @@ a {
   padding: 12px;
 }
 
-.profileCard__page {
-  width: 400px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 150%;
+.profileCardMentBox {
+  padding: 5px;
+  width: 85px;
   position: relative;
-  margin-bottom: 10px;
 }
 
-.spriteExplanation {
+.profileCard__page {
+  width: 100px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.profileCardIcon {
   position: absolute;
-  top: 1px;
-  right: 320px;
+  right: 0;
+  bottom: 11px;
 }
 
 .myProfileCard {
@@ -2208,6 +2208,16 @@ a {
   color: #D3D3D3;
 }
 
+label {
+  display: block;
+}
+
+.profilelInformation {
+  display: grid;
+  grid-template-columns: 16;
+  grid-template-rows: 1;
+}
+
 .formTitle {
   font-size: 14px;
   font-weight: 600;
@@ -2220,14 +2230,72 @@ a {
   color: #BDBDBD;
 }
 
+.certificate {
+  position: relative;
+  padding: 15px;
+}
+
+.explanationIcon {
+  position: absolute;
+  top: 17px;
+  left: 65px;
+}
+
+.fileCertificate {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.certificateBox {
+  width: 230px;
+  height: 130px;
+  background-color: #E9E9E9;
+  position: relative;
+  border-radius: 5px;
+}
+
+.spriteCertificate {
+  position: absolute;
+  top: 30px;
+  left: 90px;
+}
+
+.certificateMent {
+  color: #A7A7A7;
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+}
+
 .allAgree {
   font-size: 14px;
   font-weight: 800;
   line-height: 150%;
 }
 
+.personalAgree,
+.infoAgree,
+.responsibilityAgree {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 150%;
+  display: block;
+}
+
 .personalAgreeNotice {
   font-size: 10px;
+  color: #BDBDBD;
+}
+
+.agreeInformation {
+  font-size: 10.503px;
+  line-height: 160%;
   color: #BDBDBD;
 }
 

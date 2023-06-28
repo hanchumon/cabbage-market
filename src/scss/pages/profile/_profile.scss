@@ -128,7 +128,7 @@ a {
   position: relative;
 }
 
- .spriteExplanation {
+ .noticeicon {
    position: absolute;
    top: -2px;
    right: 0;
@@ -166,19 +166,15 @@ a {
   height: 8px;
   background-color: $gray-200;
   border-radius: 15px;
-  position: absolute;
-  left: 10px;
-  top: 40px;
 }
 
 .passionTemperature__nowView {
-  width: 150px;
+  width: 200px;
   height: 8px;
   background-color: $primary;
   border-radius: 15px;
-  position: absolute;
-  left: 0;
-  top: 0;
+  display: flex;
+  justify-content: flex-start;
 }
 
 // 좋아요

@@ -1,6 +1,15 @@
 @use "./../../utils/" as *;
 @use "./../../themes/" as *;
 
+label {
+  display: block;
+}
+
+.profilelInformation {
+  display: grid;
+  grid-template-columns: 16;
+  grid-template-rows: 1;
+}
 
 // 전체 라벨
 .formTitle {
@@ -16,18 +25,79 @@
   color: $gray-300;
 }
 
-// 동의서 파트
-.agreeCentent {
-  
+//취득자격
+.certificate {
+position: relative;
+padding: 15px;
 }
 
+.explanationIcon {
+  position: absolute;
+  top: 17px;
+  left: 65px;
+}
+
+//파일 숨기기
+.fileCertificate {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
+
+.certificateBox {
+  width: 230px;
+  height: 130px;
+  background-color: $gray-100;
+  position: relative;
+  border-radius: 5px;
+}
+
+.spriteCertificate {
+  position: absolute;
+  top: 30px;
+  left: 90px;
+}
+
+.certificateMent {
+  color: $gray-400;
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+}
+
+// 동의서 파트
 .allAgree {
   font-size: 14px;
   font-weight: 800;
   line-height: 150%;
 }
 
+.personalAgree,
+.infoAgree,
+.responsibilityAgree {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 150%;
+  display: block;
+}
+
+// .essentialAgree {
+//   color: red;
+// }
+
 .personalAgreeNotice {
   font-size: 10px;
+  color: $gray-300;
+}
+
+// 맨마지막 문장
+.agreeInformation {
+  font-size: 10.503px;
+  line-height: 160%;
   color: $gray-300;
 }
