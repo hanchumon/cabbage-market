@@ -234,6 +234,11 @@
     @include whbp($size: rem(14px), $bpX: rem(-80px), $bpY: rem(-220px));
   }
 
+  &SmHeart {
+    @include whbp($size: rem(14px), $bpX: rem(-100px), $bpY: rem(-220px));
+  }
+
+
   &Certificate {
     @include whbp($size: rem(14px), $bpX: rem(-120px), $bpY: rem(-220px));
   }
