@@ -3,7 +3,7 @@
 
 [배포 URL]
 
-* URL: ----
+* URL: [배추마켓](https://cabbage-market.netlify.app)
  
 
 ## 프로젝트 소개
